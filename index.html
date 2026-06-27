@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Step 1">
+<meta name="theme-color" content="#1a1f2e">
+<title>Step 1 Schedule</title>
+<link rel="manifest" href="manifest.json">
+<style>
+  :root {
+    --bg: #1a1f2e; --bg2: #212840; --bg3: #141929;
+    --border: #2d3650; --border2: #3a4568;
+    --text: #e2e8f5; --muted: #8899bb; --dim: #5c6f99; --xdim: #3d5080;
+    --p1: #6366f1; --p2: #f59e0b; --p3: #10b981; --p4: #ef4444;
+    --blue: #3b82f6; --gold: #c9a84c;
+    --safe-top: env(safe-area-inset-top, 0px);
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { height: 100%; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif; font-size: 13px; overflow: hidden; }
+  body { padding-top: var(--safe-top); display: flex; flex-direction: column; }
+
+  /* HEADER */
+  #header { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 12px 14px 10px; flex-shrink: 0; }
+  #header-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+  #app-title { font-size: 14px; font-weight: 700; color: var(--text); letter-spacing: -0.01em; }
+  #app-subtitle { font-size: 9.5px; color: var(--dim); margin-top: 2px; letter-spacing: 0.05em; }
+  #progress-pct { font-size: 18px; font-weight: 700; color: var(--p1); line-height: 1; }
+  #progress-text { font-size: 9.5px; color: var(--dim); text-align: right; margin-top: 2px; }
+  #progress-bar { height: 3px; background: var(--border); border-radius: 2px; overflow: hidden; margin-bottom: 10px; }
+  #progress-fill { height: 100%; background: linear-gradient(90deg, var(--p1), var(--p3)); border-radius: 2px; transition: width 0.4s ease; }
+
+  #tabs { display: flex; gap: 5px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: none; }
+  #tabs::-webkit-scrollbar { display: none; }
+  .tab { padding: 5px 10px; border-radius: 3px; font-size: 9.5px; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; border: 1px solid var(--border); white-space: nowrap; color: var(--dim); background: transparent; transition: all 0.2s; font-family: inherit; font-weight: 600; }
+  .tab.active { color: var(--active-color); border-color: var(--active-color); background: color-mix(in srgb, var(--active-color) 14%, transparent); }
+  .tab-sketchy { color: #10b981; border-color: #10b981; background: color-mix(in srgb, #10b981 14%, transparent); display: inline-flex; align-items: center; }
+  .tab-sketchy:hover, .tab-sketchy.sk-active { background: color-mix(in srgb, #10b981 26%, transparent); border-color: #10b981; }
+
+  /* SKETCHY VIEW */
+  #sketchy-view { display: none; flex: 1; overflow: hidden; flex-direction: column; }
+  #sketchy-view.visible { display: flex; }
+  #sk-source-tabs { display: flex; gap: 5px; padding: 10px 14px 8px; background: var(--bg2); border-bottom: 1px solid var(--border); flex-shrink: 0; }
+  .sk-src-btn { padding: 5px 10px; border-radius: 3px; font-size: 9.5px; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; border: 1px solid var(--border); white-space: nowrap; color: var(--dim); background: transparent; transition: all 0.2s; font-family: inherit; font-weight: 600; }
+  .sk-src-btn.active { color: var(--sk-color); border-color: var(--sk-color); background: color-mix(in srgb, var(--sk-color) 14%, transparent); }
+  #sk-stats { display: flex; gap: 14px; padding: 7px 14px; background: var(--bg2); border-bottom: 1px solid var(--border); flex-shrink: 0; flex-wrap: wrap; }
+  .sk-stat { display: flex; align-items: center; gap: 5px; font-size: 9.5px; color: var(--dim); }
+  .sk-dot { width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0; }
+  #sk-scroll { flex: 1; overflow-y: auto; padding: 12px 14px 60px; -webkit-overflow-scrolling: touch; }
+  .sk-unit { margin-bottom: 18px; }
+  .sk-unit-hd { display: flex; align-items: center; gap: 8px; margin-bottom: 7px; padding-bottom: 5px; border-bottom: 1px solid color-mix(in srgb, var(--sk-color,#10b981) 22%, transparent); }
+  .sk-badge { padding: 2px 7px; font-size: 8.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--sk-color); background: color-mix(in srgb, var(--sk-color) 14%, transparent); border: 1px solid color-mix(in srgb, var(--sk-color) 30%, transparent); border-radius: 3px; font-weight: 700; }
+  .sk-unit-ct { font-size: 9.5px; color: var(--xdim); margin-left: auto; }
+  .sk-upbar { height: 2px; background: var(--border); border-radius: 1px; flex: 1; min-width: 50px; overflow: hidden; }
+  .sk-upfill { height: 100%; border-radius: 1px; transition: width 0.3s; }
+  .sk-row { background: var(--bg3); border: 1px solid var(--border2); border-radius: 5px; margin-bottom: 4px; border-left: 3px solid transparent; transition: border-color 0.15s; }
+  .sk-row.p3 { border-left-color: var(--sk-color); background: color-mix(in srgb, var(--sk-color) 7%, var(--bg3)); }
+  .sk-inner { display: flex; align-items: center; gap: 10px; padding: 8px 11px; }
+  .sk-title { flex: 1; font-size: 11.5px; color: #8899bb; font-weight: 500; line-height: 1.3; }
+  .sk-row.p3 .sk-title { color: var(--text); }
+  .sk-passes { display: flex; gap: 4px; flex-shrink: 0; }
+  .sk-pbtn { width: 26px; height: 26px; border-radius: 4px; border: 1.5px solid var(--border2); display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 8px; font-weight: 700; color: var(--dim); background: transparent; transition: all 0.15s; font-family: inherit; user-select: none; -webkit-user-select: none; }
+  .sk-pbtn.on { color: white; border-color: transparent; }
+  .sk-pbtn[data-p="1"].on { background: #6366f1; }
+  .sk-pbtn[data-p="2"].on { background: #f59e0b; }
+  .sk-pbtn[data-p="3"].on { background: var(--sk-color); }
+
+  /* Sketchy in day-detail */
+  .sk-day-section { padding-top: 2px; }
+  .sk-day-unit-hd { font-size: 8.5px; color: var(--sk-color, #10b981); letter-spacing: 0.1em; text-transform: uppercase; font-weight: 700; margin: 8px 0 4px; }
+  .day-detail .sk-row { background: var(--bg2); margin-bottom: 3px; }
+  .day-detail .sk-pbtn { width: 23px; height: 23px; font-size: 7.5px; }
+
+  /* TODAY BANNER */
+  #today-banner { background: linear-gradient(135deg, color-mix(in srgb, var(--p1) 20%, var(--bg2)), var(--bg2)); border-bottom: 1px solid var(--border); padding: 12px 14px; flex-shrink: 0; display: none; border-left: 3px solid var(--p1); }
+  #today-label { font-size: 9px; color: var(--p1); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 4px; font-weight: 700; }
+  #today-title { font-size: 15px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
+  #today-content { font-size: 11px; color: var(--muted); line-height: 1.5; }
+  #today-content .row { margin-bottom: 3px; }
+
+  /* SCROLL */
+  #scroll { flex: 1; overflow-y: auto; padding: 14px; padding-bottom: calc(80px + var(--safe-bottom)); -webkit-overflow-scrolling: touch; }
+
+  /* STRATEGY CARD */
+  #strategy { background: var(--bg2); border: 1px solid var(--border); border-left: 3px solid var(--gold); padding: 12px 14px; border-radius: 5px; margin-bottom: 20px; }
+  #strategy h3 { font-size: 10px; color: var(--gold); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 8px; font-weight: 700; }
+  #strategy-content { font-size: 11px; color: var(--muted); line-height: 1.6; }
+  #strategy-content b { color: var(--text); font-weight: 600; }
+  #strategy-toggle { color: var(--gold); font-size: 10px; cursor: pointer; margin-top: 6px; text-decoration: underline; }
+  #strategy-detail { display: none; margin-top: 8px; }
+  #strategy-detail.open { display: block; }
+
+  /* WEEK HEADER */
+  .week { margin-bottom: 22px; }
+  .week-h { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; padding-bottom: 6px; border-bottom: 1px solid color-mix(in srgb, var(--phase-color) 22%, transparent); }
+  .week-badge { padding: 2px 7px; font-size: 8.5px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--phase-color); background: color-mix(in srgb, var(--phase-color) 14%, transparent); border: 1px solid color-mix(in srgb, var(--phase-color) 32%, transparent); border-radius: 3px; font-weight: 700; }
+  .week-label { font-size: 11.5px; color: #cbd5e1; font-weight: 600; flex: 1; }
+  .week-dates { font-size: 9px; color: var(--xdim); }
+
+  /* DAY ROW */
+  .day { background: var(--bg3); border: 1px solid var(--border2); border-radius: 5px; margin-bottom: 5px; overflow: hidden; transition: all 0.2s; border-left: 3px solid transparent; }
+  .day.done { background: color-mix(in srgb, var(--phase-color) 7%, var(--bg3)); border-color: color-mix(in srgb, var(--phase-color) 20%, transparent); border-left-color: var(--phase-color); }
+  .day.rest { opacity: 0.6; background: #111622; }
+  .day.nbme { border-left-color: var(--p2); background: color-mix(in srgb, var(--p2) 5%, var(--bg3)); }
+  .day.exam-day { border-left-color: var(--p4); background: color-mix(in srgb, var(--p4) 10%, var(--bg3)); }
+  .day.today-row { border-left-color: var(--p1); box-shadow: 0 0 0 1px color-mix(in srgb, var(--p1) 35%, transparent); }
+  .day.expanded { background: color-mix(in srgb, var(--phase-color) 6%, var(--bg3)); }
+
+  .day-summary { display: flex; align-items: center; gap: 10px; padding: 11px 13px; cursor: pointer; -webkit-user-select: none; user-select: none; }
+  .day-summary:active { opacity: 0.85; }
+
+  .day-check { width: 20px; height: 20px; flex-shrink: 0; border: 1.5px solid var(--border); border-radius: 4px; display: flex; align-items: center; justify-content: center; transition: all 0.15s; background: transparent; }
+  .day.done .day-check { background: var(--phase-color); border-color: var(--phase-color); }
+  .checkmark { color: white; font-size: 12px; display: none; line-height: 1; }
+  .day.done .checkmark { display: block; }
+
+  .day-info { flex: 1; min-width: 0; }
+  .day-top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .day-date { font-size: 10px; color: var(--dim); font-weight: 600; }
+  .day-subject { font-size: 10.5px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--phase-color); }
+  .day.nbme .day-subject { color: var(--p2); }
+  .day.exam-day .day-subject { color: var(--p4); }
+  .day.rest .day-subject { color: var(--xdim); }
+  .day-today-tag { font-size: 8.5px; color: var(--p1); background: color-mix(in srgb, var(--p1) 18%, transparent); padding: 1px 5px; border-radius: 2px; font-weight: 700; letter-spacing: 0.1em; }
+  .day-hours { font-size: 10px; color: var(--dim); margin-left: auto; }
+  .day-preview { font-size: 11px; color: #94a3b8; line-height: 1.4; margin-top: 4px; }
+
+  .day-expand-icon { color: var(--xdim); font-size: 11px; transition: transform 0.2s; line-height: 1; padding: 2px; }
+  .day.expanded .day-expand-icon { transform: rotate(180deg); color: var(--phase-color); }
+
+  /* EXPANDED DETAIL */
+  .day-detail { display: none; padding: 0 13px 14px 43px; }
+  .day.expanded .day-detail { display: block; }
+
+  .detail-row { display: flex; align-items: flex-start; gap: 8px; padding: 6px 0; border-top: 1px solid color-mix(in srgb, var(--phase-color) 10%, var(--border2)); }
+  .detail-icon { font-size: 12px; flex-shrink: 0; margin-top: 1px; width: 18px; }
+  .detail-label { font-size: 8.5px; color: var(--dim); letter-spacing: 0.1em; text-transform: uppercase; font-weight: 700; margin-bottom: 2px; }
+  .detail-text { font-size: 11px; color: #cbd5e1; line-height: 1.55; }
+  .detail-content { flex: 1; min-width: 0; }
+
+  /* SETTINGS */
+  #settings-btn { position: fixed; bottom: calc(18px + var(--safe-bottom)); right: 14px; width: 44px; height: 44px; border-radius: 50%; background: var(--p1); border: none; color: white; font-size: 17px; cursor: pointer; z-index: 50; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 18px color-mix(in srgb, var(--p1) 45%, transparent); }
+  #settings-panel { position: fixed; bottom: calc(72px + var(--safe-bottom)); right: 14px; background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 16px; width: 270px; z-index: 49; display: none; box-shadow: 0 8px 32px rgba(0,0,0,0.12); }
+  #settings-panel.open { display: block; }
+  .set-title { font-size: 10px; color: var(--p1); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 12px; font-weight: 700; }
+  .set-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+  .set-label { font-size: 11px; color: #cbd5e1; }
+  .set-input { background: var(--bg3); border: 1px solid var(--border2); color: var(--text); padding: 5px 8px; font-family: inherit; font-size: 11px; border-radius: 3px; width: 110px; }
+  .set-btn { width: 100%; padding: 9px; background: var(--p1); border: none; color: white; font-family: inherit; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; border-radius: 4px; margin-top: 4px; }
+  .set-note { font-size: 10px; color: var(--xdim); margin-top: 8px; line-height: 1.5; }
+  #notif-status { font-size: 10px; color: var(--p3); margin-top: 6px; display: none; }
+</style>
+</head>
+<body>
+
+<div id="header">
+  <div id="header-top">
+    <div>
+      <div id="app-title">Step 1 · Oct 22 ✓</div>
+      <div id="app-subtitle">125 days · Bootcamp + FA + Pathoma + UWorld</div>
+    </div>
+    <div style="text-align:right">
+      <div id="progress-pct">0%</div>
+      <div id="progress-text">0 / 110</div>
+    </div>
+  </div>
+  <div id="progress-bar"><div id="progress-fill" style="width:0%"></div></div>
+  <div id="tabs">
+    <button class="tab tab-sketchy" onclick="toggleSketchy(this)">🧪 Sketchy</button>
+    </div>
+</div>
+
+<div id="today-banner">
+  <div id="today-label">📍 Today</div>
+  <div id="today-title"></div>
+  <div id="today-content"></div>
+</div>
+
+<div id="scroll">
+  <div id="strategy">
+    <h3>The Plan</h3>
+    <div id="strategy-content">
+      <b>110 days, 8-10 hrs/day, 6 days/week</b> Bootcamp Systems-Based stretched 20% for sustainability. Phase 1 (Wks 1-13): content + UWorld ramping 40→100 Qs/day. Phase 2 (Wks 14-15): pure NBMEs + Free 120s + rapid FA passes.
+      <div id="strategy-toggle" onclick="document.getElementById('strategy-detail').classList.toggle('open')">Show full strategy ↓</div>
+      <div id="strategy-detail">
+        <br><b>UWorld:</b> Tutor mode, subject-aligned through Wk 11. Switch to timed random Wk 12+. Target: 1 full pass + redo of all marked/incorrect.<br><br>
+        <b>Anki:</b> 60-80 new cards/day matched to today's topic using Anking system tags. Stop new cards Aug 1. Reviews continue daily. Won't clear all 14k — prioritize 1-HighYield tag first.<br><br>
+        <b>NBMEs scheduled:</b> 25 (Jun 17), 26 (Jul 10), 28 (Jul 31), 30 (Aug 14), 31 (Aug 19), Free 120s (Aug 21 + 26).<br><br>
+        <b>Pathoma:</b> Aligned with each organ system. Final rapid pass on Ch 1-4 in week 16 (these dominate Step 1).<br><br>
+        <b>Sketchy:</b> Front-loaded during Micro/Pharm weeks (12-13). Rapid image recall in final week.<br><br>
+        <b>Divine podcasts:</b> Listen during meals, walks, breaks. Matched to current subject. Not core study — supplements.
+      </div>
+    </div>
+  </div>
+  <div id="weeks"></div>
+</div>
+
+<div id="sketchy-view">
+  <div id="sk-source-tabs">
+    <button class="sk-src-btn" data-sk="micro" onclick="skSetSource('micro')">Micro</button>
+    <button class="sk-src-btn" data-sk="pharm" onclick="skSetSource('pharm')">Pharm</button>
+    <button class="sk-src-btn" data-sk="path" onclick="skSetSource('path')">Path</button>
+  </div>
+  <div id="sk-stats">
+    <div class="sk-stat"><div class="sk-dot" style="background:#6366f1"></div><b>1P:</b><span id="sk-1p">0</span></div>
+    <div class="sk-stat"><div class="sk-dot" style="background:#f59e0b"></div><b>2P:</b><span id="sk-2p">0</span></div>
+    <div class="sk-stat"><div class="sk-dot" style="background:#10b981"></div><b>3P:</b><span id="sk-3p">0</span></div>
+    <div class="sk-stat" style="margin-left:auto;color:var(--muted);font-weight:600"><span id="sk-total"></span></div>
+  </div>
+  <div id="sk-scroll"><div id="sk-units"></div></div>
+</div>
+
+<button id="settings-btn" onclick="toggleSet()">⚙️</button>
+<div id="settings-panel">
+  <div class="set-title">Notifications</div>
+  <div class="set-row">
+    <div class="set-label">Daily reminder</div>
+    <input type="time" id="notif-time" class="set-input" value="07:30">
+  </div>
+  <button class="set-btn" onclick="enableNotif()">Enable Reminder</button>
+  <div id="notif-status">✓ Daily reminder active</div>
+  <div class="set-note">Sends a notification each morning with today's plan summary. Allow notifications when prompted.</div>
+</div>
+
+<script>
+const SCHEDULE = [{"d":"Sun Jun 28","iso":"2026-06-28","s":"Cardio","h":6,"bc":"Ch 1-4: Embryology & Anatomy · Vascular System · Cardiac Parameters","fa":"FA Cardio pp 290-305","p":null,"sk":null,"uw":20,"an":35,"dv":"Ep 5 (Cardio Physiology)","type":"normal"},{"d":"Mon Jun 29","iso":"2026-06-29","s":"Cardio","h":6,"bc":"Ch 5-8: Cardiac Function Curves · PV Loops · Vasodilation · Pressure-Flow","fa":"FA Cardio pp 306-316","p":null,"sk":null,"uw":20,"an":35,"dv":"Ep 116 (Cardio 1)","type":"normal"},{"d":"Tue Jun 30","iso":"2026-06-30","s":"Cardio","h":6,"bc":"Ch 9-12: Cardiac Cycle · RAAS · Exercise & Conduction Physiology","fa":"FA Cardio pp 317-323 (EKG, conduction)","p":null,"sk":null,"uw":20,"an":35,"dv":"Ep 253 (Starling Forces)","type":"normal"},{"d":"Wed Jul 1","iso":"2026-07-01","s":"Cardio","h":6,"bc":"Ch 13-16: Antiarrhythmics · Atrial & Ventricular Arrhythmias · Conduction Block","fa":"FA Cardio pp 324-330 (arrhythmias, drugs)","p":null,"sk":null,"uw":20,"an":35,"dv":"Ep 154 (Cardio 2)","type":"normal"},{"d":"Thu Jul 2","iso":"2026-07-02","s":"Cardio","h":6,"bc":"Ch 17-18: Heart Failure · Cardiomyopathy","fa":"FA Cardio pp 331-335","p":"Pathoma Ch 8: HF, cardiomyopathy","sk":"Path: 2.1 Cardiac Hypertrophy & Heart Failure · 2.2 Dilated Cardiomyopathy · 2.3 Hypertrophic Cardiomyopathy · 2.4 Restrictive Cardiomyopathy","uw":20,"an":35,"dv":"Ep 264 (Heart Failure)","type":"normal"},{"d":"Fri Jul 3","iso":"2026-07-03","s":"Cardio","h":6,"bc":"Ch 19-20: Aortic Disease · Valvular Disease","fa":"FA Cardio pp 336-342","p":"Pathoma Ch 8 cont: valvular","sk":"Path: 3.1 Endocarditis · 3.2 Rheumatic Heart Disease · 4.2 Valvular Heart Disease (Aortic Stenosis · AR · Mitral Stenosis · MR · MVP) · 4.3 Aortic Aneurysm & Dissection","uw":20,"an":35,"dv":"Ep 244 (Valvular Disease)","type":"normal"},{"d":"Sat Jul 4","iso":"2026-07-04","h":3,"s":"REST","bc":"Anki — Cardio physiology cards. Review EKG diagrams in FA.","fa":"—","p":null,"sk":null,"uw":0,"an":0,"dv":null,"type":"rest"},{"d":"Sun Jul 5","iso":"2026-07-05","s":"Cardio","h":7,"bc":"Ch 21-22: Acyanotic & Cyanotic Congenital Heart Defects","fa":"FA Cardio pp 343-347 (congenital)","p":"Pathoma Ch 8: congenital","sk":"Path: 5.1 Acyanotic CHD (ASD · VSD · PDA · Coarctation) · 5.2 Cyanotic CHD (Tetralogy of Fallot · TGA · Truncus Arteriosus)","uw":20,"an":35,"dv":"Ep 445 (MI Complications)","type":"normal"},{"d":"Mon Jul 6","iso":"2026-07-06","s":"Cardio","h":7,"bc":"Ch 23-24: Stable Angina & Atherosclerosis · MI","fa":"FA Cardio pp 348-353 (atherosclerosis, MI)","p":"Pathoma Ch 7: Vascular","sk":"Path: 1.1 Myocardial Response to Ischemia · 1.2 Atherosclerosis & Coronary Artery Disease · 1.3 MI Complications (Arrhythmia · Free Wall Rupture · Papillary Muscle Rupture · VSD · Dressler Syndrome)","uw":20,"an":35,"dv":"Ep 477 (ACS)","type":"normal"},{"d":"Tue Jul 7","iso":"2026-07-07","s":"Cardio","h":7,"bc":"Ch 25-28: Peripheral Arterial/Venous Disease · HTN · Pericardial Disease · Shock","fa":"FA Cardio pp 354-end (HTN, pericardium, shock)","p":null,"sk":"Path: 3.3 Myocarditis · 3.4 Pericardial Disease (Acute Pericarditis · Cardiac Tamponade · Constrictive Pericarditis) · 4.1 Hypertensive Heart Disease · 4.4 Peripheral Arterial & Venous Disease","uw":20,"an":35,"dv":"Ep 233 (Shock)","type":"normal"},{"d":"Wed Jul 8","iso":"2026-07-08","s":"Pulm","h":6,"bc":"Ch 1-3: Intro · Air Physiology · Blood Physiology","fa":"FA Pulm pp 656-668 (anatomy, lung volumes, gas exchange)","p":null,"sk":null,"uw":20,"an":35,"dv":"Ep 66 (Pulm Pharm)","type":"normal"},{"d":"Thu Jul 9","iso":"2026-07-09","s":"Pulm","h":7,"bc":"Ch 4-5: Lung Path Fundamentals · Obstructive Lung Disease","fa":"FA Pulm pp 669-678 (COPD, asthma, bronchiectasis)","p":"Pathoma Ch 9: Pulm obstructive","sk":"Path: 1.1 Chronic Obstructive Pulmonary Disease · 1.2 Asthma · 1.3 Bronchiectasis","uw":20,"an":35,"dv":"Ep 392 (Pulm Path 1)","type":"normal"},{"d":"Fri Jul 10","iso":"2026-07-10","s":"Pulm","h":7,"bc":"Ch 6-8: Restrictive Lung Disease & Lung Cancer · PE · ARDS · Pulm HTN","fa":"FA Pulm pp 679-end (restrictive, cancer, ARDS)","p":"Pathoma Ch 9 cont","sk":"Path: 2.1 Pneumonia (Bacterial · Atypical · Viral) · 2.2 Idiopathic Pulmonary Fibrosis · 2.3 Sarcoidosis & Pneumoconioses · Vascular 3.3 DVT & Pulmonary Embolism · 3.4 Pulmonary Hypertension · 3.5 ARDS · Oncology 4.1 Lung Cancer (Adenocarcinoma · SCC · SCLC · Large Cell)","uw":20,"an":35,"dv":"Ep 286 (ARDS)","type":"normal"},{"d":"Sat Jul 11","iso":"2026-07-11","h":3,"s":"REST","bc":"Anki — Cardio path + Pulm. Review cardiac cycle diagrams.","fa":"—","p":null,"sk":null,"uw":0,"an":0,"dv":null,"type":"rest"},{"d":"Sun Jul 12","iso":"2026-07-12","s":"Renal","h":6,"bc":"Ch 1-2: Anatomy & Embryology · Fluid & Filtration","fa":"FA Renal pp 580-590 (anatomy, GFR, clearance)","p":null,"sk":null,"uw":20,"an":35,"dv":"Ep 52 (Renal 1)","type":"normal"},{"d":"Mon Jul 13","iso":"2026-07-13","s":"Renal","h":6,"bc":"Ch 3-5: Nephron Transporters · RAAS · Electrolytes","fa":"FA Renal pp 591-600 (tubular function, electrolytes)","p":null,"sk":null,"uw":20,"an":35,"dv":"Ep 53 (Renal 2)","type":"normal"},{"d":"Tue Jul 14","iso":"2026-07-14","s":"Renal","h":7,"bc":"Ch 6-8: Acid-Base Physiology · Path Diagnostics · Nephrotic Syndromes","fa":"FA Renal pp 601-608 (acid-base, nephrotic)","p":"Pathoma Ch 12: Renal","sk":"Path: 1.1 Renal Function Tests & AKI · 2.1 Nephrotic Syndrome","uw":20,"an":35,"dv":"Ep 470 (Acid-Base)","type":"normal"},{"d":"Wed Jul 15","iso":"2026-07-15","s":"Renal","h":7,"bc":"Ch 9-12: Nephritic Syndromes · Nephrolithiasis · Urinary Incontinence · AKI","fa":"FA Renal pp 609-616 (nephritic, stones, AKI, CKD)","p":null,"sk":"Path: 3.1 Nephritic Syndrome · 3.2 Nephrolithiasis (Calcium Oxalate · Uric Acid · Struvite · Cystine) · 3.3 UTI & Pyelonephritis · 3.4 CKD","uw":20,"an":35,"dv":"Ep 169 (Nephrotic/Nephritic)","type":"normal"},{"d":"Thu Jul 16","iso":"2026-07-16","s":"Renal","h":7,"bc":"Ch 13-15: Inflammatory Conditions & Malignancy · Cystic Kidney Disease · Pharm","fa":"FA Renal pp 616-end (CKD, pharm, PKD)","p":"Pathoma Ch 12 cont","sk":"Path: 5.1 Renal Cell Carcinoma · 5.2 Nephroblastoma (Wilms Tumor) · 5.3 Bladder Cancer (Transitional Cell · SCC) · 5.4 ADPKD & ARPKD · 6.5 Renal Tubular Acidosis","uw":20,"an":35,"dv":"Ep 287 (Urinalysis)","type":"normal"},{"d":"Fri Jul 17","iso":"2026-07-17","s":"Neuro","h":6,"bc":"Ch 1-3: Embryology · Cellular Function · Ascending Tracts","fa":"FA Neuro pp 524-538 (spinal anatomy, tracts)","p":null,"sk":null,"uw":20,"an":35,"dv":"Ep 87 (Neuro 1)","type":"normal"},{"d":"Sat Jul 18","iso":"2026-07-18","h":3,"s":"REST","bc":"Anki — Renal consolidation. Review tubular transport diagram.","fa":"—","p":null,"sk":null,"uw":0,"an":0,"dv":null,"type":"rest"},{"d":"Sun Jul 19","iso":"2026-07-19","s":"Neuro","h":6,"bc":"Ch 4-6: Descending Tracts · Brainstem Anatomy · Cerebral Cortex","fa":"FA Neuro pp 539-552 (brainstem, lobes)","p":null,"sk":null,"uw":20,"an":35,"dv":"Ep 89 (Neuro 2)","type":"normal"},{"d":"Mon Jul 20","iso":"2026-07-20","s":"Neuro","h":6,"bc":"Ch 7-9: Radiculopathy · Spinal Cord Syndromes · Invasive Spinal Cord Disease","fa":"FA Neuro pp 553-562 (spinal cord lesions)","p":null,"sk":null,"uw":20,"an":35,"dv":"Ep 371 (Spinal Cord)","type":"normal"},{"d":"Tue Jul 21","iso":"2026-07-21","s":"Neuro","h":7,"bc":"Ch 10-13: Demyelinating Disease · NMJ · Cranial Nerves I-VI","fa":"FA Neuro pp 563-575 (MS, NMJ, CN I-VI)","p":"Pathoma Ch 17: CNS (intro)","sk":"Path: 1.3 Multiple Sclerosis · 1.4 Myasthenia Gravis · 1.5 Lambert-Eaton Myasthenic Syndrome","uw":20,"an":35,"dv":"Ep 435 (NMJ Disorders)","type":"normal"},{"d":"Wed Jul 22","iso":"2026-07-22","s":"Neuro","h":6,"bc":"Ch 14-17: Cranial Nerves VII-XII · Vision · Auditory Sensation · Vertigo","fa":"FA Neuro pp 576-588 (CN VII-XII, eye, ear)","p":null,"sk":null,"uw":20,"an":35,"dv":"Ep 361 (Eye 1)","type":"normal"},{"d":"Thu Jul 23","iso":"2026-07-23","s":"Neuro","h":7,"bc":"Ch 18-19: Pediatric & Adult Brain Tumors","fa":"FA Neuro pp 589-595 (CNS tumors)","p":"Pathoma Ch 17: CNS tumors","sk":"Path: 2.1 Intracranial Hypertension · 2.2 Hydrocephalus · Oncology 3.1 Primary Brain Tumors (GBM · Astrocytoma · Meningioma · Medulloblastoma · Acoustic Neuroma · Craniopharyngioma · Oligodendroglioma)","uw":30,"an":35,"dv":"Ep 516 (Brain Tumors)","type":"normal"},{"d":"Fri Jul 24","iso":"2026-07-24","s":"Neuro","h":7,"bc":"Ch 20-21: Ischemic CVAs · Aneurysms & ICH","fa":"FA Neuro pp 596-602 (stroke syndromes)","p":"Pathoma Ch 17: CVA","sk":"Path: 4.1 Ischemic Stroke & Lacunar Infarcts · 4.2 Hemorrhagic Stroke & Subarachnoid Hemorrhage","uw":30,"an":35,"dv":"Ep 315 (Circle of Willis)","type":"normal"},{"d":"Sat Jul 25","iso":"2026-07-25","h":3,"s":"REST","bc":"Anki — Neuro anatomy. Review spinal cord tracts in FA.","fa":"—","p":null,"sk":null,"uw":0,"an":0,"dv":null,"type":"rest"},{"d":"Sun Jul 26","iso":"2026-07-26","s":"Neuro","h":7,"bc":"Ch 22-24: Cerebellum & Ventricles · Diencephalon · Basal Ganglia","fa":"FA Neuro pp 603-615 (cerebellum, BG, hydrocephalus)","p":null,"sk":"Path: 3.3 Guillain-Barré & Charcot-Marie-Tooth · 4.2 Sturge-Weber & Tuberous Sclerosis · 4.3 Neurofibromatosis","uw":30,"an":35,"dv":"Ep 133 (Neuro 3)","type":"normal"},{"d":"Mon Jul 27","iso":"2026-07-27","s":"Neuro","h":7,"bc":"Ch 25-26: Neurotransmitters in Psych Disease & Dementia","fa":"FA Neuro pp 616-622 (NT, dementia, Alzheimer's, Parkinson's)","p":"Pathoma Ch 17: neurodegen","sk":"Path: 5.1 Alzheimer Disease & Dementia · 5.2 Parkinson Disease · 5.3 Huntington Disease · 5.4 ALS & Friedreich Ataxia","uw":30,"an":35,"dv":"Ep 374 (Spinal Cord Lesions)","type":"normal"},{"d":"Tue Jul 28","iso":"2026-07-28","s":"Neuro","h":8,"bc":"Ch 27-29: Headache & Seizures · Traumatic Brain Injuries · Neuro UWorld 60 Qs timed","fa":"FA Neuro pp 623-end (seizures, TBI) — error review","p":null,"sk":"Pharm: 2.1 AEDs — Phenytoin & Valproate · 2.2 Carbamazepine, Lamotrigine & Levetiracetam · 2.3 Ethosuximide","uw":60,"an":35,"dv":"Ep 372 (Headache)","type":"normal"},{"d":"Wed Jul 29","iso":"2026-07-29","s":"Repro","h":7,"bc":"Ch 1-2: Fetal Development · Pregnancy","fa":"FA Repro pp 612-625 (embryo, pregnancy)","p":null,"sk":"Path: 1.1 Obstetric Complications (PROM, Oligohydramnios, Polyhydramnios) · 1.2 Ectopic Pregnancy & Molar Pregnancy","uw":30,"an":35,"dv":"Ep 142 (Repro 1)","type":"normal"},{"d":"Thu Jul 30","iso":"2026-07-30","s":"Repro","h":7,"bc":"Ch 3: Pathology of Pregnancy","fa":"FA Repro pp 626-635 (placenta, eclampsia, ectopic)","p":"Pathoma Ch 13-14: Repro","sk":"Path: 1.3 Preeclampsia & Eclampsia · 1.4 Placenta Previa & Abruptio Placentae · 1.5 Gestational Diabetes","uw":30,"an":35,"dv":"Ep 338 (Fetal HR)","type":"normal"},{"d":"Fri Jul 31","iso":"2026-07-31","s":"Repro","h":8,"bc":"Ch 4: Female Pathology","fa":"FA Repro pp 636-645 (ovary, uterus, cervix, breast)","p":"Pathoma Ch 14-15 cont","sk":"Path: 2.1 Reproductive Hormones & PCOS · 2.2 Ovarian Tumors (Serous/Mucinous Cystadenoma · Dermoid · Granulosa Cell · Krukenberg) · 2.3 Endometrial Carcinoma & Uterine Fibroids · 2.4 Cervical Dysplasia & Cervical Cancer (HPV 16/18) · 2.5 Breast Cancer (DCIS · IDC · ILC · Paget Disease of Nipple · Inflammatory)","uw":30,"an":35,"dv":"Ep 157 (Repro 2)","type":"normal"},{"d":"Sat Aug 1","iso":"2026-08-01","h":3,"s":"REST","bc":"Anki — Neuro path + cranial nerves. Review brainstem cross-sections.","fa":"—","p":null,"sk":null,"uw":0,"an":0,"dv":null,"type":"rest"},{"d":"Sun Aug 2","iso":"2026-08-02","s":"Repro","h":8,"bc":"Ch 5: Male Pathology · Ch 6: Reproductive Pharmacology","fa":"FA Repro pp 646-end (male repro, contraceptives)","p":null,"sk":"Path: 3.1 Prostate Cancer · 3.2 Benign Prostatic Hyperplasia · 3.3 Testicular Tumors (Seminoma · NSGCT: Embryonal · Yolk Sac · Choriocarcinoma · Teratoma) | Pharm: 3.4 Contraceptives · 3.5 Estrogen/Progesterone/Androgens","uw":30,"an":35,"dv":"Ep 531 (Contraceptives)","type":"normal"},{"d":"Mon Aug 3","iso":"2026-08-03","s":"Immuno","h":7,"bc":"Ch 1-3: Lymphoid Tissue · Innate Immunity · Inflammatory Response","fa":"FA Immuno pp 96-108 (innate, complement, inflammation)","p":"Pathoma Ch 2: Inflammation","sk":"Path: 2.1 Hypersensitivity Types I-IV · 2.2 Autoimmune Diseases (SLE, Sjogren's Syndrome, Scleroderma)","uw":30,"an":35,"dv":"Ep 136 (Immuno 1)","type":"normal"},{"d":"Tue Aug 4","iso":"2026-08-04","s":"Immuno","h":7,"bc":"Ch 4-7: Cytokines · T-cells · B-cells & Antibodies","fa":"FA Immuno pp 109-115 (adaptive immunity)","p":null,"sk":"Path: 2.3 Rheumatoid Arthritis · 3.1 Systemic Vasculitis (Giant Cell, PAN, Wegener's, Churg-Strauss)","uw":30,"an":35,"dv":"Ep 279 (Prostaglandins)","type":"normal"},{"d":"Wed Aug 5","iso":"2026-08-05","s":"Immuno","h":7,"bc":"Ch 8-10: Complement · Vaccinations · Immunodeficiency Syndromes","fa":"FA Immuno pp 116-120 (complement, immunodef)","p":null,"sk":"Path: 4.1 Primary Immunodeficiency Syndromes (SCID · Bruton's · DiGeorge · CVID · Wiskott-Aldrich · Job's)","uw":30,"an":35,"dv":"Ep 173 (Immunodeficiency)","type":"normal"},{"d":"Thu Aug 6","iso":"2026-08-06","s":"Immuno","h":7,"bc":"Ch 11-13: Hypersensitivity · Transfusion Reactions · Transplant Rejection","fa":"FA Immuno pp 121-end (HSR types I-IV, transplant)","p":null,"sk":"Path: 4.2 Transplant Rejection (Hyperacute/Acute/Chronic) · 4.3 Transfusion Reactions & Blood Group Antigens","uw":30,"an":35,"dv":"Ep 323 (Immunocompromised)","type":"normal"},{"d":"Fri Aug 7","iso":"2026-08-07","s":"Psych","h":7,"bc":"Ch 1-2: Psychology & Developmental Disorders","fa":"FA Psych pp 542-552 (development, Erikson, Piaget)","p":null,"sk":"Pharm: 4.3 Mood Stabilizers (Lithium, Valproate, Lamotrigine) · 4.4 Buspirone & Non-Benzo Anxiolytics","uw":30,"an":35,"dv":"Ep 229 (Psych 1)","type":"normal"},{"d":"Sat Aug 8","iso":"2026-08-08","h":3,"s":"REST","bc":"Anki — Repro + Immuno intro. Review hormone table in FA.","fa":"—","p":null,"sk":null,"uw":0,"an":0,"dv":null,"type":"rest"},{"d":"Sun Aug 9","iso":"2026-08-09","s":"Psych","h":7,"bc":"Ch 3-5: Memory · Dissociation · Anxiety · Trauma & Personality Disorders","fa":"FA Psych pp 553-562 (anxiety, PTSD, personality)","p":null,"sk":"Pharm: 6.1 Benzodiazepines · 6.2 Barbiturates · 6.3 Buspirone · 6.4 Z-drugs (Zolpidem, Zaleplon, Eszopiclone)","uw":30,"an":35,"dv":"Ep 453 (Psych Timelines)","type":"normal"},{"d":"Mon Aug 10","iso":"2026-08-10","s":"Psych","h":7,"bc":"Ch 6-8: Psychosis & Mood Disorders · Sleep & Psychosomatic · Substance Misuse","fa":"FA Psych pp 563-572 (schizophrenia, bipolar, MDD, substance)","p":null,"sk":"Pharm: 4.1 Typical Antipsychotics (Haloperidol, Chlorpromazine, Thioridazine) · 4.2 Atypical Antipsychotics (Clozapine, Risperidone, Olanzapine, Quetiapine, Aripiprazole)","uw":30,"an":35,"dv":"Ep 451 (Serotonin Syndrome)","type":"normal"},{"d":"Tue Aug 11","iso":"2026-08-11","s":"Psych","h":8,"bc":"Ch 9: Psychiatry Pharmacology — full psychopharmacology deep dive","fa":"FA Psych pp 573-end (antipsychotics, antidepressants, mood stabilizers)","p":null,"sk":"Pharm: 5.1 SSRIs & SNRIs · 5.2 Tricyclic Antidepressants (Amitriptyline, Imipramine, Clomipramine) · 5.3 MAOIs · 5.4 Bupropion & Mirtazapine","uw":30,"an":35,"dv":"Ep 67 (Psych Pharm)","type":"normal"},{"d":"Wed Aug 12","iso":"2026-08-12","s":"Pharm","h":7,"bc":"Ch 1-2: Pharmacodynamics · Pharmacokinetics","fa":"FA Pharm pp 230-240 (PK/PD, dose-response, half-life)","p":null,"sk":"Pharm: 4.1 G-Protein Coupled Receptors · 4.2 Tyrosine Kinase Receptors · 4.3 Nuclear Receptors & Dose-Response","uw":30,"an":35,"dv":"Ep 471 (Receptors 1)","type":"normal"},{"d":"Thu Aug 13","iso":"2026-08-13","s":"Pharm","h":7,"bc":"Ch 3: Autonomic System","fa":"FA Pharm pp 241-248 (ANS, cholinergics, adrenergics)","p":null,"sk":"Pharm Autonomic: 1.1 Cholinomimetics · 1.2 Anticholinesterases · 1.3 Muscarinic Antagonists · 2.1 Adrenergic Agonists · 2.2 Alpha Blockers · 2.3 Beta Blockers","uw":30,"an":35,"dv":"Ep 18 (ANS Pharm)","type":"normal"},{"d":"Fri Aug 14","iso":"2026-08-14","s":"Pharm","h":7,"bc":"Ch 4: Side Effects & Toxins — comprehensive pharmacology toxicology","fa":"FA Pharm pp 249-end (toxidromes, SE mnemonics)","p":null,"sk":"Pharm: 5.1 Drug-Induced Toxicity (SIADH, SJS, Agranulocytosis) · 5.2 HY Drug Side Effects (Sulfa drugs, QT prolongation, P450 interactions)","uw":30,"an":35,"dv":"Ep 387 (Drug Reactions 1)","type":"normal"},{"d":"Sat Aug 15","iso":"2026-08-15","h":3,"s":"REST","bc":"Anki — Immuno + Pharm. Review hypersensitivity table.","fa":"—","p":null,"sk":null,"uw":0,"an":0,"dv":null,"type":"rest"},{"d":"Sun Aug 16","iso":"2026-08-16","s":"NBME","h":8,"bc":"🎯 NBME Form 25 — full timed exam (4 hrs). Then full error review.","fa":"FA — error-driven review","p":null,"sk":null,"uw":0,"an":0,"dv":null,"type":"nbme"},{"d":"Mon Aug 17","iso":"2026-08-17","s":"Review","h":8,"bc":"NBME 25 error review — annotate every wrong answer in FA. Identify top 3 weak subjects.","fa":"FA — error sections","p":null,"sk":null,"uw":40,"an":0,"dv":"Ep 184 (NBME Weird Questions)","type":"normal"},{"d":"Tue Aug 18","iso":"2026-08-18","s":"Genetics","h":7,"bc":"Ch 1-3: DNA Structure · DNA Replication · DNA Mutations","fa":"FA Biochem pp 36-46 (DNA repair, mutations, lab techniques)","p":null,"sk":"Path: 1.1 Chromosomal Disorders (Down Syndrome T21 · Turner 45X · Klinefelter 47XXY · Patau T13 · Edwards T18)","uw":40,"an":50,"dv":"Ep 138 (Genetic Diseases)","type":"normal"},{"d":"Wed Aug 19","iso":"2026-08-19","s":"Genetics","h":8,"bc":"Ch 4-7: Mitosis/Meiosis · Lab Techniques · Clinical Genetics · HY Disorders","fa":"FA Biochem pp 47-58 (inheritance patterns, karyotypes)","p":null,"sk":"Path: 1.2 X-linked Recessive Disorders (Duchenne/Becker MD · Hemophilia A/B · G6PD · Bruton · Fabry · Hunter) · 1.3 Autosomal Dominant (Marfan · NF1/NF2 · Huntington · ADPKD · Li-Fraumeni · BRCA1/2) · 1.4 Autosomal Recessive (PKU · CF · Gaucher · Wilson · Hemochromatosis · Alkaptonuria) · 1.5 Trinucleotide Repeats (Fragile X · Huntington · Myotonic Dystrophy · Friedreich Ataxia) · 1.6 Genomic Imprinting (Prader-Willi · Angelman)","uw":40,"an":50,"dv":"Ep 424 (Inheritance Modes)","type":"normal"},{"d":"Thu Aug 20","iso":"2026-08-20","s":"Heme","h":8,"bc":"Ch 1-3: Embryology · Blood Cells · Microcytic Anemias","fa":"FA Heme pp 384-396 (iron def, thalassemia, sideroblastic)","p":"Pathoma Ch 5: RBC","sk":"Path: 1.1 Iron Deficiency Anemia · 1.2 Beta-Thalassemia · 1.3 Sickle Cell Disease · 1.4 Sideroblastic Anemia · 1.5 Lead Poisoning","uw":40,"an":50,"dv":"Ep 4 (Heme)","type":"normal"},{"d":"Fri Aug 21","iso":"2026-08-21","s":"Heme","h":8,"bc":"Ch 4-5: Normocytic Anemias · Macrocytic Anemias","fa":"FA Heme pp 397-405 (hemolytic, B12, folate, aplastic)","p":"Pathoma Ch 5 cont","sk":"Path: 2.1 Hemolytic Anemias (G6PD, Hereditary Spherocytosis, AIHA, TTP/HUS, PNH) · 2.2 B12 & Folate Deficiency · 2.3 Aplastic Anemia","uw":40,"an":50,"dv":"Ep 226 (Iron Labs)","type":"normal"},{"d":"Sat Aug 22","iso":"2026-08-22","h":3,"s":"REST","bc":"Anki — Genetics + Heme. Review inheritance patterns in FA.","fa":"—","p":null,"sk":null,"uw":0,"an":0,"dv":null,"type":"rest"},{"d":"Sun Aug 23","iso":"2026-08-23","s":"Heme","h":8,"bc":"Ch 6-7: Platelets · Coagulation & Fibrinolysis","fa":"FA Heme pp 406-415 (platelets, VWD, hemophilia, DIC, TTP)","p":"Pathoma Ch 4: Hemostasis","sk":"Path: 3.1 Hemophilia A & B · 3.2 Von Willebrand Disease · 3.3 DIC & TTP/HUS · 3.4 Thrombocytopenia (ITP, HIT)","uw":40,"an":50,"dv":"Ep 444 (Thrombosis)","type":"normal"},{"d":"Mon Aug 24","iso":"2026-08-24","s":"Heme","h":8,"bc":"Ch 8-10: Oncology & Therapeutics · Leukemias & Lymphomas · Plasma Cell Dyscrasias","fa":"FA Heme pp 416-end (ALL/AML/CLL/CML, Hodgkin/NHL, MM)","p":"Pathoma Ch 3: Neoplasia + Ch 6: WBC","sk":"Path: 1.1 Myeloid Proliferative Disorders (CML · PV · ET · Myelofibrosis) · 1.2 AML & MDS · 2.1 ALL & CLL · 3.1 Hodgkin Lymphoma · 3.2 Non-Hodgkin Lymphoma (Diffuse Large B-Cell · Follicular · Burkitt · Mantle Cell) · 4.1 Multiple Myeloma & Plasma Cell Dyscrasias","uw":40,"an":50,"dv":"Ep 203 (Leukemia/Lymphoma)","type":"normal"},{"d":"Tue Aug 25","iso":"2026-08-25","s":"Derm","h":7,"bc":"Ch 1-3: General Principles · Infectious Diseases of Skin · Inflammatory Diseases","fa":"FA Derm pp 478-490 (lesion types, psoriasis, eczema, SJS)","p":"Pathoma Ch 19: Skin","sk":"Path: 1.1 Psoriasis · 1.2 Atopic Dermatitis & Contact Dermatitis · 1.3 Acne & Rosacea · 2.1 Bullous Pemphigoid · 2.2 Pemphigus Vulgaris · 2.3 SJS/TEN","uw":40,"an":50,"dv":"Ep 242 (Derm 1)","type":"normal"},{"d":"Wed Aug 26","iso":"2026-08-26","s":"Derm","h":7,"bc":"Ch 4-5: Malignant Skin Disorders & Additional Disorders","fa":"FA Derm pp 491-end (BCC, SCC, melanoma, pemphigus)","p":null,"sk":"Path: 3.1 Basal Cell Carcinoma · 3.2 Squamous Cell Carcinoma · 3.3 Melanoma · 3.4 Actinic Keratosis & Seborrheic Keratosis","uw":40,"an":50,"dv":"Ep 246 (Derm 2)","type":"normal"},{"d":"Thu Aug 27","iso":"2026-08-27","s":"Biostat","h":7,"bc":"Ch 1-3: Study Designs · Bias & Study Errors · Risk Quantification","fa":"FA Public Health pp 256-268 (study types, bias, RR, OR)","p":null,"sk":null,"uw":40,"an":50,"dv":"Ep 143 (Biostatistics)","type":"normal"},{"d":"Fri Aug 28","iso":"2026-08-28","s":"Biostat","h":7,"bc":"Ch 4-6: Diagnostic Tests · Statistical Distributions · Statistical Testing","fa":"FA Public Health pp 269-280 (sensitivity/specificity, NNT, p-value)","p":null,"sk":null,"uw":40,"an":50,"dv":"Ep 363 (Confounding)","type":"normal"},{"d":"Sat Aug 29","iso":"2026-08-29","h":3,"s":"REST","bc":"Anki — Heme + Derm + Biostat. Review coagulation cascade.","fa":"—","p":null,"sk":null,"uw":0,"an":0,"dv":null,"type":"rest"},{"d":"Sun Aug 30","iso":"2026-08-30","s":"Endo","h":8,"bc":"Ch 1-3: Fundamentals · Hypothalamus · Anterior & Posterior Pituitary","fa":"FA Endo pp 336-348 (HPA axis, pituitary hormones, SIADH, DI)","p":"Pathoma Ch 16: Endocrine","sk":"Path: 1.1 Hypopituitarism (Sheehan · Empty Sella · Craniopharyngioma) · 1.2 SIADH & Diabetes Insipidus · 1.3 Hyperpituitarism (Prolactinoma · Acromegaly · Cushing Disease)","uw":40,"an":50,"dv":"Ep 514 (Endo Testing)","type":"normal"},{"d":"Mon Aug 31","iso":"2026-08-31","s":"Endo","h":8,"bc":"Ch 4-5: Thyroid · Parathyroids","fa":"FA Endo pp 349-358 (thyroid path, Graves/Hashimoto, Ca2+ disorders)","p":null,"sk":"Path: 3.1 Thyroid Disorders (Graves · Hashimoto · Thyroid Cancer: Papillary · Follicular · Medullary · Anaplastic) · 3.2 Hyperparathyroidism (Primary/Secondary/Tertiary) · 3.3 Hypoparathyroidism & Pseudohypoparathyroidism","uw":40,"an":50,"dv":"Ep 251 (Thyroid)","type":"normal"},{"d":"Tue Sep 1","iso":"2026-09-01","s":"Endo","h":8,"bc":"Ch 6-7: Adrenal Glands · Pancreas (Diabetes)","fa":"FA Endo pp 359-end (Cushing/Addison/Conn/pheo, DM, DKA, HHS)","p":"Pathoma Ch 16 cont","sk":"Path: 2.1 Adrenal Insufficiency (Addison Disease · Waterhouse-Friderichsen) · 2.2 Cushing Syndrome & Disease · 2.3 Hyperaldosteronism (Conn Syndrome) · 2.4 Pheochromocytoma · 3.1 Diabetes Mellitus Type 1 & Type 2 · 3.2 DKA & HHS · 3.3 Carcinoid Tumor · 4.6 Multiple Endocrine Neoplasia (MEN 1 · MEN 2A · MEN 2B)","uw":40,"an":50,"dv":"Ep 301 (Diabetes 1)","type":"normal"},{"d":"Wed Sep 2","iso":"2026-09-02","s":"Public Health","h":7,"bc":"Ch 1-5: Ethics · Communication · Delivering Care · Safety · Practice Qs","fa":"FA Public Health pp 281-end (ethics, informed consent, HIPAA)","p":null,"sk":null,"uw":40,"an":50,"dv":"Ep 123 (Ethics)","type":"normal"},{"d":"Thu Sep 3","iso":"2026-09-03","s":"GI","h":8,"bc":"Ch 1-4: Embryology · Oral Cavity · Esophagus · Stomach","fa":"FA GI pp 364-378 (embryo, GERD, Barrett's, PUD, gastric cancer)","p":"Pathoma Ch 10: GI upper","sk":"Path: 1.1 Structural Esophageal Disorders & GERD · 1.2 Esophageal Cancer (SCC · Adenocarcinoma/Barrett Esophagus) · 2.1 Peptic Ulcer Disease · 2.2 Gastric Cancer (Adenocarcinoma · Linitis Plastica · MALT Lymphoma · GISTs) · 2.3 Gastritis (H. pylori · Autoimmune) · 2.4 Congenital GI Disorders","uw":40,"an":50,"dv":"Ep 489 (Esophagus)","type":"normal"},{"d":"Fri Sep 4","iso":"2026-09-04","s":"GI","h":8,"bc":"Ch 5-7: Liver · Biliary System · Pancreas","fa":"FA GI pp 379-395 (hepatitis serology, cirrhosis, biliary, pancreas)","p":"Pathoma Ch 10-11: Liver/Pancreas","sk":"Path: 4.1 Liver Disease & Cirrhosis · 4.2 Hepatocellular Carcinoma · 5.1 Cholelithiasis & Cholecystitis · 5.2 Cholangiocarcinoma & PSC/PBC · 6.1 Acute & Chronic Pancreatitis · 6.2 Pancreatic Adenocarcinoma","uw":40,"an":50,"dv":"Ep 503 (LFTs)","type":"normal"},{"d":"Sat Sep 5","iso":"2026-09-05","h":3,"s":"REST","bc":"Anki — Endo + GI. Review MEN table in FA.","fa":"—","p":null,"sk":null,"uw":0,"an":0,"dv":null,"type":"rest"},{"d":"Sun Sep 6","iso":"2026-09-06","s":"GI","h":8,"bc":"Ch 8-10: Small Intestine · Large Intestine · Hernias","fa":"FA GI pp 396-end (malabsorption, IBD, colorectal cancer)","p":"Pathoma Ch 10 cont","sk":"Path: 3.1 Inflammatory Bowel Disease (Crohn's · UC) · 3.2 Colorectal Cancer & Polyps (FAP · Lynch Syndrome · Villous Adenoma) · 3.3 Malabsorption Syndromes (Celiac Disease · Whipple Disease · Tropical Sprue · Lactase Deficiency) · 3.4 Appendicitis · 3.5 Carcinoid Tumor · 3.6 Anorectal Disorders","uw":40,"an":50,"dv":"Ep 384 (IBDs)","type":"normal"},{"d":"Mon Sep 7","iso":"2026-09-07","s":"Biochem","h":8,"bc":"Ch 1-3: Cell Biology · Lysosomal Storage Diseases · Connective Tissue","fa":"FA Biochem pp 60-72 (cell cycle, lysosomal, collagen)","p":null,"sk":"Path: 1.1 Lysosomal Storage Diseases — Gaucher · Niemann-Pick · Fabry · Tay-Sachs · Hurler (MPS I) · Hunter (MPS II) · Pompe (GSD II)","uw":40,"an":50,"dv":"Ep 56 (Cell Bio 1)","type":"normal"},{"d":"Tue Sep 8","iso":"2026-09-08","s":"Biochem","h":8,"bc":"Ch 4-6: Energy Production · Carbohydrates · One Carbon Metabolism","fa":"FA Biochem pp 73-85 (glycolysis, TCA, gluconeogenesis, folate)","p":null,"sk":null,"uw":40,"an":50,"dv":"Ep 13 (Metabolism)","type":"normal"},{"d":"Wed Sep 9","iso":"2026-09-09","s":"Biochem","h":8,"bc":"Ch 7-10: Oxidative Stress · Glycogen · Lipid Metabolism · Protein Metabolism","fa":"FA Biochem pp 86-95 (glycogen storage, FA metabolism, urea cycle)","p":null,"sk":"Path: 1.2 Glycogen Storage Diseases (Von Gierke GSD Ia · Pompe GSD II · Cori GSD III · McArdle GSD V) · 1.3 Familial Hypercholesterolemia","uw":40,"an":50,"dv":"Ep 11 (Glycogen)","type":"normal"},{"d":"Thu Sep 10","iso":"2026-09-10","s":"Biochem","h":8,"bc":"Ch 11-12: Porphyrias · Vitamins — complete vitamin + mineral pathology","fa":"FA Biochem pp 96-118 (vitamins, minerals, porphyrias)","p":null,"sk":"Path: 1.4 Vitamin Deficiencies — A (night blindness) · C (scurvy) · D (rickets) · E · K | B vitamins: B1/Thiamine · B3/Niacin · B6 · B12 · Folate · 1.5 Porphyrias (AIP · Porphyria Cutanea Tarda · Lead Poisoning effects on heme)","uw":40,"an":50,"dv":"Ep 243 (Water Vitamins)","type":"normal"},{"d":"Fri Sep 11","iso":"2026-09-11","s":"MSK","h":8,"bc":"Ch 1-3: Skeletal Muscle · Non-Rheumatologic Diseases · Rheumatologic Diseases","fa":"FA MSK pp 458-468 (muscle, OA, RA, gout, pseudogout)","p":"Pathoma Ch 18: MSK","sk":"Path: 1.1 Osteoarthritis vs RA · 1.2 Gout & Pseudogout · 1.3 SLE & Sjogren's Syndrome · 2.1 Polymyalgia Rheumatica · 2.2 Fibromyalgia","uw":40,"an":50,"dv":"Ep 99 (Rheum 1)","type":"normal"},{"d":"Sat Sep 12","iso":"2026-09-12","h":3,"s":"REST","bc":"Anki — Biochem + MSK. Review metabolic pathway diagrams.","fa":"—","p":null,"sk":null,"uw":0,"an":0,"dv":null,"type":"rest"},{"d":"Sun Sep 13","iso":"2026-09-13","s":"MSK","h":8,"bc":"Ch 4-6: Seronegative Spondyloarthritis · Primary Bone Tumors · Vasculitides","fa":"FA MSK pp 469-476 (AS, psoriatic, bone tumors, vasculitis)","p":"Pathoma Ch 18 cont","sk":"Path: 3.1 Seroneg SpA (AS · PsA · Reactive Arthritis · IBD-associated) · 3.2 Dermatomyositis & Polymyositis · 4.1 Bone Tumors (Osteosarcoma · Ewing's · GCT · Chondrosarcoma) · 4.2 Osteoporosis & Osteomalacia · 4.3 Paget Disease of Bone · 5.1 Vasculitis by vessel size","uw":40,"an":50,"dv":"Ep 269 (Bone Tumors)","type":"normal"},{"d":"Mon Sep 14","iso":"2026-09-14","s":"MSK","h":8,"bc":"Ch 7-15: Spine · Brachial Plexus · Upper & Lower Extremity · Childhood MSK · Pharm","fa":"FA MSK pp 477-end (nerve injuries, anatomy, pharm)","p":null,"sk":"Pharm: 1.4 NSAIDs & COX-2 Inhibitors · 1.5 Colchicine · 1.6 Allopurinol & Febuxostat | 1.2 DMARDs (MTX, HCQ, Sulfasalazine, Leflunomide) · 1.3 Biologics (TNF-alpha, IL-6, B-cell inhibitors)","uw":40,"an":50,"dv":"Ep 305 (Upper Limb)","type":"normal"},{"d":"Tue Sep 15","iso":"2026-09-15","s":"NBME","h":8,"bc":"🎯 NBME Form 26 — full timed exam (4 hrs). Then full error review.","fa":"FA — error-driven review","p":null,"sk":null,"uw":0,"an":0,"dv":null,"type":"nbme"},{"d":"Wed Sep 16","iso":"2026-09-16","s":"Review","h":8,"bc":"NBME 26 error review — deep dive on every wrong answer. Re-read FA sections. Update weak list.","fa":"FA — error-driven sections","p":null,"sk":null,"uw":40,"an":0,"dv":"Ep 184 (NBME Weird Questions)","type":"normal"},{"d":"Thu Sep 17","iso":"2026-09-17","s":"Micro","h":8,"bc":"Sketchy: Gram+ Cocci — S. aureus, S. pyogenes, S. pneumoniae, Enterococcus","fa":"FA Micro pp 124-138 (Gram+ cocci, toxins, infections)","p":null,"sk":"Micro Bacteria: 1.1 S. aureus · 1.2 S. pyogenes · 1.3 S. pneumoniae · 1.4 S. viridans · 1.5 S. agalactiae · 1.6 Enterococci · 1.7 MRSA & Staph epi","uw":50,"an":50,"dv":"Ep 77 (Gram Positive)","type":"normal"},{"d":"Fri Sep 18","iso":"2026-09-18","s":"Micro","h":8,"bc":"Sketchy: Gram+ Rods — Clostridium · Bacillus · Listeria · Corynebacterium · Mycobacteria (TB, leprosy, MAC)","fa":"FA Micro pp 139-152 (Gram+ rods, TB serology, treatment)","p":null,"sk":"Micro Bacteria: 2.1 C. botulinum · 2.2 C. tetani · 2.3 C. perfringens · 2.4 C. difficile · 2.5 B. anthracis · 2.6 B. cereus · 2.7 Listeria · 2.8 Corynebacterium diphtheriae · 2.9 Actinomyces · 2.10 Nocardia · 8.1 M. tuberculosis · 8.2 MAC · 8.3 M. leprae","uw":50,"an":50,"dv":"Ep 262 (Tuberculosis)","type":"normal"},{"d":"Sat Sep 19","iso":"2026-09-19","h":3,"s":"REST","bc":"Anki — Micro Bacteria. Flip Sketchy images from memory.","fa":"—","p":null,"sk":null,"uw":0,"an":0,"dv":null,"type":"rest"},{"d":"Sun Sep 20","iso":"2026-09-20","s":"Micro","h":8,"bc":"Sketchy: Gram− — Neisseria, H. flu, Pseudomonas, E. coli, Klebsiella, Salmonella, Shigella, Campylobacter, H. pylori","fa":"FA Micro pp 153-165 (Gram− bacteria, GI pathogens)","p":null,"sk":"Micro Bacteria: 3.1 N. gonorrhoeae · 3.2 N. meningitidis · 3.3 H. influenzae · 3.4 Bordetella · 4.1 E. coli · 4.2 Klebsiella · 4.3 Pseudomonas · 4.4 Salmonella · 4.5 H. pylori · 5.1 V. cholerae · 5.2 Campylobacter · 5.3 Shigella · 5.4 Yersinia","uw":50,"an":50,"dv":"Ep 78 (Gram Negative)","type":"normal"},{"d":"Mon Sep 21","iso":"2026-09-21","s":"Micro","h":8,"bc":"Sketchy: Atypicals (Mycoplasma, Chlamydia, Rickettsia) · Spirochetes (Treponema, Borrelia, Leptospira)","fa":"FA Micro pp 166-176 (atypicals, spirochetes, STIs)","p":null,"sk":"Micro Bacteria: 5.5 Brucella · 5.6 Francisella · 6.1 Treponema pallidum · 6.2 Borrelia burgdorferi · 6.3 Legionella · 6.4 Leptospira · 7.1 Chlamydia trachomatis · 7.2 Chlamydophila pneumoniae · 9.1 R. rickettsii · 9.2 R. typhi · 10.4 Mycoplasma · 10.6 R. prowazekii","uw":50,"an":50,"dv":"Ep 201 (Micro 1)","type":"normal"},{"d":"Tue Sep 22","iso":"2026-09-22","s":"Micro","h":8,"bc":"Sketchy: Fungi — Candida, Aspergillus, Cryptococcus, dimorphic fungi, Mucor, Pneumocystis","fa":"FA Micro pp 177-184 (fungi, antifungal targets)","p":null,"sk":"Micro Fungi: 1.1 Aspergillus · 1.2 Blastomycosis · 1.3 Coccidioidomycosis · 1.4 Histoplasmosis · 2.1 Pneumocystis jirovecii · 2.2 Dermatophytes · 3.1 Candida albicans · 3.2 Mucormycosis · 3.3 Cryptococcus · 3.4 Sporothrix","uw":60,"an":40,"dv":"Ep 205 (Micro 2)","type":"normal"},{"d":"Wed Sep 23","iso":"2026-09-23","s":"Micro","h":8,"bc":"Sketchy: DNA Viruses — Herpes family (HSV/VZV/EBV/CMV), Adenovirus, Parvovirus, HPV, HBV, Poxvirus","fa":"FA Micro pp 185-194 (DNA viruses, serology)","p":null,"sk":"Micro Viruses: 1.1 HSV · 1.2 VZV · 1.3 EBV · 1.4 CMV · 1.5 HHV-6 · 1.6 HHV-8 · 1.7 Flavivirus · 3.1 Parvovirus B19 · 3.2 Adenovirus · 3.3 HPV","uw":60,"an":40,"dv":"Ep 2 (Viruses)","type":"normal"},{"d":"Thu Sep 24","iso":"2026-09-24","s":"Micro","h":8,"bc":"Sketchy: RNA Viruses — Influenza, Measles, Mumps, Rubella, Rabies, Picornaviruses, Rotavirus, Hepatitis A-E","fa":"FA Micro pp 195-202 (RNA viruses)","p":null,"sk":"Micro Viruses: 2.1 Influenza · 2.2 Paramyxovirus · 2.3 Rhabdovirus · 2.4 Coronavirus · 4.1 Hep A · 4.2 Hep B · 4.3 Hep C · 4.4 Hep D · 4.5 Hep E · 5.1 Poliovirus · 5.2 Coxsackievirus · 5.3 Rhinovirus · 6.1 Rotavirus · 6.2 Norovirus","uw":60,"an":40,"dv":"Ep 3 (Viruses)","type":"normal"},{"d":"Fri Sep 25","iso":"2026-09-25","s":"Micro","h":8,"bc":"Sketchy: HIV/AIDS — lifecycle, CD4 thresholds & OIs, HAART · Parasites (Protozoa)","fa":"FA Micro pp 203-218 (HIV, AIDS complications, protozoa)","p":null,"sk":"Micro Viruses: 7.1 HIV/AIDS — lifecycle, CD4 thresholds, opportunistic infections, HAART classes | Micro Parasites: 1.1 Giardia · 1.2 Entamoeba histolytica · 1.3 Cryptosporidium · 1.4 Naegleria fowleri · 1.5 Acanthamoeba · 2.1 Toxoplasma gondii · 2.2 Plasmodium · 2.3 Babesia · 3.1 T. brucei · 3.2 T. cruzi · 3.3 Leishmania","uw":60,"an":40,"dv":"Ep 218 (Micro 3)","type":"normal"},{"d":"Sat Sep 26","iso":"2026-09-26","h":3,"s":"REST","bc":"Anki — Micro Fungi/Viruses/Parasites. HIV CD4 thresholds from memory.","fa":"—","p":null,"sk":null,"uw":0,"an":0,"dv":null,"type":"rest"},{"d":"Sun Sep 27","iso":"2026-09-27","s":"Micro","h":8,"bc":"Sketchy: Helminths (Ascaris, hookworm, Strongyloides, tapeworms, Schistosoma) · Ectoparasites + Micro UWorld 60 Qs timed","fa":"FA Micro pp 219-226 (helminths, ectoparasites)","p":null,"sk":"Micro Parasites: 4.1 Ascaris · 4.2 Hookworm · 4.3 Strongyloides · 5.1 Schistosoma · 5.2 Clonorchis sinensis · 5.3 Taenia · 6.1 Cestodes · 6.2 Trichinella · 6.3 Trichomonas · 6.4 Enterobius","uw":60,"an":40,"dv":"Ep 252 (PEP/HIV prophylaxis)","type":"normal"},{"d":"Mon Sep 28","iso":"2026-09-28","s":"Pharm","h":8,"bc":"Sketchy: Antibiotics — cell wall inhibitors (PCN, cephalosporins, vancomycin, carbapenems) + protein synthesis + other","fa":"FA Micro pp 227-238 (antimicrobials, mechanisms, resistance)","p":null,"sk":"Pharm Antimicrobials: 1.1 Penicillin · 1.2 Aminopenicillins · 1.3 Antistaphylococcal PCN · 1.4 Cephalosporins · 1.5 Carbapenems & Aztreonam · 1.6 Vancomycin · 1.7 Daptomycin · 2.1 Tetracyclines · 2.2 Macrolides · 2.3 Clindamycin · 2.4 Chloramphenicol · 2.5 Linezolid · 3.1 Aminoglycosides · 3.2 Sulfonamides & TMP · 4.1 Nitrofurantoin · 4.2 Fluoroquinolones · 4.3 Metronidazole","uw":60,"an":30,"dv":"Ep 460 (Antibiotics 1)","type":"normal"},{"d":"Tue Sep 29","iso":"2026-09-29","s":"NBME","h":8,"bc":"🎯 NBME Form 28 — full timed exam (4 hrs). Then full error review.","fa":"FA — error-driven review","p":null,"sk":null,"uw":0,"an":0,"dv":null,"type":"nbme"},{"d":"Wed Sep 30","iso":"2026-09-30","s":"Review","h":8,"bc":"NBME 28 comprehensive error review. Identify top 3 remaining weak subjects. Update FA annotations.","fa":"FA — error sections","p":null,"sk":null,"uw":50,"an":0,"dv":"Ep 433 (Drug Reactions 2)","type":"normal"},{"d":"Thu Oct 1","iso":"2026-10-01","s":"Pharm","h":8,"bc":"Sketchy: Antifungals + Antiparasitic + Antivirals (NRTIs, NNRTIs, PIs, integrase inhibitors, neuraminidase inhibitors)","fa":"FA Pharm pp 196-205 (antifungals, antivirals, HIV pharm)","p":null,"sk":"Pharm Antimicrobials: 5.1 Amphotericin B · 5.2 Azoles · 5.3 Echinocandins · 6.1 NRTIs · 6.2 NNRTIs · 6.3 Protease Inhibitors · 6.4 Integrase Inhibitors · 6.5 Fusion/Entry Inhibitors · 7.1 Neuraminidase Inhibitors · 7.2 Antiherpes Drugs","uw":60,"an":30,"dv":"Ep 461 (Antibiotics 2)","type":"normal"},{"d":"Fri Oct 2","iso":"2026-10-02","s":"Pharm","h":8,"bc":"Sketchy: Cardiovascular drugs — antihypertensives, antiarrhythmics (Vaughan-Williams I-IV), HF drugs, anticoagulants","fa":"FA Pharm pp 206-218 (cardio pharm, anticoagulants)","p":null,"sk":"Pharm Autonomic: 2.4 Indirect Sympathomimetics | CV & Renal: 1.1 ACE/ARBs · 1.2 CCBs · 1.3 Nitrates · 1.4 Antiarrhythmics I · 1.5 Antiarrhythmics II-IV · 1.6 Digoxin · 2.1 Thiazides · 2.2 Loop Diuretics · 2.3 K-sparing · 3.1 Heparin/LMWH · 3.2 Warfarin · 3.3 DOACs · 3.4 Thrombolytics · 4.1 Statins","uw":60,"an":30,"dv":"Ep 55 (Cardio Pharm)","type":"normal"},{"d":"Sat Oct 3","iso":"2026-10-03","h":3,"s":"REST","bc":"Anki — Pharm integration. Review P450 table and drug SEs.","fa":"—","p":null,"sk":null,"uw":0,"an":0,"dv":null,"type":"rest"},{"d":"Sun Oct 4","iso":"2026-10-04","s":"Pharm","h":8,"bc":"Sketchy: CNS drugs — antidepressants · antipsychotics · anticonvulsants · Parkinson/Alzheimer · opioids · anesthetics","fa":"FA Pharm pp 219-230 (psychopharm, neuro drugs)","p":null,"sk":"Pharm Neuro/Psych: 1.1 General Anesthetics · 1.2 Local Anesthetics · 1.3 Opioids · 1.4 NSAIDs · 2.1 AEDs (Na) · 2.2 AEDs (GABA) · 2.3 AEDs (Other) · 3.1 Parkinson Drugs · 3.2 Alzheimer Drugs · 4.1 Typical Antipsychotics · 4.2 Atypical Antipsychotics · 5.1 SSRIs/SNRIs · 5.2 TCAs · 5.3 MAOIs · 5.4 Mood Stabilizers · 6.1 Benzos · 6.2 Barbiturates · 6.3 Buspirone & Z-drugs","uw":60,"an":30,"dv":"Ep 20 (Psych Pharm)","type":"normal"},{"d":"Mon Oct 5","iso":"2026-10-05","s":"Pharm","h":8,"bc":"Sketchy: GI + Pulm + Endo + Renal + Antineoplastic drugs","fa":"FA Pharm pp 231-end (all remaining pharm classes)","p":null,"sk":"Pharm GI/Endo: 1.1 H2 Blockers/PPIs · 1.2 GI Motility · 1.3 Antiemetics · 2.1 Insulin · 2.2 Oral Hypoglycemics · 3.1 Thyroid Drugs · 3.2 Corticosteroids · 3.3 Sex Hormones | Antineoplastics: 1.1 Alkylating · 1.2 Antimetabolites · 1.3 Topoisomerase · 1.4 Antitumor Antibiotics · 1.5 Microtubule · 2.1 TKIs · 2.2 mAbs · 2.3 Hormonal | Blood/Inflam: 1.1 Corticosteroids · 1.2 DMARDs · 1.3 Biologics (TNF-α) · 2.1 Antihistamines · 2.2 Leukotrienes · 2.3 Epinephrine | Smooth Muscle: 1.1 Bronchodilators · 1.2 Methylxanthines · 1.3 Uterotonic · 1.4 Tocolytics","uw":60,"an":30,"dv":"Ep 432 (Pharm Blitz)","type":"normal"},{"d":"Tue Oct 6","iso":"2026-10-06","s":"Dedicated","h":8,"bc":"Weak area #1 (from NBME list) — Pathoma/Bootcamp rewatch + 60 targeted UWorld Qs in subject","fa":"FA — weak subject 1","p":"Pathoma weak chapter","sk":null,"uw":60,"an":0,"dv":"Ep 84 (Rapid Review 1)","type":"normal"},{"d":"Wed Oct 7","iso":"2026-10-07","s":"Dedicated","h":8,"bc":"Weak area #2 — same protocol: content review + 60 UWorld questions + full explanations","fa":"FA — weak subject 2","p":null,"sk":null,"uw":60,"an":0,"dv":"Ep 90 (Rapid Review 2)","type":"normal"},{"d":"Thu Oct 8","iso":"2026-10-08","s":"Dedicated","h":8,"bc":"Weak area #3 — content review + UWorld block + annotate FA on every error","fa":"FA — weak subject 3","p":null,"sk":null,"uw":60,"an":0,"dv":"Ep 92 (Rapid Review 3)","type":"normal"},{"d":"Fri Oct 9","iso":"2026-10-09","s":"Free 120","h":8,"bc":"🎯 NBME Free 120 (2022 version) — full timed, exam conditions. Treat like the real thing. Full review.","fa":"FA — error sections","p":null,"sk":null,"uw":0,"an":0,"dv":"Skip today","type":"nbme"},{"d":"Sat Oct 10","iso":"2026-10-10","h":3,"s":"REST","bc":"Full rest. No studying. Walk, eat well, sleep. You have earned it.","fa":"—","p":null,"sk":null,"uw":0,"an":0,"dv":null,"type":"rest"},{"d":"Sun Oct 11","iso":"2026-10-11","s":"Review","h":8,"bc":"Free 120 (2022) error review — annotate every wrong answer. Note any repeated NBME weak spots.","fa":"FA — error sections","p":null,"sk":null,"uw":40,"an":0,"dv":"Ep 96 (Rapid Review 5)","type":"normal"},{"d":"Mon Oct 12","iso":"2026-10-12","s":"Rapid FA","h":8,"bc":"First Aid rapid pass: Biochem → Genetics → Immunology — speed read, HY tables only, mark any gaps","fa":"FA: Biochem + Genetics + Immuno","p":null,"sk":null,"uw":50,"an":0,"dv":"Ep 117 (Rapid Review Repro)","type":"normal"},{"d":"Tue Oct 13","iso":"2026-10-13","s":"Rapid FA","h":8,"bc":"First Aid rapid pass: Cardio → Pulm → Renal — reinforce key tables and diagrams","fa":"FA: Cardio + Pulm + Renal","p":null,"sk":null,"uw":50,"an":0,"dv":"Ep 160 (Rapid Review)","type":"normal"},{"d":"Wed Oct 14","iso":"2026-10-14","s":"Rapid FA","h":8,"bc":"First Aid rapid pass: GI → Endo → Repro","fa":"FA: GI + Endo + Repro","p":null,"sk":null,"uw":50,"an":0,"dv":"Ep 168 (Rapid Review)","type":"normal"},{"d":"Thu Oct 15","iso":"2026-10-15","s":"Rapid FA","h":8,"bc":"First Aid rapid pass: Neuro + Psych → Heme + MSK + Derm → Micro + Pharm","fa":"FA: Neuro/Psych/Heme/MSK/Derm/Micro/Pharm","p":null,"sk":null,"uw":50,"an":0,"dv":"Ep 500 (USMLE Rapid Review)","type":"normal"},{"d":"Fri Oct 16","iso":"2026-10-16","s":"Free 120","h":8,"bc":"🎯 NBME Free 120 (2023 version) — full timed. Compare with first Free 120 for progress.","fa":"FA — error review","p":null,"sk":null,"uw":0,"an":0,"dv":"Skip today","type":"nbme"},{"d":"Sat Oct 17","iso":"2026-10-17","h":3,"s":"REST","bc":"Full rest. No new content. Tomorrow: NBME 30.","fa":"—","p":null,"sk":null,"uw":0,"an":0,"dv":null,"type":"rest"},{"d":"Sun Oct 18","iso":"2026-10-18","s":"Final","h":8,"bc":"Free 120 (2023) error review + Pathoma Ch 1-4 rewatch at 2x — Cell Injury, Inflammation, Hemodynamics, Neoplasia.","fa":"FA Pathology sections","p":"Pathoma Ch 1-4 at 2x speed","sk":null,"uw":40,"an":0,"dv":"Ep 101 (Rapid Review 6)","type":"normal"},{"d":"Mon Oct 19","iso":"2026-10-19","s":"Final","h":8,"bc":"Sketchy Micro rapid image recall — flip through all bacteria + fungi + virus images. Name from memory.","fa":"Sketchy all images (rapid)","p":null,"sk":"Rapid recall: All Micro Bacteria (42) · Viruses (25) · Fungi (10) · Parasites (19) — name from image","uw":40,"an":0,"dv":"Ep 105 (Rapid Review 7)","type":"normal"},{"d":"Tue Oct 20","iso":"2026-10-20","s":"Final","h":8,"bc":"UWorld redo — all marked/incorrect questions from entire prep. These are your personal weak spots.","fa":"FA — spot review on redos","p":null,"sk":null,"uw":80,"an":0,"dv":"Ep 498 (Successful Dedicated 1)","type":"normal"},{"d":"Wed Oct 21","iso":"2026-10-21","s":"NBME","h":8,"bc":"🎯 NBME Form 30 — full timed exam (4 hrs). Then full error review.","fa":"FA — error-driven review","p":null,"sk":null,"uw":0,"an":0,"dv":null,"type":"nbme"},{"d":"Thu Oct 22","iso":"2026-10-22","s":"Review","h":8,"bc":"NBME 30 error review — exhaustive. Note any topic appearing in multiple NBMEs (guaranteed on exam).","fa":"FA — error sections","p":null,"sk":null,"uw":40,"an":0,"dv":"Ep 107 (Rapid Review GI)","type":"normal"},{"d":"Fri Oct 23","iso":"2026-10-23","s":"Final","h":6,"bc":"FA — HY tables, drug side effects, microbe presentations, key formulas. No deep reading. Skim and reinforce.","fa":"FA: HY tables only","p":null,"sk":null,"uw":0,"an":0,"dv":"Ep 499 (Successful Dedicated 2)","type":"normal"},{"d":"Sat Oct 24","iso":"2026-10-24","h":3,"s":"REST","bc":"Full rest. No studying. Confirm test center, bring valid ID, plan snacks.","fa":"—","p":null,"sk":null,"uw":0,"an":0,"dv":null,"type":"rest"},{"d":"Sun Oct 25","iso":"2026-10-25","s":"Final","h":3,"bc":"No new content. Anki reviews only. Pack bag. Confirm test center, bring valid ID, plan snacks. Sleep by 9pm.","fa":"—","p":null,"sk":null,"uw":0,"an":0,"dv":null,"type":"rest"},{"d":"Mon Oct 26","iso":"2026-10-26","h":0,"s":"EXAM","bc":"🎯 USMLE STEP 1 — EXAM DAY. Trust your preparation. You are ready.","fa":"—","p":null,"sk":null,"uw":0,"an":0,"dv":null,"type":"exam"}];
+
+// Phase color mapping by date index
+const PHASES = [
+  { id: 1, name: "Foundations", color: "#6366f1", range: [0, 27] },
+  { id: 2, name: "Systems", color: "#f59e0b", range: [28, 69] },
+  { id: 3, name: "Micro + Pharm", color: "#10b981", range: [70, 97] },
+  { id: 4, name: "Dedicated", color: "#ef4444", range: [98, 124] },
+];
+
+function getPhase(idx) {
+  for (const p of PHASES) if (idx >= p.range[0] && idx <= p.range[1]) return p;
+  return PHASES[0];
+}
+
+// State
+const checked = JSON.parse(localStorage.getItem("s1-checked") || "{}");
+const expanded = JSON.parse(localStorage.getItem("s1-expanded") || "{}");
+let activePhase = 1;
+
+function save() { localStorage.setItem("s1-checked", JSON.stringify(checked)); }
+function saveExp() { localStorage.setItem("s1-expanded", JSON.stringify(expanded)); }
+
+// Find today
+function findToday() {
+  const _d = new Date(); const today = `${_d.getFullYear()}-${String(_d.getMonth()+1).padStart(2,'0')}-${String(_d.getDate()).padStart(2,'0')}`;
+  return SCHEDULE.findIndex(d => d.iso === today);
+}
+
+// Auto-jump to today's phase (or hash date's phase)
+const todayIdx = findToday();
+const _hashIso = window.location.hash.replace("#", "");
+const _hashIdx = /^\d{4}-\d{2}-\d{2}$/.test(_hashIso) ? SCHEDULE.findIndex(d => d.iso === _hashIso) : -1;
+if (_hashIdx >= 0) {
+  activePhase = getPhase(_hashIdx).id;
+} else if (todayIdx >= 0) {
+  activePhase = getPhase(todayIdx).id;
+}
+
+function renderProgress() {
+  const total = SCHEDULE.length;
+  const done = Object.values(checked).filter(Boolean).length;
+  const pct = Math.round(done / total * 100);
+  document.getElementById("progress-pct").textContent = pct + "%";
+  document.getElementById("progress-text").textContent = `${done} / ${total}`;
+  document.getElementById("progress-fill").style.width = pct + "%";
+}
+
+function renderToday() {
+  const idx = todayIdx;
+  if (idx < 0) { document.getElementById("today-banner").style.display = "none"; return; }
+  const td = SCHEDULE[idx];
+  const phase = getPhase(idx);
+  document.getElementById("today-banner").style.display = "block";
+  document.getElementById("today-banner").style.borderLeftColor = phase.color;
+  document.getElementById("today-title").textContent = `${td.s} · ${td.h} hrs`;
+  let html = "";
+  if (td.bc) html += `<div class="row">📺 <b style="color:#cbd5e1">${td.bc}</b></div>`;
+  if (td.fa) html += `<div class="row">📖 ${td.fa}</div>`;
+  if (td.p) html += `<div class="row">🔬 ${td.p}</div>`;
+  if (SK_DAY_MAP[td.iso]) html += `<div class="row">🧪 Sketchy — expand to see chapters</div>`;
+  if (td.uw > 0) html += `<div class="row" style="color:#60a5fa">❓ UWorld: ${td.uw} Qs</div>`;
+  if (td.an > 0) html += `<div class="row" style="color:#a78bfa">🃏 Anki: ${td.an} new cards (Anking ${td.s} tag)</div>`;
+  if (td.dv) html += `<div class="row" style="color:#94a3b8">🎧 Divine: ${td.dv}</div>`;
+  document.getElementById("today-content").innerHTML = html;
+}
+
+function renderTabs() {
+  const container = document.getElementById("tabs");
+  // Preserve the sketchy link (first child)
+  const sketchyLink = container.querySelector(".tab-sketchy");
+  container.innerHTML = "";
+  if (sketchyLink) container.appendChild(sketchyLink);
+
+  PHASES.forEach(p => {
+    const days = SCHEDULE.slice(p.range[0], p.range[1]+1);
+    const done = days.filter((_, i) => checked[p.range[0]+i]).length;
+    const btn = document.createElement("button");
+    btn.className = "tab" + (activePhase === p.id ? " active" : "");
+    btn.style.setProperty("--active-color", p.color);
+    btn.textContent = `${p.name} ${done}/${days.length}`;
+    btn.onclick = () => { activePhase = p.id; renderWeeks(); };
+    container.appendChild(btn);
+  });
+}
+
+function renderWeeks() {
+  renderTabs();
+  const scroll = document.getElementById("weeks");
+  scroll.innerHTML = "";
+  const phase = PHASES.find(p => p.id === activePhase);
+  const [start, end] = phase.range;
+
+  let currentWeek = -1;
+  let weekDiv = null;
+
+  for (let i = start; i <= end; i++) {
+    const day = SCHEDULE[i];
+    const weekNum = Math.floor((i) / 7) + 1;
+
+    if (weekNum !== currentWeek) {
+      currentWeek = weekNum;
+      weekDiv = document.createElement("div");
+      weekDiv.className = "week";
+
+      const firstIdx = (weekNum - 1) * 7;
+      const lastIdx = Math.min(firstIdx + 6, SCHEDULE.length - 1);
+      const firstDate = SCHEDULE[firstIdx]?.d?.replace(/\w+ /, "") || "";
+      const lastDate = SCHEDULE[lastIdx]?.d?.replace(/\w+ /, "") || "";
+      const wkLabel = getWeekLabel(weekNum);
+
+      const header = document.createElement("div");
+      header.className = "week-h";
+      header.style.setProperty("--phase-color", phase.color);
+      header.innerHTML = `<div class="week-badge" style="--phase-color:${phase.color}">Wk ${weekNum}</div><div class="week-label">${wkLabel}</div><div class="week-dates">${firstDate} – ${lastDate}</div>`;
+      weekDiv.appendChild(header);
+      scroll.appendChild(weekDiv);
+    }
+
+    weekDiv.appendChild(buildDay(i, day, phase));
+  }
+
+  if (todayIdx >= start && todayIdx <= end) {
+    setTimeout(() => {
+      const el = scroll.querySelector(".today-row");
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+    }, 100);
+  }
+
+  // Deep link: if URL hash is a date (e.g. #2026-06-20), scroll to it
+  const hashIso = window.location.hash.replace("#", "");
+  if (/^\d{4}-\d{2}-\d{2}$/.test(hashIso)) {
+    const hashDay = SCHEDULE.find(d => d.iso === hashIso);
+    if (hashDay) {
+      const hashPhase = getPhase(SCHEDULE.indexOf(hashDay)).id;
+      if (hashPhase === activePhase) {
+        setTimeout(() => {
+          const el = scroll.querySelector(`[data-iso="${hashIso}"]`);
+          if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+        }, 150);
+      }
+    }
+  }
+}
+
+function getWeekLabel(n) {
+  const labels = {
+    1: "Cardiology Part 1 (6 hrs/day — MBA summer)",
+    2: "Cardiology Part 2 + Pulmonology intro",
+    3: "Pulmonology finish + Nephrology",
+    4: "Nephrology finish + Neurology intro",
+    5: "Neurology heavy (8 hrs/day begins)",
+    6: "Neurology finish + Reproduction",
+    7: "Immunology + Pharmacology + NBME 25",
+    8: "Psychiatry + Genetics",
+    9: "Hematology/Oncology + Dermatology",
+    10: "Biostatistics + Endocrinology + Public Health",
+    11: "GI + Biochemistry",
+    12: "Biochemistry finish + MSK/Rheum + NBME 26",
+    13: "Microbiology — Bacteria + Fungi (Sketchy)",
+    14: "Micro finish (Viruses/Parasites) + Antibiotics",
+    15: "Pharm Integration + NBME 28",
+    16: "Dedicated: Weak Areas + NBME 30",
+    17: "Free 120s + Rapid First Aid",
+    18: "Final Polish + Exam Day"
+  };
+  return labels[n] || `Week ${n}`;
+}
+
+function buildDay(idx, day, phase) {
+  const done = !!checked[idx];
+  const isToday = idx === todayIdx;
+  const isExp = !!expanded[idx];
+
+  const el = document.createElement("div");
+  el.dataset.iso = day.iso;
+  el.className = "day" +
+    (done ? " done" : "") +
+    (day.type === "rest" ? " rest" : "") +
+    (day.type === "nbme" ? " nbme" : "") +
+    (day.type === "exam" ? " exam-day" : "") +
+    (isToday ? " today-row" : "") +
+    (isExp ? " expanded" : "");
+  el.style.setProperty("--phase-color", phase.color);
+
+  const summary = document.createElement("div");
+  summary.className = "day-summary";
+  summary.innerHTML = `
+    <div class="day-check"><span class="checkmark">✓</span></div>
+    <div class="day-info">
+      <div class="day-top">
+        <span class="day-date">${day.d}</span>
+        <span class="day-subject">${day.s}</span>
+        ${isToday ? '<span class="day-today-tag">TODAY</span>' : ''}
+        <span class="day-hours">${day.h > 0 ? day.h + 'h' : ''}</span>
+      </div>
+      <div class="day-preview">${getDayPreview(day)}</div>
+    </div>
+    <div class="day-expand-icon">▼</div>
+  `;
+
+  summary.addEventListener("click", (e) => {
+    if (e.target.closest(".day-check")) {
+      checked[idx] = !checked[idx];
+      save();
+      el.classList.toggle("done");
+      renderProgress();
+      renderTabs();
+    } else {
+      expanded[idx] = !expanded[idx];
+      saveExp();
+      el.classList.toggle("expanded");
+    }
+  });
+
+  el.appendChild(summary);
+
+  const detail = document.createElement("div");
+  detail.className = "day-detail";
+  let dHtml = "";
+  if (day.bc) dHtml += detailRow("📺", "Bootcamp", day.bc);
+  if (day.fa) dHtml += detailRow("📖", "First Aid", day.fa);
+  if (day.p) dHtml += detailRow("🔬", "Pathoma", day.p);
+  if (day.sk) dHtml += detailRow("🎨", "Sketchy", day.sk);
+  if (day.uw > 0) dHtml += detailRow("❓", "UWorld", `${day.uw} questions${idx < 91 ? ' (tutor mode, subject-aligned)' : ' (timed random)'}`);
+  if (day.an > 0) dHtml += detailRow("🃏", "Anki", `${day.an} new cards · Anking ${day.s} system tag · Reviews continue regardless`);
+  if (day.an === 0 && day.type !== "rest" && day.type !== "exam") dHtml += detailRow("🃏", "Anki", "Reviews only (no new cards from Aug 1+)");
+  if (day.dv) dHtml += detailRow("🎧", "Divine", day.dv);
+  detail.innerHTML = dHtml;
+  el.appendChild(detail);
+
+  return el;
+}
+
+function detailRow(icon, label, text) {
+  return `<div class="detail-row"><span class="detail-icon">${icon}</span><div class="detail-content"><div class="detail-label">${label}</div><div class="detail-text">${text}</div></div></div>`;
+}
+
+function getDayPreview(day) {
+  if (day.type === "rest") return day.bc || "Rest day";
+  if (day.type === "nbme") return day.bc || "NBME exam";
+  if (day.type === "exam") return "STEP 1 EXAM";
+  let parts = [];
+  if (day.bc) parts.push(day.bc.slice(0, 60) + (day.bc.length > 60 ? "..." : ""));
+  return parts.join(" · ") || "Tap to view";
+}
+
+// Settings
+function toggleSet() { document.getElementById("settings-panel").classList.toggle("open"); }
+async function enableNotif() {
+  if (!("Notification" in window)) { alert("Notifications not supported."); return; }
+  const perm = await Notification.requestPermission();
+  if (perm !== "granted") { alert("Please allow notifications."); return; }
+  const time = document.getElementById("notif-time").value || "07:30";
+  localStorage.setItem("notif-time", time);
+  const [h, m] = time.split(":").map(Number);
+  scheduleNotif(h, m);
+  document.getElementById("notif-status").style.display = "block";
+  document.getElementById("settings-panel").classList.remove("open");
+}
+
+function scheduleNotif(h, m) {
+  if (!navigator.serviceWorker?.controller) return;
+  const now = new Date();
+  const next = new Date();
+  next.setHours(h, m, 0, 0);
+  if (next <= now) next.setDate(next.getDate() + 1);
+  const ms = next - now;
+  const tdIdx = findToday();
+  const tomorrow = tdIdx >= 0 && tdIdx + 1 < SCHEDULE.length ? SCHEDULE[tdIdx + 1] : null;
+  const body = tomorrow
+    ? `${tomorrow.s} · ${tomorrow.h}h. ${tomorrow.bc ? tomorrow.bc.slice(0, 70) : ''}`
+    : "Check your Step 1 schedule.";
+  navigator.serviceWorker.controller.postMessage({
+    type: "SCHEDULE_NOTIFICATION", ms, title: "Step 1 — Today's Plan 📚", body
+  });
+}
+
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js").then(() => {
+    const saved = localStorage.getItem("notif-time");
+    if (saved && Notification.permission === "granted") {
+      const [h, m] = saved.split(":").map(Number);
+      navigator.serviceWorker.ready.then(() => scheduleNotif(h, m));
+      document.getElementById("notif-status").style.display = "block";
+    }
+  });
+}
+
+// ── Sketchy tracker ──────────────────────────────────────────
+const SK_DATA = {
+  micro: { color: "#10b981", units: {
+    "Bacteria": [
+      "1.1 Staphylococcus aureus","1.2 Streptococcus pyogenes","1.3 Streptococcus pneumoniae",
+      "1.4 Viridans streptococci","1.5 Enterococcus","1.6 Bacillus anthracis","1.7 Bacillus cereus",
+      "1.8 Clostridium perfringens","1.9 Clostridium tetani","1.10 Clostridium botulinum",
+      "1.11 Clostridium difficile","1.12 Listeria monocytogenes","1.13 Corynebacterium diphtheriae",
+      "1.14 Neisseria meningitidis","1.15 Neisseria gonorrhoeae","1.16 Haemophilus influenzae",
+      "1.17 Bordetella pertussis","1.18 Legionella pneumophila","1.19 Pseudomonas aeruginosa",
+      "1.20 Escherichia coli","1.21 Salmonella","1.22 Shigella","1.23 Klebsiella pneumoniae",
+      "1.24 Proteus mirabilis","1.25 Helicobacter pylori","1.26 Vibrio cholerae",
+      "1.27 Campylobacter jejuni","1.28 Yersinia","1.29 Bacteroides fragilis",
+      "1.30 Treponema pallidum","1.31 Borrelia burgdorferi","1.32 Leptospira",
+      "1.33 Chlamydia trachomatis","1.34 Chlamydophila pneumoniae","1.35 Rickettsia",
+      "1.36 Coxiella burnetii","1.37 Mycoplasma pneumoniae","1.38 Mycobacterium tuberculosis",
+      "1.39 Mycobacterium leprae","1.40 Francisella tularensis","1.41 Brucella","1.42 Nocardia"
+    ],
+    "Viruses": [
+      "2.1 Herpes simplex virus 1 & 2","2.2 Varicella-zoster virus","2.3 Epstein-Barr virus",
+      "2.4 Cytomegalovirus","2.5 HHV-6 & HHV-7","2.6 HHV-8 (Kaposi)","2.7 Smallpox & Vaccinia",
+      "2.8 Adenovirus","2.9 Parvovirus B19","2.10 JC virus","2.11 Influenza",
+      "2.12 Parainfluenza","2.13 RSV","2.14 Measles","2.15 Mumps","2.16 Rubella",
+      "2.17 Rabies","2.18 Ebola & Marburg","2.19 Dengue & Zika","2.20 West Nile virus",
+      "2.21 Hep A","2.22 Hep B","2.23 Hep C","2.24 HIV","2.25 HTLV"
+    ],
+    "Fungi": [
+      "3.1 Aspergillus fumigatus","3.2 Mucor & Rhizopus","3.3 Candida albicans",
+      "3.4 Cryptococcus neoformans","3.5 Pneumocystis jirovecii","3.6 Histoplasma capsulatum",
+      "3.7 Coccidioides immitis","3.8 Blastomyces dermatitidis","3.9 Sporothrix schenckii",
+      "3.10 Dermatophytes"
+    ],
+    "Parasites": [
+      "4.1 Giardia lamblia","4.2 Entamoeba histolytica","4.3 Cryptosporidium",
+      "4.4 Trichomonas vaginalis","4.5 Toxoplasma gondii","4.6 Plasmodium",
+      "4.7 Babesia","4.8 Trypanosoma cruzi","4.9 Trypanosoma brucei","4.10 Leishmania",
+      "4.11 Ascaris lumbricoides","4.12 Strongyloides stercoralis","4.13 Enterobius vermicularis",
+      "4.14 Trichuris trichiura","4.15 Hookworm","4.16 Trichinella spiralis",
+      "4.17 Wuchereria bancrofti","4.18 Onchocerca volvulus","4.19 Schistosoma"
+    ]
+  }},
+  pharm: { color: "#a78bfa", units: {
+    "Antimicrobials": [
+      "1.1 Penicillins","1.2 Cephalosporins","1.3 Carbapenems & Monobactams",
+      "1.4 Vancomycin","1.5 Aminoglycosides","1.6 Tetracyclines","1.7 Macrolides",
+      "1.8 Clindamycin","1.9 Fluoroquinolones","1.10 Metronidazole","1.11 Rifampin",
+      "1.12 Isoniazid","1.13 Pyrazinamide & Ethambutol","1.14 Antifungals — Azoles",
+      "1.15 Amphotericin B","1.16 Echinocandins","1.17 Antivirals — Herpes",
+      "1.18 Antivirals — Influenza","1.19 HIV — NRTIs","1.20 HIV — NNRTIs",
+      "1.21 HIV — PIs","1.22 HIV — Integrase & Entry inhibitors",
+      "1.23 Antimalarials","1.24 Antiprotozoals","1.25 Antihelminthics",
+      "1.26 Sulfonamides & Trimethoprim","1.27 Chloramphenicol & Linezolid"
+    ],
+    "Autonomic Drugs": [
+      "2.1 Cholinomimetics","2.2 Anticholinergics","2.3 Alpha agonists",
+      "2.4 Beta agonists","2.5 Alpha blockers","2.6 Beta blockers","2.7 Neuromuscular blockers"
+    ],
+    "Cardiovascular & Renal": [
+      "3.1 ACE inhibitors & ARBs","3.2 Calcium channel blockers","3.3 Nitrates",
+      "3.4 Digoxin","3.5 Antiarrhythmics — Class I","3.6 Antiarrhythmics — Class III",
+      "3.7 Statins","3.8 Fibrates & Niacin","3.9 Thiazide diuretics",
+      "3.10 Loop diuretics","3.11 K-sparing diuretics","3.12 Carbonic anhydrase inhibitors",
+      "3.13 Anticoagulants","3.14 Thrombolytics"
+    ],
+    "Neuro & Psych": [
+      "4.1 Benzodiazepines","4.2 Non-BZD sedatives","4.3 Barbiturates",
+      "4.4 Antiepileptics — Na channel","4.5 Antiepileptics — other",
+      "4.6 Opioids","4.7 Opioid antagonists","4.8 SSRIs","4.9 SNRIs & TCAs",
+      "4.10 MAOIs","4.11 Atypical antidepressants","4.12 Typical antipsychotics",
+      "4.13 Atypical antipsychotics","4.14 Lithium","4.15 Parkinson drugs — dopamine",
+      "4.16 Parkinson drugs — other","4.17 Alzheimer drugs","4.18 General anesthetics"
+    ],
+    "GI & Endocrine": [
+      "5.1 Antacids & PPIs","5.2 H2 blockers","5.3 Antiemetics","5.4 Laxatives & antidiarrheals",
+      "5.5 Insulin","5.6 Oral antidiabetics","5.7 Thyroid drugs","5.8 Steroids"
+    ],
+    "Antineoplastics": [
+      "6.1 Alkylating agents","6.2 Antimetabolites","6.3 Antitumor antibiotics",
+      "6.4 Vinca alkaloids & Taxanes","6.5 Topoisomerase inhibitors",
+      "6.6 Targeted therapy — TKIs","6.7 Monoclonal antibodies","6.8 Hormonal agents"
+    ],
+    "Blood & Inflammation": [
+      "7.1 NSAIDs","7.2 Acetaminophen","7.3 Aspirin","7.4 Colchicine & Allopurinol",
+      "7.5 DMARDs","7.6 Biologics","7.7 Antiplatelet agents"
+    ],
+    "Smooth Muscle": [
+      "8.1 Bronchodilators","8.2 Corticosteroids — inhaled","8.3 Oxytocin & Tocolytics","8.4 ED drugs"
+    ]
+  }},
+  path: { color: "#f97316", units: {
+    "Cardiac": [
+      "1.1 Ischemic heart disease","1.2 MI complications","1.3 Heart failure",
+      "1.4 Cardiomyopathies","1.5 Valvular disease","1.6 Pericarditis & effusions"
+    ],
+    "Vascular": ["2.1 Vasculitides & aneurysms"],
+    "Pulmonary": ["3.1 Obstructive & restrictive lung disease"],
+    "Renal": [
+      "4.1 Nephrotic syndrome","4.2 Nephritic syndrome","4.3 Acute kidney injury",
+      "4.4 Chronic kidney disease","4.5 Renal tubular disorders"
+    ],
+    "GI": [
+      "5.1 Esophageal disorders","5.2 Gastric disorders","5.3 Small intestine",
+      "5.4 Large intestine","5.5 Liver disease","5.6 Cirrhosis & portal hypertension","5.7 Pancreas"
+    ],
+    "Endocrine": [
+      "6.1 Thyroid disorders","6.2 Adrenal disorders","6.3 Pituitary disorders","6.4 Diabetes"
+    ],
+    "Reproductive & GU": ["7.1 Reproductive pathology"],
+    "Myeloid & Lymphoid": ["8.1 Leukemias & lymphomas"],
+    "Neurology": [
+      "9.1 Neurodegenerative diseases","9.2 Demyelinating diseases","9.3 CNS tumors",
+      "9.4 Stroke pathology","9.5 Meningitis & encephalitis","9.6 Peripheral neuropathy"
+    ]
+  }}
+};
+
+// ── Sketchy Path blocks ──────────────────────────────────────────────────
+const _CARDIAC = [
+  {src:"path",unit:"Cardiac",chs:[
+    "1.1 Ischemic heart disease","1.2 MI complications","1.3 Heart failure",
+    "1.4 Cardiomyopathies","1.5 Valvular disease","1.6 Pericarditis & effusions"
+  ]},
+  {src:"path",unit:"Vascular",chs:["2.1 Vasculitides & aneurysms"]}
+];
+const _PULM  = [{src:"path",unit:"Pulmonary",chs:["3.1 Obstructive & restrictive lung disease"]}];
+const _RENAL = [{src:"path",unit:"Renal",chs:[
+  "4.1 Nephrotic syndrome","4.2 Nephritic syndrome",
+  "4.3 Acute kidney injury","4.4 Chronic kidney disease","4.5 Renal tubular disorders"
+]}];
+const _NEURO = [{src:"path",unit:"Neurology",chs:[
+  "9.1 Neurodegenerative diseases","9.2 Demyelinating diseases","9.3 CNS tumors",
+  "9.4 Stroke pathology","9.5 Meningitis & encephalitis","9.6 Peripheral neuropathy"
+]}];
+const _REPRO = [{src:"path",unit:"Reproductive & GU",chs:["7.1 Reproductive pathology"]}];
+const _HEME  = [{src:"path",unit:"Myeloid & Lymphoid",chs:["8.1 Leukemias & lymphomas"]}];
+const _ENDO  = [{src:"path",unit:"Endocrine",chs:[
+  "6.1 Thyroid disorders","6.2 Adrenal disorders","6.3 Pituitary disorders","6.4 Diabetes"
+]}];
+const _GI    = [{src:"path",unit:"GI",chs:[
+  "5.1 Esophageal disorders","5.2 Gastric disorders","5.3 Small intestine",
+  "5.4 Large intestine","5.5 Liver disease","5.6 Cirrhosis & portal hypertension","5.7 Pancreas"
+]}];
+
+// ── Sketchy Pharm blocks (1st pass during systems; 2nd pass during Micro/Pharm) ─
+const _PA = [{src:"pharm",unit:"Antimicrobials",chs:[
+  "1.1 Penicillins","1.2 Cephalosporins","1.3 Carbapenems & Monobactams","1.4 Vancomycin",
+  "1.5 Aminoglycosides","1.6 Tetracyclines","1.7 Macrolides","1.8 Clindamycin",
+  "1.9 Fluoroquinolones","1.10 Metronidazole","1.11 Rifampin","1.12 Isoniazid",
+  "1.13 Pyrazinamide & Ethambutol","1.14 Antifungals — Azoles","1.15 Amphotericin B",
+  "1.16 Echinocandins","1.17 Antivirals — Herpes","1.18 Antivirals — Influenza",
+  "1.19 HIV — NRTIs","1.20 HIV — NNRTIs","1.21 HIV — PIs",
+  "1.22 HIV — Integrase & Entry inhibitors","1.23 Antimalarials",
+  "1.24 Antiprotozoals","1.25 Antihelminthics","1.26 Sulfonamides & Trimethoprim",
+  "1.27 Chloramphenicol & Linezolid"
+]}];
+const _PU = [{src:"pharm",unit:"Autonomic Drugs",chs:[
+  "2.1 Cholinomimetics","2.2 Anticholinergics","2.3 Alpha agonists",
+  "2.4 Beta agonists","2.5 Alpha blockers","2.6 Beta blockers","2.7 Neuromuscular blockers"
+]}];
+const _PV = [{src:"pharm",unit:"Cardiovascular & Renal",chs:[
+  "3.1 ACE inhibitors & ARBs","3.2 Calcium channel blockers","3.3 Nitrates","3.4 Digoxin",
+  "3.5 Antiarrhythmics — Class I","3.6 Antiarrhythmics — Class III",
+  "3.7 Statins","3.8 Fibrates & Niacin","3.9 Thiazide diuretics","3.10 Loop diuretics",
+  "3.11 K-sparing diuretics","3.12 Carbonic anhydrase inhibitors",
+  "3.13 Anticoagulants","3.14 Thrombolytics"
+]}];
+const _PN = [{src:"pharm",unit:"Neuro & Psych",chs:[
+  "4.1 Benzodiazepines","4.2 Non-BZD sedatives","4.3 Barbiturates",
+  "4.4 Antiepileptics — Na channel","4.5 Antiepileptics — other",
+  "4.6 Opioids","4.7 Opioid antagonists","4.8 SSRIs","4.9 SNRIs & TCAs",
+  "4.10 MAOIs","4.11 Atypical antidepressants","4.12 Typical antipsychotics",
+  "4.13 Atypical antipsychotics","4.14 Lithium","4.15 Parkinson drugs — dopamine",
+  "4.16 Parkinson drugs — other","4.17 Alzheimer drugs","4.18 General anesthetics"
+]}];
+const _PG = [{src:"pharm",unit:"GI & Endocrine",chs:[
+  "5.1 Antacids & PPIs","5.2 H2 blockers","5.3 Antiemetics","5.4 Laxatives & antidiarrheals",
+  "5.5 Insulin","5.6 Oral antidiabetics","5.7 Thyroid drugs","5.8 Steroids"
+]}];
+const _PT = [{src:"pharm",unit:"Antineoplastics",chs:[
+  "6.1 Alkylating agents","6.2 Antimetabolites","6.3 Antitumor antibiotics",
+  "6.4 Vinca alkaloids & Taxanes","6.5 Topoisomerase inhibitors",
+  "6.6 Targeted therapy — TKIs","6.7 Monoclonal antibodies","6.8 Hormonal agents"
+]}];
+const _PB = [{src:"pharm",unit:"Blood & Inflammation",chs:[
+  "7.1 NSAIDs","7.2 Acetaminophen","7.3 Aspirin","7.4 Colchicine & Allopurinol",
+  "7.5 DMARDs","7.6 Biologics","7.7 Antiplatelet agents"
+]}];
+const _PS = [{src:"pharm",unit:"Smooth Muscle",chs:[
+  "8.1 Bronchodilators","8.2 Corticosteroids — inhaled","8.3 Oxytocin & Tocolytics","8.4 ED drugs"
+]}];
+
+// SK_DAY_MAP: date → [{src, unit, chs}]
+// Path = all section chapters every study day of that subject.
+// Pharm 1st pass = relevant unit(s) layered onto same days.
+// Pharm 2nd pass = dedicated Micro/Pharm days (Sep 21–26) already in map below.
+const SK_DAY_MAP = {
+  // ── CARDIO Jun 17–28 — Path Cardiac/Vascular + Pharm Autonomic + CV&Renal ──
+  "2026-06-20": [..._CARDIAC, ..._PU, ..._PV],
+  "2026-06-21": [..._CARDIAC, ..._PU, ..._PV],
+  "2026-06-22": [..._CARDIAC, ..._PU, ..._PV],
+  "2026-06-23": [..._CARDIAC, ..._PU, ..._PV],
+  "2026-06-24": [..._CARDIAC, ..._PU, ..._PV],
+  "2026-06-25": [..._CARDIAC, ..._PU, ..._PV],
+  "2026-06-27": [..._CARDIAC, ..._PU, ..._PV],
+  "2026-06-28": [..._CARDIAC, ..._PU, ..._PV],
+  "2026-06-29": [..._CARDIAC, ..._PU, ..._PV],
+  "2026-06-30": [..._CARDIAC, ..._PU, ..._PV],
+  "2026-07-01": [..._CARDIAC, ..._PU, ..._PV],
+
+  // ── PULM Jun 29–Jul 2 — Path Pulm + Pharm Smooth Muscle ─────
+  "2026-07-02": [..._PULM, ..._PS],
+  "2026-07-04": [..._PULM, ..._PS],
+  "2026-07-05": [..._PULM, ..._PS],
+
+  // ── RENAL Jul 3–8 — Path Renal + Pharm CV&Renal (diuretics) ─
+  "2026-07-06": [..._RENAL, ..._PV],
+  "2026-07-07": [..._RENAL, ..._PV],
+  "2026-07-08": [..._RENAL, ..._PV],
+  "2026-07-09": [..._RENAL, ..._PV],
+  "2026-07-11": [..._RENAL, ..._PV],
+
+  // ── NEURO Jul 9–13 + Jul 15–20 — Path Neuro + Pharm Neuro&Psych ──
+  "2026-07-12": [..._NEURO, ..._PN],
+  "2026-07-13": [..._NEURO, ..._PN],
+  "2026-07-14": [..._NEURO, ..._PN],
+  "2026-07-15": [..._NEURO, ..._PN],
+  "2026-07-16": [..._NEURO, ..._PN],
+  "2026-07-18": [..._NEURO, ..._PN],
+  "2026-07-19": [..._NEURO, ..._PN],
+  "2026-07-20": [..._NEURO, ..._PN],
+  "2026-07-21": [..._NEURO, ..._PN],
+  "2026-07-22": [..._NEURO, ..._PN],
+  "2026-07-23": [..._NEURO, ..._PN],
+
+  // ── REPRO Jul 22–25 — Path Repro + Pharm GI&Endo + Smooth Muscle ──
+  "2026-07-25": [..._REPRO, ..._PG, ..._PS],
+  "2026-07-26": [..._REPRO, ..._PG, ..._PS],
+  "2026-07-27": [..._REPRO, ..._PG, ..._PS],
+  "2026-07-28": [..._REPRO, ..._PG, ..._PS],
+
+  // ── IMMUNO Jul 26–30 — Pharm Blood & Inflammation ───────────
+  "2026-07-29": [..._PB],
+  "2026-07-30": [..._PB],
+  "2026-08-01": [..._PB],
+  "2026-08-02": [..._PB],
+
+  // ── PHARM BOOTCAMP Jul 31–Aug 2 — Autonomic + CV (overview days) ──
+  "2026-08-03": [..._PU, ..._PV],
+  "2026-08-04": [..._PU, ..._PV],
+  "2026-08-05": [..._PB, ..._PS],
+
+  // ── PSYCH Aug 5–8 — Pharm Neuro & Psych ─────────────────────
+  "2026-08-08": [..._PN],
+  "2026-08-09": [..._PN],
+  "2026-08-10": [..._PN],
+  "2026-08-11": [..._PN],
+
+  // ── HEME Aug 12–15 — Path Myeloid + Pharm Antineoplastics + Blood ──
+  "2026-08-15": [..._HEME, ..._PT, ..._PB],
+  "2026-08-16": [..._HEME, ..._PT, ..._PB],
+  "2026-08-17": [..._HEME, ..._PT, ..._PB],
+  "2026-08-18": [..._HEME, ..._PT, ..._PB],
+
+  // ── DERM Aug 16–17 — Pharm Blood & Inflammation (steroids, biologics) ──
+  "2026-08-19": [..._PB],
+  "2026-08-20": [..._PB],
+
+  // ── ENDO Aug 21–23 — Path Endocrine + Pharm GI & Endocrine ──
+  "2026-08-24": [..._ENDO, ..._PG],
+  "2026-08-25": [..._ENDO, ..._PG],
+  "2026-08-26": [..._ENDO, ..._PG],
+
+  // ── GI Aug 26–28 — Path GI + Pharm GI & Endocrine ───────────
+  "2026-08-29": [..._GI, ..._PG],
+  "2026-08-30": [..._GI, ..._PG],
+  "2026-08-31": [..._GI, ..._PG],
+
+  // ── MSK Sep 3–5 — Pharm Blood & Inflammation (NSAIDs, DMARDs, biologics) ──
+  "2026-09-06": [..._PB],
+  "2026-09-07": [..._PB],
+  "2026-09-08": [..._PB],
+
+  // ── MICRO — Bacteria (Sep 9–12) + Pharm Antimicrobials 1st pass ──
+  "2026-09-12": [{src:"micro",unit:"Bacteria",chs:[
+    "1.1 Staphylococcus aureus","1.2 Streptococcus pyogenes","1.3 Streptococcus pneumoniae",
+    "1.4 Viridans streptococci","1.5 Enterococcus"
+  ]}, ..._PA],
+  "2026-09-13": [{src:"micro",unit:"Bacteria",chs:[
+    "1.6 Bacillus anthracis","1.7 Bacillus cereus","1.8 Clostridium perfringens",
+    "1.9 Clostridium tetani","1.10 Clostridium botulinum","1.11 Clostridium difficile",
+    "1.12 Listeria monocytogenes","1.13 Corynebacterium diphtheriae",
+    "1.38 Mycobacterium tuberculosis","1.39 Mycobacterium leprae"
+  ]}, ..._PA],
+  "2026-09-14": [{src:"micro",unit:"Bacteria",chs:[
+    "1.14 Neisseria meningitidis","1.15 Neisseria gonorrhoeae","1.16 Haemophilus influenzae",
+    "1.17 Bordetella pertussis","1.19 Pseudomonas aeruginosa","1.20 Escherichia coli",
+    "1.21 Salmonella","1.22 Shigella","1.23 Klebsiella pneumoniae",
+    "1.25 Helicobacter pylori","1.26 Vibrio cholerae","1.27 Campylobacter jejuni","1.28 Yersinia"
+  ]}, ..._PA],
+  "2026-09-15": [{src:"micro",unit:"Bacteria",chs:[
+    "1.18 Legionella pneumophila","1.29 Bacteroides fragilis",
+    "1.30 Treponema pallidum","1.31 Borrelia burgdorferi","1.32 Leptospira",
+    "1.33 Chlamydia trachomatis","1.34 Chlamydophila pneumoniae",
+    "1.35 Rickettsia","1.36 Coxiella burnetii","1.37 Mycoplasma pneumoniae",
+    "1.40 Francisella tularensis","1.41 Brucella","1.42 Nocardia"
+  ]}, ..._PA],
+
+  // ── MICRO — Fungi (Sep 13) + Pharm Antimicrobials 1st pass ──
+  "2026-09-16": [{src:"micro",unit:"Fungi",chs:[
+    "3.1 Aspergillus fumigatus","3.2 Mucor & Rhizopus","3.3 Candida albicans",
+    "3.4 Cryptococcus neoformans","3.5 Pneumocystis jirovecii","3.6 Histoplasma capsulatum",
+    "3.7 Coccidioides immitis","3.8 Blastomyces dermatitidis","3.9 Sporothrix schenckii",
+    "3.10 Dermatophytes"
+  ]}, ..._PA],
+
+  // ── MICRO — Viruses (Sep 16–18) + Pharm Antimicrobials 1st pass ──
+  "2026-09-19": [{src:"micro",unit:"Viruses",chs:[
+    "2.1 Herpes simplex virus 1 & 2","2.2 Varicella-zoster virus","2.3 Epstein-Barr virus",
+    "2.4 Cytomegalovirus","2.5 HHV-6 & HHV-7","2.6 HHV-8 (Kaposi)","2.7 Smallpox & Vaccinia",
+    "2.8 Adenovirus","2.9 Parvovirus B19","2.10 JC virus"
+  ]}, ..._PA],
+  "2026-09-20": [{src:"micro",unit:"Viruses",chs:[
+    "2.11 Influenza","2.12 Parainfluenza","2.13 RSV","2.14 Measles","2.15 Mumps","2.16 Rubella",
+    "2.17 Rabies","2.18 Ebola & Marburg","2.19 Dengue & Zika","2.20 West Nile virus",
+    "2.21 Hep A","2.22 Hep B","2.23 Hep C"
+  ]}, ..._PA],
+  "2026-09-21": [{src:"micro",unit:"Viruses",chs:["2.24 HIV","2.25 HTLV"]}, ..._PA],
+
+  // ── MICRO — Parasites (Sep 19–20) + Pharm Antimicrobials 1st pass ──
+  "2026-09-22": [{src:"micro",unit:"Parasites",chs:[
+    "4.1 Giardia lamblia","4.2 Entamoeba histolytica","4.3 Cryptosporidium",
+    "4.4 Trichomonas vaginalis","4.5 Toxoplasma gondii","4.6 Plasmodium",
+    "4.7 Babesia","4.8 Trypanosoma cruzi","4.9 Trypanosoma brucei","4.10 Leishmania"
+  ]}, ..._PA],
+  "2026-09-23": [{src:"micro",unit:"Parasites",chs:[
+    "4.11 Ascaris lumbricoides","4.12 Strongyloides stercoralis","4.13 Enterobius vermicularis",
+    "4.14 Trichuris trichiura","4.15 Hookworm","4.16 Trichinella spiralis",
+    "4.17 Wuchereria bancrofti","4.18 Onchocerca volvulus","4.19 Schistosoma"
+  ]}, ..._PA],
+
+  // ── PHARM — Antimicrobials (Sep 21 antibacterials / Sep 23 antifungals+antivirals) ──
+  "2026-09-24": [{src:"pharm",unit:"Antimicrobials",chs:[
+    "1.1 Penicillins","1.2 Cephalosporins","1.3 Carbapenems & Monobactams","1.4 Vancomycin",
+    "1.5 Aminoglycosides","1.6 Tetracyclines","1.7 Macrolides","1.8 Clindamycin",
+    "1.9 Fluoroquinolones","1.10 Metronidazole","1.11 Rifampin","1.12 Isoniazid",
+    "1.13 Pyrazinamide & Ethambutol","1.26 Sulfonamides & Trimethoprim","1.27 Chloramphenicol & Linezolid"
+  ]}],
+  "2026-09-26": [{src:"pharm",unit:"Antimicrobials",chs:[
+    "1.14 Antifungals — Azoles","1.15 Amphotericin B","1.16 Echinocandins",
+    "1.17 Antivirals — Herpes","1.18 Antivirals — Influenza",
+    "1.19 HIV — NRTIs","1.20 HIV — NNRTIs","1.21 HIV — PIs",
+    "1.22 HIV — Integrase & Entry inhibitors","1.23 Antimalarials",
+    "1.24 Antiprotozoals","1.25 Antihelminthics"
+  ]}],
+
+  // ── PHARM — CV + Autonomic (Sep 24) ──────────────────────────
+  "2026-09-27": [
+    {src:"pharm",unit:"Autonomic Drugs",chs:[
+      "2.1 Cholinomimetics","2.2 Anticholinergics","2.3 Alpha agonists",
+      "2.4 Beta agonists","2.5 Alpha blockers","2.6 Beta blockers","2.7 Neuromuscular blockers"
+    ]},
+    {src:"pharm",unit:"Cardiovascular & Renal",chs:[
+      "3.1 ACE inhibitors & ARBs","3.2 Calcium channel blockers","3.3 Nitrates","3.4 Digoxin",
+      "3.5 Antiarrhythmics — Class I","3.6 Antiarrhythmics — Class III",
+      "3.7 Statins","3.8 Fibrates & Niacin",
+      "3.9 Thiazide diuretics","3.10 Loop diuretics","3.11 K-sparing diuretics",
+      "3.12 Carbonic anhydrase inhibitors","3.13 Anticoagulants","3.14 Thrombolytics"
+    ]}
+  ],
+
+  // ── PHARM — CNS (Sep 25) ─────────────────────────────────────
+  "2026-09-28": [{src:"pharm",unit:"Neuro & Psych",chs:[
+    "4.1 Benzodiazepines","4.2 Non-BZD sedatives","4.3 Barbiturates",
+    "4.4 Antiepileptics — Na channel","4.5 Antiepileptics — other",
+    "4.6 Opioids","4.7 Opioid antagonists",
+    "4.8 SSRIs","4.9 SNRIs & TCAs","4.10 MAOIs","4.11 Atypical antidepressants",
+    "4.12 Typical antipsychotics","4.13 Atypical antipsychotics","4.14 Lithium",
+    "4.15 Parkinson drugs — dopamine","4.16 Parkinson drugs — other",
+    "4.17 Alzheimer drugs","4.18 General anesthetics"
+  ]}],
+
+  // ── PHARM — GI/Endo + Antineoplastics + Blood + Smooth Muscle (Sep 26) ──
+  "2026-09-29": [
+    {src:"pharm",unit:"GI & Endocrine",chs:[
+      "5.1 Antacids & PPIs","5.2 H2 blockers","5.3 Antiemetics","5.4 Laxatives & antidiarrheals",
+      "5.5 Insulin","5.6 Oral antidiabetics","5.7 Thyroid drugs","5.8 Steroids"
+    ]},
+    {src:"pharm",unit:"Antineoplastics",chs:[
+      "6.1 Alkylating agents","6.2 Antimetabolites","6.3 Antitumor antibiotics",
+      "6.4 Vinca alkaloids & Taxanes","6.5 Topoisomerase inhibitors",
+      "6.6 Targeted therapy — TKIs","6.7 Monoclonal antibodies","6.8 Hormonal agents"
+    ]},
+    {src:"pharm",unit:"Blood & Inflammation",chs:[
+      "7.1 NSAIDs","7.2 Acetaminophen","7.3 Aspirin","7.4 Colchicine & Allopurinol",
+      "7.5 DMARDs","7.6 Biologics","7.7 Antiplatelet agents"
+    ]},
+    {src:"pharm",unit:"Smooth Muscle",chs:[
+      "8.1 Bronchodilators","8.2 Corticosteroids — inhaled","8.3 Oxytocin & Tocolytics","8.4 ED drugs"
+    ]}
+  ],
+
+  // ── RAPID RECALL (Oct 15) ─────────────────────────────────────
+  "2026-10-18": [
+    {src:"micro",unit:"Bacteria",chs:[
+      "1.1 Staphylococcus aureus","1.2 Streptococcus pyogenes","1.3 Streptococcus pneumoniae",
+      "1.4 Viridans streptococci","1.5 Enterococcus","1.6 Bacillus anthracis","1.7 Bacillus cereus",
+      "1.8 Clostridium perfringens","1.9 Clostridium tetani","1.10 Clostridium botulinum",
+      "1.11 Clostridium difficile","1.12 Listeria monocytogenes","1.13 Corynebacterium diphtheriae",
+      "1.14 Neisseria meningitidis","1.15 Neisseria gonorrhoeae","1.16 Haemophilus influenzae",
+      "1.17 Bordetella pertussis","1.18 Legionella pneumophila","1.19 Pseudomonas aeruginosa",
+      "1.20 Escherichia coli","1.21 Salmonella","1.22 Shigella","1.23 Klebsiella pneumoniae",
+      "1.24 Proteus mirabilis","1.25 Helicobacter pylori","1.26 Vibrio cholerae",
+      "1.27 Campylobacter jejuni","1.28 Yersinia","1.29 Bacteroides fragilis",
+      "1.30 Treponema pallidum","1.31 Borrelia burgdorferi","1.32 Leptospira",
+      "1.33 Chlamydia trachomatis","1.34 Chlamydophila pneumoniae","1.35 Rickettsia",
+      "1.36 Coxiella burnetii","1.37 Mycoplasma pneumoniae","1.38 Mycobacterium tuberculosis",
+      "1.39 Mycobacterium leprae","1.40 Francisella tularensis","1.41 Brucella","1.42 Nocardia"
+    ]},
+    {src:"micro",unit:"Viruses",chs:[
+      "2.1 Herpes simplex virus 1 & 2","2.2 Varicella-zoster virus","2.3 Epstein-Barr virus",
+      "2.4 Cytomegalovirus","2.5 HHV-6 & HHV-7","2.6 HHV-8 (Kaposi)","2.7 Smallpox & Vaccinia",
+      "2.8 Adenovirus","2.9 Parvovirus B19","2.10 JC virus","2.11 Influenza",
+      "2.12 Parainfluenza","2.13 RSV","2.14 Measles","2.15 Mumps","2.16 Rubella",
+      "2.17 Rabies","2.18 Ebola & Marburg","2.19 Dengue & Zika","2.20 West Nile virus",
+      "2.21 Hep A","2.22 Hep B","2.23 Hep C","2.24 HIV","2.25 HTLV"
+    ]},
+    {src:"micro",unit:"Fungi",chs:[
+      "3.1 Aspergillus fumigatus","3.2 Mucor & Rhizopus","3.3 Candida albicans",
+      "3.4 Cryptococcus neoformans","3.5 Pneumocystis jirovecii","3.6 Histoplasma capsulatum",
+      "3.7 Coccidioides immitis","3.8 Blastomyces dermatitidis","3.9 Sporothrix schenckii",
+      "3.10 Dermatophytes"
+    ]},
+    {src:"micro",unit:"Parasites",chs:[
+      "4.1 Giardia lamblia","4.2 Entamoeba histolytica","4.3 Cryptosporidium",
+      "4.4 Trichomonas vaginalis","4.5 Toxoplasma gondii","4.6 Plasmodium",
+      "4.7 Babesia","4.8 Trypanosoma cruzi","4.9 Trypanosoma brucei","4.10 Leishmania",
+      "4.11 Ascaris lumbricoides","4.12 Strongyloides stercoralis","4.13 Enterobius vermicularis",
+      "4.14 Trichuris trichiura","4.15 Hookworm","4.16 Trichinella spiralis",
+      "4.17 Wuchereria bancrofti","4.18 Onchocerca volvulus","4.19 Schistosoma"
+    ]}
+  ]
+};
+
+let skSource = "micro";
+let skInSketchy = false;
+// How many passes each source requires in this study plan
+const SK_MAX_PASS = { micro: 1, path: 2, pharm: 2 };
+
+function toggleSketchy(btn) {
+  skInSketchy = !skInSketchy;
+  document.getElementById("scroll").style.display = skInSketchy ? "none" : "";
+  document.getElementById("today-banner").style.display = skInSketchy ? "none" : "";
+  const sv = document.getElementById("sketchy-view");
+  sv.classList.toggle("visible", skInSketchy);
+  btn.classList.toggle("sk-active", skInSketchy);
+  if (skInSketchy) skRender();
+}
+
+function skSetSource(src) {
+  skSource = src;
+  document.querySelectorAll(".sk-src-btn").forEach(b => b.classList.toggle("active", b.dataset.sk === src));
+  skRender();
+}
+
+function skRender() {
+  // activate correct source tab
+  document.querySelectorAll(".sk-src-btn").forEach(b => b.classList.toggle("active", b.dataset.sk === skSource));
+  const src = SK_DATA[skSource];
+  const color = src.color;
+  const maxP = SK_MAX_PASS[skSource]; // 1 for micro, 2 for path/pharm
+  document.documentElement.style.setProperty("--sk-color", color);
+
+  // tally passes
+  let p1=0,p2=0,p3=0,total=0;
+  Object.entries(src.units).forEach(([unit, chapters]) => {
+    chapters.forEach(ch => {
+      total++;
+      const v = parseInt(localStorage.getItem("sk-passes|" + skSource + "|" + unit + "|" + ch) || "0");
+      if (v >= 1) p1++;
+      if (v >= 2) p2++;
+      if (v >= 3) p3++;
+    });
+  });
+  document.getElementById("sk-1p").textContent = p1;
+  document.getElementById("sk-2p").textContent = p2;
+  // hide 3P stat row if source only has 2 passes
+  const stat3El = document.getElementById("sk-3p")?.closest(".sk-stat");
+  if (stat3El) stat3El.style.display = maxP >= 3 ? "" : "none";
+  document.getElementById("sk-3p").textContent = p3;
+  document.getElementById("sk-total").textContent = (maxP === 1 ? p1 : p2) + "/" + total + " done";
+
+  // render units
+  const container = document.getElementById("sk-units");
+  container.innerHTML = "";
+  Object.entries(src.units).forEach(([unit, chapters]) => {
+    const unitDone = chapters.filter(ch =>
+      parseInt(localStorage.getItem("sk-passes|" + skSource + "|" + unit + "|" + ch) || "0") >= maxP
+    ).length;
+    const div = document.createElement("div");
+    div.className = "sk-unit";
+    const passes = Array.from({length: maxP}, (_,i) => i+1);
+    div.innerHTML = `<div class="sk-unit-hd">
+      <span>${unit}</span>
+      <span class="sk-badge" style="background:color-mix(in srgb,${color} 20%,transparent);color:${color}">${unitDone}/${chapters.length}</span>
+    </div>` +
+    chapters.map(ch => {
+      const key = "sk-passes|" + skSource + "|" + unit + "|" + ch;
+      const pass = parseInt(localStorage.getItem(key) || "0");
+      const safeUnit = unit.replace(/\\/g,"\\\\").replace(/'/g,"\\'");
+      const safeCh = ch.replace(/\\/g,"\\\\").replace(/'/g,"\\'");
+      return `<div class="sk-row${pass >= maxP ? ' p3' : ''}">
+        <div class="sk-inner">
+          <span class="sk-title">${ch}</span>
+          <div class="sk-passes">
+            ${passes.map(p => `<button class="sk-pbtn${pass >= p ? ' on' : ''}" data-p="${p}" onclick="skToggle('${skSource}','${safeUnit}','${safeCh}',${p})">${p}P</button>`).join("")}
+          </div>
+        </div>
+      </div>`;
+    }).join("");
+    container.appendChild(div);
+  });
+}
+
+function skToggle(src, unit, ch, p, event) {
+  const key = "sk-passes|" + src + "|" + unit + "|" + ch;
+  const cur = parseInt(localStorage.getItem(key) || "0");
+  const newVal = cur >= p ? p - 1 : p;
+  localStorage.setItem(key, newVal);
+  const maxP = SK_MAX_PASS[src];
+  if (skInSketchy) {
+    skRender();
+  } else if (event) {
+    // Just refresh the row in the day card
+    const row = event.target.closest(".sk-row");
+    if (row) {
+      row.classList.toggle("p3", newVal >= maxP);
+      row.querySelectorAll(".sk-pbtn").forEach(btn => {
+        btn.classList.toggle("on", newVal >= parseInt(btn.dataset.p));
+      });
+    }
+  }
+}
+
+function skDayHtml(dayIso) {
+  const sections = SK_DAY_MAP[dayIso];
+  if (!sections || sections.length === 0) return "";
+  let html = `<div class="detail-row"><span class="detail-icon">🧪</span><div class="detail-content" style="flex:1"><div class="detail-label">Sketchy</div><div class="sk-day-section">`;
+  sections.forEach(({src, unit, chs}) => {
+    const color = SK_DATA[src].color;
+    html += `<div style="--sk-color:${color}"><div class="sk-day-unit-hd">${unit}</div>`;
+    const maxP = SK_MAX_PASS[src];
+    const passes = Array.from({length: maxP}, (_,i) => i+1);
+    chs.forEach(ch => {
+      const key = "sk-passes|" + src + "|" + unit + "|" + ch;
+      const pass = parseInt(localStorage.getItem(key) || "0");
+      const ss = src.replace(/'/g,"\\'"), su = unit.replace(/'/g,"\\'"), sc = ch.replace(/'/g,"\\'");
+      html += `<div class="sk-row${pass>=maxP?" p3":""}"><div class="sk-inner">
+        <span class="sk-title">${ch}</span>
+        <div class="sk-passes">${passes.map(p=>`<button class="sk-pbtn${pass>=p?" on":""}" data-p="${p}" onclick="skToggle('${ss}','${su}','${sc}',${p},event)">${p}P</button>`).join("")}</div>
+      </div></div>`;
+    });
+    html += `</div>`;
+  });
+  html += `</div></div></div>`;
+  return html;
+}
+
+// Init
+renderProgress();
+renderToday();
+renderWeeks();
+</script>
+</body>
+</html>
