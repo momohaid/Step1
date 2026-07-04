@@ -5,805 +5,597 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:USMLE Step 1 🧠
 X-WR-TIMEZONE:America/New_York
-X-WR-CALDESC:Daily Step 1 study schedule — Oct 19 2026 target
+X-WR-CALDESC:Daily Step 1 study schedule — Oct 26 2026 exam
 BEGIN:VEVENT
-UID:step1-2026-06-17-0001@mo-usmle
-DTSTART;TZID=America/New_York:20260617T070000
-DTEND;TZID=America/New_York:20260617T130000
-SUMMARY:📚 Step1 · Cardio · 6h
-DESCRIPTION:📺 Bootcamp: Ch 1-2: Embryology & Anatomy\n📖 First Aid: FA Cardi
- o pp 290-298\n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 5
-  (Cardio Physiology)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Cardio — Ch 1-2: Embryology & Anatomy
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Cardio — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-06-18-0002@mo-usmle
-DTSTART;TZID=America/New_York:20260618T070000
-DTEND;TZID=America/New_York:20260618T130000
-SUMMARY:📚 Step1 · Cardio · 6h
-DESCRIPTION:📺 Bootcamp: Ch 3-4: Vascular System\, Cardiac Parameters\n📖 Fir
- st Aid: FA Cardio pp 299-305\n🔬 Pathoma: Pathoma Ch 1 Cell Injury (context
- )\n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 116 (Cardio 
- 1)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Cardio — Ch 3-4: Vascular System\, Cardiac Para
- meters
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Cardio — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-06-19-0003@mo-usmle
-DTSTART;TZID=America/New_York:20260619T070000
-DTEND;TZID=America/New_York:20260619T130000
-SUMMARY:📚 Step1 · Cardio · 6h
-DESCRIPTION:📺 Bootcamp: Ch 5-6: Cardiac Function Curves\, PV Loops\n📖 First
-  Aid: FA Cardio pp 306-312\n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n
- 🎧 Divine: Ep 253 (Starling Forces)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Cardio — Ch 5-6: Cardiac Function Curves\, PV L
- oops
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Cardio — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-06-20-0004@mo-usmle
-DTSTART;TZID=America/New_York:20260620T070000
-DTEND;TZID=America/New_York:20260620T130000
-SUMMARY:📚 Step1 · Cardio · 6h
-DESCRIPTION:📺 Bootcamp: Ch 7-8: Vasodilation/Vasoconstriction\, Pressure-Fl
- ow Physiology\n📖 First Aid: FA Cardio pp 313-316\n❓ UWorld: 20 questions\n
- 🃏 Anki: 35 new cards\n🎧 Divine: Ep 154 (Cardio 2)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Cardio — Ch 7-8: Vasodilation/Vasoconstriction\
- , Pressure-Flow Physiology
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Cardio — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-06-21-0005@mo-usmle
-DTSTART;TZID=America/New_York:20260621T070000
-DTEND;TZID=America/New_York:20260621T130000
-SUMMARY:📚 Step1 · Cardio · 6h
-DESCRIPTION:📺 Bootcamp: Ch 9: Cardiac Cycle · Ch 10: RAAS · Ch 11-12: Exerc
- ise & Conduction Physiology\n📖 First Aid: FA Cardio pp 317-323 (EKG\, cond
- uction)\n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 165 (C
- ardio 3)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Cardio — Ch 9: Cardiac Cycle · Ch 10: RAAS · Ch
-  11-12: Exercise & Conduction Physiology
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Cardio — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-06-22-0006@mo-usmle
-DTSTART;TZID=America/New_York:20260622T070000
-DTEND;TZID=America/New_York:20260622T130000
-SUMMARY:📚 Step1 · Cardio · 6h
-DESCRIPTION:📺 Bootcamp: Ch 13: Antiarrhythmics · Ch 14-15: Atrial & Ventric
- ular Arrhythmias · Ch 16: Conduction Block\n📖 First Aid: FA Cardio pp 324-
- 330 (arrhythmias\, drugs)\n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n🎧
-  Divine: Ep 477 (ACS)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Cardio — Ch 13: Antiarrhythmics · Ch 14-15: Atr
- ial & Ventricular Arrhythmias · Ch 16: Con
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Cardio — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-06-23-0007@mo-usmle
-DTSTART;TZID=America/New_York:20260623T070000
-DTEND;TZID=America/New_York:20260623T100000
-SUMMARY:😴 Step1 · REST · 3h
-DESCRIPTION:📺 Bootcamp: Anki — Cardio cards. Review EKG diagrams in FA.
- 
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:PT0S
-ACTION:DISPLAY
-DESCRIPTION:Rest day — Anki reviews only. Recharge.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-06-24-0008@mo-usmle
-DTSTART;TZID=America/New_York:20260624T070000
-DTEND;TZID=America/New_York:20260624T130000
-SUMMARY:📚 Step1 · Cardio · 6h
-DESCRIPTION:📺 Bootcamp: Ch 17: Heart Failure · Ch 18: Cardiomyopathy\n📖 Fir
- st Aid: FA Cardio pp 331-335\n🔬 Pathoma: Pathoma Ch 8: HF\, cardiomyopathy
- \n🧪 Sketchy: Path: 2.1 Cardiac Hypertrophy & Heart Failure\n❓ UWorld: 20 q
- uestions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 264 (Heart Failure)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Cardio — Ch 17: Heart Failure · Ch 18: Cardiomy
- opathy
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Cardio — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-06-25-0009@mo-usmle
-DTSTART;TZID=America/New_York:20260625T070000
-DTEND;TZID=America/New_York:20260625T140000
-SUMMARY:📚 Step1 · Cardio · 7h
-DESCRIPTION:📺 Bootcamp: Ch 19: Aortic Disease · Ch 20: Valvular Disease\n📖 
- First Aid: FA Cardio pp 336-342\n🔬 Pathoma: Pathoma Ch 8 cont: valvular\n🧪
-  Sketchy: Path: 3.1 Endocarditis · 3.2 Rheumatic Heart Disease\n❓ UWorld: 
- 20 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 244 (Valvular Disease)
- 
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Cardio — Ch 19: Aortic Disease · Ch 20: Valvula
- r Disease
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Cardio — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-06-26-0010@mo-usmle
-DTSTART;TZID=America/New_York:20260626T070000
-DTEND;TZID=America/New_York:20260626T130000
-SUMMARY:📚 Step1 · Cardio · 6h
-DESCRIPTION:📺 Bootcamp: Ch 21-22: Acyanotic & Cyanotic Congenital Heart Def
- ects\n📖 First Aid: FA Cardio pp 343-347 (congenital)\n🔬 Pathoma: Pathoma C
- h 8: congenital\n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n🎧 Divine: E
- p 445 (MI Complications)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Cardio — Ch 21-22: Acyanotic & Cyanotic Congeni
- tal Heart Defects
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Cardio — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-06-27-0011@mo-usmle
-DTSTART;TZID=America/New_York:20260627T070000
-DTEND;TZID=America/New_York:20260627T130000
-SUMMARY:📚 Step1 · Cardio · 6h
-DESCRIPTION:📺 Bootcamp: Ch 23: Stable Angina & Atherosclerosis · Ch 24: MI\
- n📖 First Aid: FA Cardio pp 348-353 (atherosclerosis\, MI)\n🔬 Pathoma: Path
- oma Ch 7: Vascular\n🧪 Sketchy: Path: 1.1 Myocardial Response to Ischemia\n
- ❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 233 (Shock)
- 
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Cardio — Ch 23: Stable Angina & Atherosclerosis
-  · Ch 24: MI
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Cardio — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-06-28-0012@mo-usmle
+UID:step1-2026-06-28-0001@mo-usmle
 DTSTART;TZID=America/New_York:20260628T070000
-DTEND;TZID=America/New_York:20260628T140000
-SUMMARY:📚 Step1 · Cardio · 7h
-DESCRIPTION:📺 Bootcamp: Ch 25: Peripheral Arterial/Venous Disease · Ch 26: 
- HTN · Ch 27-28: Pericardial Disease & Shock\n📖 First Aid: FA Cardio pp 354
- -end (HTN\, pericardium\, shock)\n🧪 Sketchy: Path: 3.3 Myocarditis · 4.1 H
- ypertensive Heart Disease\n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n🎧
-  Divine: Ep 232 (Vasculitis)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Cardio — Ch 25: Peripheral Arterial/Venous Dise
- ase · Ch 26: HTN · Ch 27-28: Pericardial D
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Cardio — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-06-29-0013@mo-usmle
-DTSTART;TZID=America/New_York:20260629T070000
-DTEND;TZID=America/New_York:20260629T130000
-SUMMARY:📚 Step1 · Pulm · 6h
-DESCRIPTION:📺 Bootcamp: Ch 1: Intro · Ch 2: Air Physiology · Ch 3: Blood Ph
- ysiology\n📖 First Aid: FA Pulm pp 656-668 (anatomy\, lung volumes\, gas ex
- change)\n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 66 (Pu
- lm Pharm)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Pulm — Ch 1: Intro · Ch 2: Air Physiology · Ch 
- 3: Blood Physiology
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Pulm — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-06-30-0014@mo-usmle
-DTSTART;TZID=America/New_York:20260630T070000
-DTEND;TZID=America/New_York:20260630T100000
-SUMMARY:😴 Step1 · REST · 3h
-DESCRIPTION:📺 Bootcamp: Anki — Cardio + Pulm intro. Review cardiac cycle di
- agrams.
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:PT0S
-ACTION:DISPLAY
-DESCRIPTION:Rest day — Anki reviews only. Recharge.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-07-01-0015@mo-usmle
-DTSTART;TZID=America/New_York:20260701T070000
-DTEND;TZID=America/New_York:20260701T130000
-SUMMARY:📚 Step1 · Pulm · 6h
-DESCRIPTION:📺 Bootcamp: Ch 4: Lung Path Fundamentals · Ch 5: Obstructive Lu
- ng Disease\n📖 First Aid: FA Pulm pp 669-678 (COPD\, asthma\, bronchiectasi
- s)\n🔬 Pathoma: Pathoma Ch 9: Pulm obstructive\n❓ UWorld: 20 questions\n🃏 A
- nki: 35 new cards\n🎧 Divine: Ep 392 (Pulm Path 1)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Pulm — Ch 4: Lung Path Fundamentals · Ch 5: Obs
- tructive Lung Disease
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Pulm — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-07-02-0016@mo-usmle
-DTSTART;TZID=America/New_York:20260702T070000
-DTEND;TZID=America/New_York:20260702T140000
-SUMMARY:📚 Step1 · Pulm · 7h
-DESCRIPTION:📺 Bootcamp: Ch 6-7: Restrictive Lung Disease & Lung Cancer · Ch
-  8: Special Topics (PE\, ARDS\, Pulm HTN)\n📖 First Aid: FA Pulm pp 679-end
-  (restrictive\, cancer\, ARDS)\n🔬 Pathoma: Pathoma Ch 9 cont\n🧪 Sketchy: P
- ath: 2.2 Idiopathic Pulmonary Fibrosis · Vascular 3.3 DVT & Pulmonary Embo
- lism\n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 286 (ARDS
+DTEND;TZID=America/New_York:20260628T130000
+SUMMARY:📚 Step1 · Cardio · 6h
+DESCRIPTION:📺 Bootcamp: Ch 1-4: Embryology & Anatomy · Vascular System 
+ · Cardiac Parameters\n📖 First Aid: FA Cardio pp 290-305\n❓ UWorld: 2
+ 0 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 5 (Cardio Physiology
  )
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Pulm — Ch 6-7: Restrictive Lung Disease & Lung 
- Cancer · Ch 8: Special Topics (PE\, ARDS\,
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Pulm — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Cardio — Ch 1-4: Embryology & Anatomy · V
+ ascular System · Cardiac Par
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-07-03-0017@mo-usmle
+UID:step1-2026-06-29-0002@mo-usmle
+DTSTART;TZID=America/New_York:20260629T070000
+DTEND;TZID=America/New_York:20260629T130000
+SUMMARY:📚 Step1 · Cardio · 6h
+DESCRIPTION:📺 Bootcamp: Ch 5-8: Cardiac Function Curves · PV Loops · V
+ asodilation · Pressure-Flow\n📖 First Aid: FA Cardio pp 306-316\n❓ UW
+ orld: 20 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 116 (Cardio 1
+ )
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Cardio — Ch 5-8: Cardiac Function Curves 
+ · PV Loops · Vasodilation · 
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-06-30-0003@mo-usmle
+DTSTART;TZID=America/New_York:20260630T070000
+DTEND;TZID=America/New_York:20260630T130000
+SUMMARY:📚 Step1 · Cardio · 6h
+DESCRIPTION:📺 Bootcamp: Ch 9-12: Cardiac Cycle · RAAS · Exercise & Con
+ duction Physiology\n📖 First Aid: FA Cardio pp 317-323 (EKG\, conduction
+ )\n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 253 
+ (Starling Forces)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Cardio — Ch 9-12: Cardiac Cycle · RAAS ·
+  Exercise & Conduction Physio
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-07-01-0004@mo-usmle
+DTSTART;TZID=America/New_York:20260701T070000
+DTEND;TZID=America/New_York:20260701T130000
+SUMMARY:📚 Step1 · Cardio · 6h
+DESCRIPTION:📺 Bootcamp: Ch 13-16: Antiarrhythmics · Atrial & Ventricula
+ r Arrhythmias · Conduction Block\n📖 First Aid: FA Cardio pp 324-330 (a
+ rrhythmias\, drugs)\n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n
+ 🎧 Divine: Ep 154 (Cardio 2)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Cardio — Ch 13-16: Antiarrhythmics · Atri
+ al & Ventricular Arrhythmias
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-07-02-0005@mo-usmle
+DTSTART;TZID=America/New_York:20260702T070000
+DTEND;TZID=America/New_York:20260702T130000
+SUMMARY:📚 Step1 · Cardio · 6h
+DESCRIPTION:📺 Bootcamp: Ch 17-18: Heart Failure · Cardiomyopathy\n📖 
+ First Aid: FA Cardio pp 331-335\n🫀 Pathoma: Pathoma Ch 8: HF\, cardiomy
+ opathy\n🎨 Sketchy: Path: 2.1 Cardiac Hypertrophy & Heart Failure · 2.2
+  Dilated Cardiomyopathy · 2.3 Hypertrophic Cardiomyopathy · 2.4 Restrict
+ ive Cardiomyopathy\n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n
+ 🎧 Divine: Ep 264 (Heart Failure)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Cardio — Ch 17-18: Heart Failure · Cardio
+ myopathy
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-07-03-0006@mo-usmle
 DTSTART;TZID=America/New_York:20260703T070000
 DTEND;TZID=America/New_York:20260703T130000
-SUMMARY:📚 Step1 · Renal · 6h
-DESCRIPTION:📺 Bootcamp: Ch 1-2: Anatomy & Embryology\, Fluid & Filtration\n
- 📖 First Aid: FA Renal pp 580-590 (anatomy\, GFR\, clearance)\n❓ UWorld: 20
-  questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 52 (Renal 1)
+SUMMARY:📚 Step1 · Cardio · 6h
+DESCRIPTION:📺 Bootcamp: Ch 19-20: Aortic Disease · Valvular Disease\n
+ 📖 First Aid: FA Cardio pp 336-342\n🫀 Pathoma: Pathoma Ch 8 cont: val
+ vular\n🎨 Sketchy: Path: 3.1 Endocarditis · 3.2 Rheumatic Heart Disease
+  · 4.2 Valvular Heart Disease (Aortic Stenosis · AR · Mitral Stenosis 
+ · MR · MVP) · 4.3 Aortic Aneurysm & Dissection\n❓ UWorld: 20 question
+ s\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 244 (Valvular Disease)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Renal — Ch 1-2: Anatomy & Embryology\, Fluid & 
- Filtration
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Renal — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Cardio — Ch 19-20: Aortic Disease · Valvu
+ lar Disease
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-07-04-0018@mo-usmle
+UID:step1-2026-07-04-0007@mo-usmle
 DTSTART;TZID=America/New_York:20260704T070000
-DTEND;TZID=America/New_York:20260704T130000
-SUMMARY:📚 Step1 · Renal · 6h
-DESCRIPTION:📺 Bootcamp: Ch 3-4: Nephron Transporters & RAAS · Ch 5: Electro
- lytes\n📖 First Aid: FA Renal pp 591-600 (tubular function\, electrolytes)\
- n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 53 (Renal 2)
- 
+DTEND;TZID=America/New_York:20260704T100000
+SUMMARY:😴 Step1 · REST · 3h
+DESCRIPTION:📺 Bootcamp: Anki — Cardio physiology cards. Review EKG dia
+ grams in FA.
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Renal — Ch 3-4: Nephron Transporters & RAAS · C
- h 5: Electrolytes
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Renal — log your UWorld Qs and Anki for today.
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-07-05-0019@mo-usmle
+UID:step1-2026-07-05-0008@mo-usmle
 DTSTART;TZID=America/New_York:20260705T070000
 DTEND;TZID=America/New_York:20260705T140000
-SUMMARY:📚 Step1 · Renal · 7h
-DESCRIPTION:📺 Bootcamp: Ch 6: Acid-Base Physiology · Ch 7-8: Path Diagnosti
- cs & Nephrotic Syndromes\n📖 First Aid: FA Renal pp 601-608 (acid-base\, ne
- phrotic)\n🔬 Pathoma: Pathoma Ch 12: Renal\n🧪 Sketchy: Path: 1.1 Renal Func
- tion Tests & AKI · 2.1 Nephrotic Syndrome\n❓ UWorld: 20 questions\n🃏 Anki:
-  35 new cards\n🎧 Divine: Ep 470 (Acid-Base)
+SUMMARY:📚 Step1 · Cardio · 7h
+DESCRIPTION:📺 Bootcamp: Ch 21-22: Acyanotic & Cyanotic Congenital Heart 
+ Defects\n📖 First Aid: FA Cardio pp 343-347 (congenital)\n🫀 Pathoma: 
+ Pathoma Ch 8: congenital\n🎨 Sketchy: Path: 5.1 Acyanotic CHD (ASD · VS
+ D · PDA · Coarctation) · 5.2 Cyanotic CHD (Tetralogy of Fallot · TGA 
+ · Truncus Arteriosus)\n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\
+ n🎧 Divine: Ep 445 (MI Complications)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Renal — Ch 6: Acid-Base Physiology · Ch 7-8: Pa
- th Diagnostics & Nephrotic Syndromes
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Renal — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Cardio — Ch 21-22: Acyanotic & Cyanotic Co
+ ngenital Heart Defects
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-07-06-0020@mo-usmle
+UID:step1-2026-07-06-0009@mo-usmle
 DTSTART;TZID=America/New_York:20260706T070000
 DTEND;TZID=America/New_York:20260706T140000
-SUMMARY:📚 Step1 · Renal · 7h
-DESCRIPTION:📺 Bootcamp: Ch 9: Nephritic Syndromes · Ch 10: Nephrolithiasis 
- · Ch 11: Urinary Incontinence · Ch 12: AKI\n📖 First Aid: FA Renal pp 609-e
- nd (nephritic\, stones\, AKI\, CKD)\n🧪 Sketchy: Path: 3.1 Nephritic Syndro
- me\n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 169 (Nephro
- tic/Nephritic)
+SUMMARY:📚 Step1 · Cardio · 7h
+DESCRIPTION:📺 Bootcamp: Ch 23-24: Stable Angina & Atherosclerosis · MI\
+ n📖 First Aid: FA Cardio pp 348-353 (atherosclerosis\, MI)\n🫀 Pathoma
+ : Pathoma Ch 7: Vascular\n🎨 Sketchy: Path: 1.1 Myocardial Response to I
+ schemia · 1.2 Atherosclerosis & Coronary Artery Disease · 1.3 MI Complic
+ ations (Arrhythmia · Free Wall Rupture · Papillary Muscle Rupture · VSD
+  · Dressler Syndrome)\n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\
+ n🎧 Divine: Ep 477 (ACS)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Renal — Ch 9: Nephritic Syndromes · Ch 10: Neph
- rolithiasis · Ch 11: Urinary Incontinence
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Renal — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Cardio — Ch 23-24: Stable Angina & Atheros
+ clerosis · MI
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-07-07-0021@mo-usmle
+UID:step1-2026-07-07-0010@mo-usmle
 DTSTART;TZID=America/New_York:20260707T070000
-DTEND;TZID=America/New_York:20260707T100000
-SUMMARY:😴 Step1 · REST · 3h
-DESCRIPTION:📺 Bootcamp: Anki — Pulm + Renal consolidation.
+DTEND;TZID=America/New_York:20260707T140000
+SUMMARY:📚 Step1 · Cardio · 7h
+DESCRIPTION:📺 Bootcamp: Ch 25-28: Peripheral Arterial/Venous Disease · 
+ HTN · Pericardial Disease · Shock\n📖 First Aid: FA Cardio pp 354-end 
+ (HTN\, pericardium\, shock)\n🎨 Sketchy: Path: 3.3 Myocarditis · 3.4 Pe
+ ricardial Disease (Acute Pericarditis · Cardiac Tamponade · Constrictive
+  Pericarditis) · 4.1 Hypertensive Heart Disease · 4.4 Peripheral Arteria
+ l & Venous Disease\n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n
+ 🎧 Divine: Ep 233 (Shock)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
-TRIGGER:PT0S
+TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Rest day — Anki reviews only. Recharge.
+DESCRIPTION:📚 Starting now: Cardio — Ch 25-28: Peripheral Arterial/Ven
+ ous Disease · HTN · Pericar
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-07-08-0022@mo-usmle
+UID:step1-2026-07-08-0011@mo-usmle
 DTSTART;TZID=America/New_York:20260708T070000
-DTEND;TZID=America/New_York:20260708T140000
-SUMMARY:📚 Step1 · Renal · 7h
-DESCRIPTION:📺 Bootcamp: Ch 13: Inflammatory Conditions & Malignancy · Ch 14
- : Cystic Kidney Disease · Ch 15: Pharm\n📖 First Aid: FA Renal pp 616-end (
- CKD\, pharm\, PKD)\n🔬 Pathoma: Pathoma Ch 12 cont\n🧪 Sketchy: Path: 5.1 Re
- nal Cell Carcinoma & Nephroblastoma · 6.5 Renal Tubular Acidosis\n❓ UWorld
- : 20 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 287 (Urinalysis)
+DTEND;TZID=America/New_York:20260708T130000
+SUMMARY:📚 Step1 · Pulm · 6h
+DESCRIPTION:📺 Bootcamp: Ch 1-3: Intro · Air Physiology · Blood Physiol
+ ogy\n📖 First Aid: FA Pulm pp 656-668 (anatomy\, lung volumes\, gas exch
+ ange)\n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 
+ 66 (Pulm Pharm)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Renal — Ch 13: Inflammatory Conditions & Malign
- ancy · Ch 14: Cystic Kidney Disease · Ch 
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Renal — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Pulm — Ch 1-3: Intro · Air Physiology · 
+ Blood Physiology
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-07-09-0023@mo-usmle
+UID:step1-2026-07-09-0012@mo-usmle
 DTSTART;TZID=America/New_York:20260709T070000
-DTEND;TZID=America/New_York:20260709T130000
-SUMMARY:📚 Step1 · Neuro · 6h
-DESCRIPTION:📺 Bootcamp: Ch 1-3: Embryology\, Cellular Function & Ascending 
- Tracts\n📖 First Aid: FA Neuro pp 524-538 (spinal anatomy\, tracts)\n❓ UWor
- ld: 20 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 87 (Neuro 1)
+DTEND;TZID=America/New_York:20260709T140000
+SUMMARY:📚 Step1 · Pulm · 7h
+DESCRIPTION:📺 Bootcamp: Ch 4-5: Lung Path Fundamentals · Obstructive Lu
+ ng Disease\n📖 First Aid: FA Pulm pp 669-678 (COPD\, asthma\, bronchiect
+ asis)\n🫀 Pathoma: Pathoma Ch 9: Pulm obstructive\n🎨 Sketchy: Path: 1
+ .1 Chronic Obstructive Pulmonary Disease · 1.2 Asthma · 1.3 Bronchiectas
+ is\n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 392
+  (Pulm Path 1)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Neuro — Ch 1-3: Embryology\, Cellular Function 
- & Ascending Tracts
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Neuro — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Pulm — Ch 4-5: Lung Path Fundamentals · O
+ bstructive Lung Disease
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-07-10-0024@mo-usmle
+UID:step1-2026-07-10-0013@mo-usmle
 DTSTART;TZID=America/New_York:20260710T070000
-DTEND;TZID=America/New_York:20260710T130000
-SUMMARY:📚 Step1 · Neuro · 6h
-DESCRIPTION:📺 Bootcamp: Ch 4-6: Descending Tracts\, Brainstem Anatomy\, Cer
- ebral Cortex\n📖 First Aid: FA Neuro pp 539-552 (brainstem\, lobes)\n❓ UWor
- ld: 20 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 89 (Neuro 2)
+DTEND;TZID=America/New_York:20260710T140000
+SUMMARY:📚 Step1 · Pulm · 7h
+DESCRIPTION:📺 Bootcamp: Ch 6-8: Restrictive Lung Disease & Lung Cancer 
+ · PE · ARDS · Pulm HTN\n📖 First Aid: FA Pulm pp 679-end (restrictive
+ \, cancer\, ARDS)\n🫀 Pathoma: Pathoma Ch 9 cont\n🎨 Sketchy: Path: 2.
+ 1 Pneumonia (Bacterial · Atypical · Viral) · 2.2 Idiopathic Pulmonary F
+ ibrosis · 2.3 Sarcoidosis & Pneumoconioses · Vascular 3.3 DVT & Pulmonar
+ y Embolism · 3.4 Pulmonary Hypertension · 3.5 ARDS · Oncology 4.1 Lung 
+ Cancer (Adenocarcinoma · SCC · SCLC · Large Cell)\n❓ UWorld: 20 quest
+ ions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 286 (ARDS)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Neuro — Ch 4-6: Descending Tracts\, Brainstem A
- natomy\, Cerebral Cortex
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Neuro — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Pulm — Ch 6-8: Restrictive Lung Disease & 
+ Lung Cancer · PE · ARDS ·
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-07-11-0025@mo-usmle
+UID:step1-2026-07-11-0014@mo-usmle
 DTSTART;TZID=America/New_York:20260711T070000
-DTEND;TZID=America/New_York:20260711T130000
-SUMMARY:📚 Step1 · Neuro · 6h
-DESCRIPTION:📺 Bootcamp: Ch 7-9: Radiculopathy\, Spinal Cord Syndromes\, Inv
- asive Spinal Cord Disease\n📖 First Aid: FA Neuro pp 553-562 (spinal cord l
- esions)\n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 371 (S
- pinal Cord)
+DTEND;TZID=America/New_York:20260711T100000
+SUMMARY:😴 Step1 · REST · 3h
+DESCRIPTION:📺 Bootcamp: Anki — Cardio path + Pulm. Review cardiac cycl
+ e diagrams.
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Neuro — Ch 7-9: Radiculopathy\, Spinal Cord Syn
- dromes\, Invasive Spinal Cord Disease
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Neuro — log your UWorld Qs and Anki for today.
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-07-12-0026@mo-usmle
+UID:step1-2026-07-12-0015@mo-usmle
 DTSTART;TZID=America/New_York:20260712T070000
 DTEND;TZID=America/New_York:20260712T130000
-SUMMARY:📚 Step1 · Neuro · 6h
-DESCRIPTION:📺 Bootcamp: Ch 10-11: Demyelinating Disease & Conduction · Ch 1
- 2-13: NMJ\, Cranial Nerves I-VI\n📖 First Aid: FA Neuro pp 563-575 (MS\, NM
- J\, CN I-VI)\n🔬 Pathoma: Pathoma Ch 17: CNS (intro)\n❓ UWorld: 20 question
- s\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 435 (NMJ Disorders)
+SUMMARY:📚 Step1 · Renal · 6h
+DESCRIPTION:📺 Bootcamp: Ch 1-2: Anatomy & Embryology · Fluid & Filtrati
+ on\n📖 First Aid: FA Renal pp 580-590 (anatomy\, GFR\, clearance)\n❓ U
+ World: 20 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 52 (Renal 1)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Neuro — Ch 10-11: Demyelinating Disease & Condu
- ction · Ch 12-13: NMJ\, Cranial Nerves I-V
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Neuro — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Renal — Ch 1-2: Anatomy & Embryology · Fl
+ uid & Filtration
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-07-13-0027@mo-usmle
+UID:step1-2026-07-13-0016@mo-usmle
 DTSTART;TZID=America/New_York:20260713T070000
 DTEND;TZID=America/New_York:20260713T130000
-SUMMARY:📚 Step1 · Neuro · 6h
-DESCRIPTION:📺 Bootcamp: Ch 14-15: Cranial Nerves VII-XII & Vision · Ch 16-1
- 7: Auditory Sensation & Vertigo\n📖 First Aid: FA Neuro pp 576-588 (CN VII-
- XII\, eye\, ear)\n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n🎧 Divine: 
- Ep 361 (Eye 1)
+SUMMARY:📚 Step1 · Renal · 6h
+DESCRIPTION:📺 Bootcamp: Ch 3-5: Nephron Transporters · RAAS · Electrol
+ ytes\n📖 First Aid: FA Renal pp 591-600 (tubular function\, electrolytes
+ )\n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 53 (
+ Renal 2)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Neuro — Ch 14-15: Cranial Nerves VII-XII & Visi
- on · Ch 16-17: Auditory Sensation & Verti
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Neuro — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Renal — Ch 3-5: Nephron Transporters · RA
+ AS · Electrolytes
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-07-14-0028@mo-usmle
+UID:step1-2026-07-14-0017@mo-usmle
 DTSTART;TZID=America/New_York:20260714T070000
-DTEND;TZID=America/New_York:20260714T100000
-SUMMARY:😴 Step1 · REST · 3h
-DESCRIPTION:📺 Bootcamp: Anki — Neuro intro cards. Review spinal cord anatom
- y diagrams.
+DTEND;TZID=America/New_York:20260714T140000
+SUMMARY:📚 Step1 · Renal · 7h
+DESCRIPTION:📺 Bootcamp: Ch 6-8: Acid-Base Physiology · Path Diagnostics
+  · Nephrotic Syndromes\n📖 First Aid: FA Renal pp 601-608 (acid-base\, 
+ nephrotic)\n🫀 Pathoma: Pathoma Ch 12: Renal\n🎨 Sketchy: Path: 1.1 Re
+ nal Function Tests & AKI · 2.1 Nephrotic Syndrome\n❓ UWorld: 20 questio
+ ns\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 470 (Acid-Base)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
-TRIGGER:PT0S
+TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Rest day — Anki reviews only. Recharge.
+DESCRIPTION:📚 Starting now: Renal — Ch 6-8: Acid-Base Physiology · Pa
+ th Diagnostics · Nephrotic 
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-07-15-0029@mo-usmle
+UID:step1-2026-07-15-0018@mo-usmle
 DTSTART;TZID=America/New_York:20260715T070000
-DTEND;TZID=America/New_York:20260715T150000
-SUMMARY:📚 Step1 · Neuro · 8h
-DESCRIPTION:📺 Bootcamp: Ch 18-19: Pediatric & Adult Brain Tumors\n📖 First A
- id: FA Neuro pp 589-595 (CNS tumors)\n🔬 Pathoma: Pathoma Ch 17: CNS tumors
- \n🧪 Sketchy: Path: 2.1 Intracranial Hypertension · 2.2 Hydrocephalus\n❓ UW
- orld: 50 questions\n🃏 Anki: 65 new cards\n🎧 Divine: Ep 516 (Brain Tumors)
- 
+DTEND;TZID=America/New_York:20260715T140000
+SUMMARY:📚 Step1 · Renal · 7h
+DESCRIPTION:📺 Bootcamp: Ch 9-12: Nephritic Syndromes · Nephrolithiasis 
+ · Urinary Incontinence · AKI\n📖 First Aid: FA Renal pp 609-616 (nephr
+ itic\, stones\, AKI\, CKD)\n🎨 Sketchy: Path: 3.1 Nephritic Syndrome · 
+ 3.2 Nephrolithiasis (Calcium Oxalate · Uric Acid · Struvite · Cystine) 
+ · 3.3 UTI & Pyelonephritis · 3.4 CKD\n❓ UWorld: 20 questions\n🃏 Ank
+ i: 35 new cards\n🎧 Divine: Ep 169 (Nephrotic/Nephritic)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Neuro — Ch 18-19: Pediatric & Adult Brain Tumor
- s
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Neuro — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Renal — Ch 9-12: Nephritic Syndromes · Ne
+ phrolithiasis · Urinary Inc
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-07-16-0030@mo-usmle
+UID:step1-2026-07-16-0019@mo-usmle
 DTSTART;TZID=America/New_York:20260716T070000
-DTEND;TZID=America/New_York:20260716T150000
-SUMMARY:📚 Step1 · Neuro · 8h
-DESCRIPTION:📺 Bootcamp: Ch 20-21: Ischemic CVAs\, Aneurysms & ICH\n📖 First 
- Aid: FA Neuro pp 596-602 (stroke syndromes)\n🔬 Pathoma: Pathoma Ch 17: CVA
- \n❓ UWorld: 50 questions\n🃏 Anki: 65 new cards\n🎧 Divine: Ep 315 (Circle o
- f Willis)
+DTEND;TZID=America/New_York:20260716T140000
+SUMMARY:📚 Step1 · Renal · 7h
+DESCRIPTION:📺 Bootcamp: Ch 13-15: Inflammatory Conditions & Malignancy 
+ · Cystic Kidney Disease · Pharm\n📖 First Aid: FA Renal pp 616-end (CK
+ D\, pharm\, PKD)\n🫀 Pathoma: Pathoma Ch 12 cont\n🎨 Sketchy: Path: 5.
+ 1 Renal Cell Carcinoma · 5.2 Nephroblastoma (Wilms Tumor) · 5.3 Bladder 
+ Cancer (Transitional Cell · SCC) · 5.4 ADPKD & ARPKD · 6.5 Renal Tubula
+ r Acidosis\n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n🎧 Divine
+ : Ep 287 (Urinalysis)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Neuro — Ch 20-21: Ischemic CVAs\, Aneurysms & I
- CH
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Neuro — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Renal — Ch 13-15: Inflammatory Conditions 
+ & Malignancy · Cystic Kidn
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-07-17-0031@mo-usmle
+UID:step1-2026-07-17-0020@mo-usmle
 DTSTART;TZID=America/New_York:20260717T070000
-DTEND;TZID=America/New_York:20260717T150000
-SUMMARY:📚 Step1 · Neuro · 8h
-DESCRIPTION:📺 Bootcamp: Ch 22: Cerebellum & Ventricles · Ch 23-24: Dienceph
- alon & Basal Ganglia\n📖 First Aid: FA Neuro pp 603-615 (cerebellum\, BG\, 
- hydrocephalus)\n🧪 Sketchy: Path: 3.3 Guillain-Barré & Charcot-Marie-Tooth 
- · 4.2 Sturge-Weber & Tuberous Sclerosis · 4.3 Neurofibromatosis\n❓ UWorld:
-  50 questions\n🃏 Anki: 65 new cards\n🎧 Divine: Ep 133 (Neuro 3)
+DTEND;TZID=America/New_York:20260717T130000
+SUMMARY:📚 Step1 · Neuro · 6h
+DESCRIPTION:📺 Bootcamp: Ch 1-3: Embryology · Cellular Function · Ascen
+ ding Tracts\n📖 First Aid: FA Neuro pp 524-538 (spinal anatomy\, tracts)
+ \n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 87 (N
+ euro 1)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Neuro — Ch 22: Cerebellum & Ventricles · Ch 23-
- 24: Diencephalon & Basal Ganglia
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Neuro — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Neuro — Ch 1-3: Embryology · Cellular Fun
+ ction · Ascending Tracts
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-07-18-0032@mo-usmle
+UID:step1-2026-07-18-0021@mo-usmle
 DTSTART;TZID=America/New_York:20260718T070000
-DTEND;TZID=America/New_York:20260718T150000
-SUMMARY:📚 Step1 · Neuro · 8h
-DESCRIPTION:📺 Bootcamp: Ch 25-26: Neurotransmitters in Psych Disease & Deme
- ntia\n📖 First Aid: FA Neuro pp 616-622 (NT\, dementia\, Alzheimer's\, Park
- inson's)\n🔬 Pathoma: Pathoma Ch 17: neurodegen\n🧪 Sketchy: Path: 5.1 Alzhe
- imer Disease & Dementia\n❓ UWorld: 50 questions\n🃏 Anki: 65 new cards\n🎧 D
- ivine: Ep 374 (Spinal Cord Lesions)
+DTEND;TZID=America/New_York:20260718T100000
+SUMMARY:😴 Step1 · REST · 3h
+DESCRIPTION:📺 Bootcamp: Anki — Renal consolidation. Review tubular tra
+ nsport diagram.
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Neuro — Ch 25-26: Neurotransmitters in Psych Di
- sease & Dementia
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Neuro — log your UWorld Qs and Anki for today.
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-07-19-0033@mo-usmle
+UID:step1-2026-07-19-0022@mo-usmle
 DTSTART;TZID=America/New_York:20260719T070000
-DTEND;TZID=America/New_York:20260719T150000
-SUMMARY:📚 Step1 · Neuro · 8h
-DESCRIPTION:📺 Bootcamp: Ch 27-28: Headache & Seizures · Ch 29: Traumatic Br
- ain Injuries\n📖 First Aid: FA Neuro pp 623-end (seizures\, TBI)\n❓ UWorld:
-  50 questions\n🃏 Anki: 65 new cards\n🎧 Divine: Ep 372 (Headache)
+DTEND;TZID=America/New_York:20260719T130000
+SUMMARY:📚 Step1 · Neuro · 6h
+DESCRIPTION:📺 Bootcamp: Ch 4-6: Descending Tracts · Brainstem Anatomy 
+ · Cerebral Cortex\n📖 First Aid: FA Neuro pp 539-552 (brainstem\, lobes
+ )\n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 89 (
+ Neuro 2)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Neuro — Ch 27-28: Headache & Seizures · Ch 29: 
- Traumatic Brain Injuries
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Neuro — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Neuro — Ch 4-6: Descending Tracts · Brain
+ stem Anatomy · Cerebral Cor
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-07-20-0034@mo-usmle
+UID:step1-2026-07-20-0023@mo-usmle
 DTSTART;TZID=America/New_York:20260720T070000
-DTEND;TZID=America/New_York:20260720T150000
-SUMMARY:📚 Step1 · Neuro · 8h
-DESCRIPTION:📺 Bootcamp: Neuro UWorld dedicated block — 60 questions timed\,
-  full review. Annotate FA on every error.\n📖 First Aid: FA Neuro — error r
- eview\n❓ UWorld: 60 questions\n🃏 Anki: 65 new cards\n🎧 Divine: Ep 311 (CSF
- /Brain Imaging)
+DTEND;TZID=America/New_York:20260720T130000
+SUMMARY:📚 Step1 · Neuro · 6h
+DESCRIPTION:📺 Bootcamp: Ch 7-9: Radiculopathy · Spinal Cord Syndromes 
+ · Invasive Spinal Cord Disease\n📖 First Aid: FA Neuro pp 553-562 (spin
+ al cord lesions)\n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n🎧 
+ Divine: Ep 371 (Spinal Cord)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Neuro — Neuro UWorld dedicated block — 60 quest
- ions timed\, full review. Annotate FA on e
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Neuro — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Neuro — Ch 7-9: Radiculopathy · Spinal Co
+ rd Syndromes · Invasive Spi
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-07-21-0035@mo-usmle
+UID:step1-2026-07-21-0024@mo-usmle
 DTSTART;TZID=America/New_York:20260721T070000
-DTEND;TZID=America/New_York:20260721T110000
-SUMMARY:😴 Step1 · REST · 4h
-DESCRIPTION:📺 Bootcamp: Anki — Neuro full consolidation. Review cranial ner
- ve table in FA.
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:PT0S
-ACTION:DISPLAY
-DESCRIPTION:Rest day — Anki reviews only. Recharge.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-07-22-0036@mo-usmle
-DTSTART;TZID=America/New_York:20260722T070000
-DTEND;TZID=America/New_York:20260722T150000
-SUMMARY:📚 Step1 · Repro · 8h
-DESCRIPTION:📺 Bootcamp: Ch 1: Fetal Development · Ch 2: Pregnancy\n📖 First 
- Aid: FA Repro pp 612-625 (embryo\, pregnancy)\n❓ UWorld: 50 questions\n🃏 A
- nki: 65 new cards\n🎧 Divine: Ep 142 (Repro 1)
+DTEND;TZID=America/New_York:20260721T140000
+SUMMARY:📚 Step1 · Neuro · 7h
+DESCRIPTION:📺 Bootcamp: Ch 10-13: Demyelinating Disease · NMJ · Crania
+ l Nerves I-VI\n📖 First Aid: FA Neuro pp 563-575 (MS\, NMJ\, CN I-VI)\n
+ 🫀 Pathoma: Pathoma Ch 17: CNS (intro)\n🎨 Sketchy: Path: 1.3 Multiple
+  Sclerosis · 1.4 Myasthenia Gravis · 1.5 Lambert-Eaton Myasthenic Syndro
+ me\n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 435
+  (NMJ Disorders)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Repro — Ch 1: Fetal Development · Ch 2: Pregnan
- cy
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Repro — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Neuro — Ch 10-13: Demyelinating Disease ·
+  NMJ · Cranial Nerves I-VI
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-07-23-0037@mo-usmle
+UID:step1-2026-07-22-0025@mo-usmle
+DTSTART;TZID=America/New_York:20260722T070000
+DTEND;TZID=America/New_York:20260722T130000
+SUMMARY:📚 Step1 · Neuro · 6h
+DESCRIPTION:📺 Bootcamp: Ch 14-17: Cranial Nerves VII-XII · Vision · Au
+ ditory Sensation · Vertigo\n📖 First Aid: FA Neuro pp 576-588 (CN VII-X
+ II\, eye\, ear)\n❓ UWorld: 20 questions\n🃏 Anki: 35 new cards\n🎧 D
+ ivine: Ep 361 (Eye 1)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Neuro — Ch 14-17: Cranial Nerves VII-XII 
+ · Vision · Auditory Sensati
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-07-23-0026@mo-usmle
 DTSTART;TZID=America/New_York:20260723T070000
-DTEND;TZID=America/New_York:20260723T150000
-SUMMARY:📚 Step1 · Repro · 8h
-DESCRIPTION:📺 Bootcamp: Ch 3: Pathology of Pregnancy\n📖 First Aid: FA Repro
-  pp 626-635 (placenta\, eclampsia\, ectopic)\n🔬 Pathoma: Pathoma Ch 13-14:
-  Repro\n❓ UWorld: 50 questions\n🃏 Anki: 65 new cards\n🎧 Divine: Ep 338 (Fe
- tal HR)
+DTEND;TZID=America/New_York:20260723T140000
+SUMMARY:📚 Step1 · Neuro · 7h
+DESCRIPTION:📺 Bootcamp: Ch 18-19: Pediatric & Adult Brain Tumors\n📖 F
+ irst Aid: FA Neuro pp 589-595 (CNS tumors)\n🫀 Pathoma: Pathoma Ch 17: C
+ NS tumors\n🎨 Sketchy: Path: 2.1 Intracranial Hypertension · 2.2 Hydroc
+ ephalus · Oncology 3.1 Primary Brain Tumors (GBM · Astrocytoma · Mening
+ ioma · Medulloblastoma · Acoustic Neuroma · Craniopharyngioma · Oligod
+ endroglioma)\n❓ UWorld: 30 questions\n🃏 Anki: 35 new cards\n🎧 Divi
+ ne: Ep 516 (Brain Tumors)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Neuro — Ch 18-19: Pediatric & Adult Brain 
+ Tumors
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-07-24-0027@mo-usmle
+DTSTART;TZID=America/New_York:20260724T070000
+DTEND;TZID=America/New_York:20260724T140000
+SUMMARY:📚 Step1 · Neuro · 7h
+DESCRIPTION:📺 Bootcamp: Ch 20-21: Ischemic CVAs · Aneurysms & ICH\n📖
+  First Aid: FA Neuro pp 596-602 (stroke syndromes)\n🫀 Pathoma: Pathoma 
+ Ch 17: CVA\n🎨 Sketchy: Path: 4.1 Ischemic Stroke & Lacunar Infarcts · 
+ 4.2 Hemorrhagic Stroke & Subarachnoid Hemorrhage\n❓ UWorld: 30 questions
+ \n🃏 Anki: 35 new cards\n🎧 Divine: Ep 315 (Circle of Willis)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Neuro — Ch 20-21: Ischemic CVAs · Aneurys
+ ms & ICH
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-07-25-0028@mo-usmle
+DTSTART;TZID=America/New_York:20260725T070000
+DTEND;TZID=America/New_York:20260725T100000
+SUMMARY:😴 Step1 · REST · 3h
+DESCRIPTION:📺 Bootcamp: Anki — Neuro anatomy. Review spinal cord tract
+ s in FA.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-07-26-0029@mo-usmle
+DTSTART;TZID=America/New_York:20260726T070000
+DTEND;TZID=America/New_York:20260726T140000
+SUMMARY:📚 Step1 · Neuro · 7h
+DESCRIPTION:📺 Bootcamp: Ch 22-24: Cerebellum & Ventricles · Diencephalo
+ n · Basal Ganglia\n📖 First Aid: FA Neuro pp 603-615 (cerebellum\, BG\,
+  hydrocephalus)\n🎨 Sketchy: Path: 3.3 Guillain-Barré & Charcot-Marie-T
+ ooth · 4.2 Sturge-Weber & Tuberous Sclerosis · 4.3 Neurofibromatosis\n
+ ❓ UWorld: 30 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 133 (Ne
+ uro 3)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Neuro — Ch 22-24: Cerebellum & Ventricles 
+ · Diencephalon · Basal Gan
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-07-27-0030@mo-usmle
+DTSTART;TZID=America/New_York:20260727T070000
+DTEND;TZID=America/New_York:20260727T140000
+SUMMARY:📚 Step1 · Neuro · 7h
+DESCRIPTION:📺 Bootcamp: Ch 25-26: Neurotransmitters in Psych Disease & D
+ ementia\n📖 First Aid: FA Neuro pp 616-622 (NT\, dementia\, Alzheimer's\
+ , Parkinson's)\n🫀 Pathoma: Pathoma Ch 17: neurodegen\n🎨 Sketchy: Pat
+ h: 5.1 Alzheimer Disease & Dementia · 5.2 Parkinson Disease · 5.3 Huntin
+ gton Disease · 5.4 ALS & Friedreich Ataxia\n❓ UWorld: 30 questions\n
+ 🃏 Anki: 35 new cards\n🎧 Divine: Ep 374 (Spinal Cord Lesions)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Neuro — Ch 25-26: Neurotransmitters in Psy
+ ch Disease & Dementia
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-07-28-0031@mo-usmle
+DTSTART;TZID=America/New_York:20260728T070000
+DTEND;TZID=America/New_York:20260728T150000
+SUMMARY:📚 Step1 · Neuro · 8h
+DESCRIPTION:📺 Bootcamp: Ch 27-29: Headache & Seizures · Traumatic Brain
+  Injuries · Neuro UWorld 60 Qs timed\n📖 First Aid: FA Neuro pp 623-end
+  (seizures\, TBI) — error review\n🎨 Sketchy: Pharm: 2.1 AEDs — Phen
+ ytoin & Valproate · 2.2 Carbamazepine\, Lamotrigine & Levetiracetam · 2.
+ 3 Ethosuximide\n❓ UWorld: 60 questions\n🃏 Anki: 35 new cards\n🎧 Di
+ vine: Ep 372 (Headache)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Neuro — Ch 27-29: Headache & Seizures · T
+ raumatic Brain Injuries · N
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-07-29-0032@mo-usmle
+DTSTART;TZID=America/New_York:20260729T070000
+DTEND;TZID=America/New_York:20260729T140000
+SUMMARY:📚 Step1 · Repro · 7h
+DESCRIPTION:📺 Bootcamp: Ch 1-2: Fetal Development · Pregnancy\n📖 Fir
+ st Aid: FA Repro pp 612-625 (embryo\, pregnancy)\n🎨 Sketchy: Path: 1.1 
+ Obstetric Complications (PROM\, Oligohydramnios\, Polyhydramnios) · 1.2 E
+ ctopic Pregnancy & Molar Pregnancy\n❓ UWorld: 30 questions\n🃏 Anki: 3
+ 5 new cards\n🎧 Divine: Ep 142 (Repro 1)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Repro — Ch 1-2: Fetal Development · Pregn
+ ancy
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-07-30-0033@mo-usmle
+DTSTART;TZID=America/New_York:20260730T070000
+DTEND;TZID=America/New_York:20260730T140000
+SUMMARY:📚 Step1 · Repro · 7h
+DESCRIPTION:📺 Bootcamp: Ch 3: Pathology of Pregnancy\n📖 First Aid: FA
+  Repro pp 626-635 (placenta\, eclampsia\, ectopic)\n🫀 Pathoma: Pathoma 
+ Ch 13-14: Repro\n🎨 Sketchy: Path: 1.3 Preeclampsia & Eclampsia · 1.4 P
+ lacenta Previa & Abruptio Placentae · 1.5 Gestational Diabetes\n❓ UWorl
+ d: 30 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 338 (Fetal HR)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
@@ -811,21 +603,20 @@ TRIGGER:-PT15M
 ACTION:DISPLAY
 DESCRIPTION:📚 Starting now: Repro — Ch 3: Pathology of Pregnancy
 END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Repro — log your UWorld Qs and Anki for today.
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-07-24-0038@mo-usmle
-DTSTART;TZID=America/New_York:20260724T070000
-DTEND;TZID=America/New_York:20260724T150000
+UID:step1-2026-07-31-0034@mo-usmle
+DTSTART;TZID=America/New_York:20260731T070000
+DTEND;TZID=America/New_York:20260731T150000
 SUMMARY:📚 Step1 · Repro · 8h
-DESCRIPTION:📺 Bootcamp: Ch 4: Female Pathology\n📖 First Aid: FA Repro pp 63
- 6-645 (ovary\, uterus\, cervix\, breast)\n🔬 Pathoma: Pathoma Ch 14-15 cont
- \n🧪 Sketchy: Path: 2.1 Reproductive Hormones & PCOS\n❓ UWorld: 50 question
- s\n🃏 Anki: 65 new cards\n🎧 Divine: Ep 157 (Repro 2)
+DESCRIPTION:📺 Bootcamp: Ch 4: Female Pathology\n📖 First Aid: FA Repro
+  pp 636-645 (ovary\, uterus\, cervix\, breast)\n🫀 Pathoma: Pathoma Ch 1
+ 4-15 cont\n🎨 Sketchy: Path: 2.1 Reproductive Hormones & PCOS · 2.2 Ova
+ rian Tumors (Serous/Mucinous Cystadenoma · Dermoid · Granulosa Cell · K
+ rukenberg) · 2.3 Endometrial Carcinoma & Uterine Fibroids · 2.4 Cervical
+  Dysplasia & Cervical Cancer (HPV 16/18) · 2.5 Breast Cancer (DCIS · IDC
+  · ILC · Paget Disease of Nipple · Inflammatory)\n❓ UWorld: 30 questi
+ ons\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 157 (Repro 2)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
@@ -833,173 +624,237 @@ TRIGGER:-PT15M
 ACTION:DISPLAY
 DESCRIPTION:📚 Starting now: Repro — Ch 4: Female Pathology
 END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Repro — log your UWorld Qs and Anki for today.
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-07-25-0039@mo-usmle
-DTSTART;TZID=America/New_York:20260725T070000
-DTEND;TZID=America/New_York:20260725T150000
-SUMMARY:📚 Step1 · Repro · 8h
-DESCRIPTION:📺 Bootcamp: Ch 5: Male Pathology · Ch 6: Reproductive Pharmacol
- ogy\n📖 First Aid: FA Repro pp 646-end (male repro\, contraceptives)\n❓ UWo
- rld: 50 questions\n🃏 Anki: 65 new cards\n🎧 Divine: Ep 531 (Contraceptives)
- 
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Repro — Ch 5: Male Pathology · Ch 6: Reproducti
- ve Pharmacology
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Repro — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-07-26-0040@mo-usmle
-DTSTART;TZID=America/New_York:20260726T070000
-DTEND;TZID=America/New_York:20260726T150000
-SUMMARY:📚 Step1 · Immuno · 8h
-DESCRIPTION:📺 Bootcamp: Ch 1-2: Lymphoid Tissue\, Innate Immunity · Ch 3: I
- nflammatory Response\n📖 First Aid: FA Immuno pp 96-108 (innate\, complemen
- t\, inflammation)\n🔬 Pathoma: Pathoma Ch 2: Inflammation\n❓ UWorld: 50 que
- stions\n🃏 Anki: 65 new cards\n🎧 Divine: Ep 136 (Immuno 1)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Immuno — Ch 1-2: Lymphoid Tissue\, Innate Immun
- ity · Ch 3: Inflammatory Response
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Immuno — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-07-27-0041@mo-usmle
-DTSTART;TZID=America/New_York:20260727T070000
-DTEND;TZID=America/New_York:20260727T150000
-SUMMARY:📚 Step1 · Immuno · 8h
-DESCRIPTION:📺 Bootcamp: Ch 4-5: Cytokines\, T-cells · Ch 6-7: B-cells & Ant
- ibodies\n📖 First Aid: FA Immuno pp 109-115 (adaptive immunity)\n❓ UWorld: 
- 50 questions\n🃏 Anki: 65 new cards\n🎧 Divine: Ep 279 (Prostaglandins)
- 
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Immuno — Ch 4-5: Cytokines\, T-cells · Ch 6-7: 
- B-cells & Antibodies
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Immuno — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-07-28-0042@mo-usmle
-DTSTART;TZID=America/New_York:20260728T070000
-DTEND;TZID=America/New_York:20260728T110000
-SUMMARY:😴 Step1 · REST · 4h
-DESCRIPTION:📺 Bootcamp: Anki — Repro + Immuno intro. Review hormone table i
- n FA.
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:PT0S
-ACTION:DISPLAY
-DESCRIPTION:Rest day — Anki reviews only. Recharge.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-07-29-0043@mo-usmle
-DTSTART;TZID=America/New_York:20260729T070000
-DTEND;TZID=America/New_York:20260729T150000
-SUMMARY:📚 Step1 · Immuno · 8h
-DESCRIPTION:📺 Bootcamp: Ch 8: Complement · Ch 9: Vaccinations · Ch 10: Immu
- nodeficiency Syndromes\n📖 First Aid: FA Immuno pp 116-120 (complement\, im
- munodef)\n❓ UWorld: 50 questions\n🃏 Anki: 65 new cards\n🎧 Divine: Ep 173 (
- Immunodeficiency)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Immuno — Ch 8: Complement · Ch 9: Vaccinations 
- · Ch 10: Immunodeficiency Syndromes
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Immuno — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-07-30-0044@mo-usmle
-DTSTART;TZID=America/New_York:20260730T070000
-DTEND;TZID=America/New_York:20260730T150000
-SUMMARY:📚 Step1 · Immuno · 8h
-DESCRIPTION:📺 Bootcamp: Ch 11: Hypersensitivity · Ch 12: Transfusion Reacti
- ons · Ch 13: Transplant Rejection\n📖 First Aid: FA Immuno pp 121-end (HSR 
- types I-IV\, transplant)\n❓ UWorld: 50 questions\n🃏 Anki: 65 new cards\n🎧 
- Divine: Ep 323 (Immunocompromised)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Immuno — Ch 11: Hypersensitivity · Ch 12: Trans
- fusion Reactions · Ch 13: Transplant Rejec
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Immuno — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-07-31-0045@mo-usmle
-DTSTART;TZID=America/New_York:20260731T070000
-DTEND;TZID=America/New_York:20260731T150000
-SUMMARY:📚 Step1 · Pharm · 8h
-DESCRIPTION:📺 Bootcamp: Ch 1: Pharmacodynamics · Ch 2: Pharmacokinetics\n📖 
- First Aid: FA Pharm pp 230-240 (PK/PD\, dose-response\, half-life)\n❓ UWor
- ld: 50 questions\n🃏 Anki: 65 new cards\n🎧 Divine: Ep 471 (Receptors 1)
- 
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Pharm — Ch 1: Pharmacodynamics · Ch 2: Pharmaco
- kinetics
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Pharm — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-01-0046@mo-usmle
+UID:step1-2026-08-01-0035@mo-usmle
 DTSTART;TZID=America/New_York:20260801T070000
-DTEND;TZID=America/New_York:20260801T150000
-SUMMARY:📚 Step1 · Pharm · 8h
-DESCRIPTION:📺 Bootcamp: Ch 3: Autonomic System\n📖 First Aid: FA Pharm pp 24
- 1-248 (ANS\, cholinergics\, adrenergics)\n❓ UWorld: 50 questions\n🃏 Anki: 
- 65 new cards\n🎧 Divine: Ep 18 (ANS Pharm)
+DTEND;TZID=America/New_York:20260801T100000
+SUMMARY:😴 Step1 · REST · 3h
+DESCRIPTION:📺 Bootcamp: Anki — Neuro path + cranial nerves. Review bra
+ instem cross-sections.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-08-02-0036@mo-usmle
+DTSTART;TZID=America/New_York:20260802T070000
+DTEND;TZID=America/New_York:20260802T150000
+SUMMARY:📚 Step1 · Repro · 8h
+DESCRIPTION:📺 Bootcamp: Ch 5: Male Pathology · Ch 6: Reproductive Pharm
+ acology\n📖 First Aid: FA Repro pp 646-end (male repro\, contraceptives)
+ \n🎨 Sketchy: Path: 3.1 Prostate Cancer · 3.2 Benign Prostatic Hyperpla
+ sia · 3.3 Testicular Tumors (Seminoma · NSGCT: Embryonal · Yolk Sac · 
+ Choriocarcinoma · Teratoma) | Pharm: 3.4 Contraceptives · 3.5 Estrogen/P
+ rogesterone/Androgens\n❓ UWorld: 30 questions\n🃏 Anki: 35 new cards\n
+ 🎧 Divine: Ep 531 (Contraceptives)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Repro — Ch 5: Male Pathology · Ch 6: Repr
+ oductive Pharmacology
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-08-03-0037@mo-usmle
+DTSTART;TZID=America/New_York:20260803T070000
+DTEND;TZID=America/New_York:20260803T140000
+SUMMARY:📚 Step1 · Immuno · 7h
+DESCRIPTION:📺 Bootcamp: Ch 1-3: Lymphoid Tissue · Innate Immunity · In
+ flammatory Response\n📖 First Aid: FA Immuno pp 96-108 (innate\, complem
+ ent\, inflammation)\n🫀 Pathoma: Pathoma Ch 2: Inflammation\n🎨 Sketch
+ y: Path: 2.1 Hypersensitivity Types I-IV · 2.2 Autoimmune Diseases (SLE\,
+  Sjogren's Syndrome\, Scleroderma)\n❓ UWorld: 30 questions\n🃏 Anki: 3
+ 5 new cards\n🎧 Divine: Ep 136 (Immuno 1)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Immuno — Ch 1-3: Lymphoid Tissue · Innate
+  Immunity · Inflammatory Res
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-08-04-0038@mo-usmle
+DTSTART;TZID=America/New_York:20260804T070000
+DTEND;TZID=America/New_York:20260804T140000
+SUMMARY:📚 Step1 · Immuno · 7h
+DESCRIPTION:📺 Bootcamp: Ch 4-7: Cytokines · T-cells · B-cells & Antibo
+ dies\n📖 First Aid: FA Immuno pp 109-115 (adaptive immunity)\n🎨 Sketc
+ hy: Path: 2.3 Rheumatoid Arthritis · 3.1 Systemic Vasculitis (Giant Cell\
+ , PAN\, Wegener's\, Churg-Strauss)\n❓ UWorld: 30 questions\n🃏 Anki: 3
+ 5 new cards\n🎧 Divine: Ep 279 (Prostaglandins)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Immuno — Ch 4-7: Cytokines · T-cells · B
+ -cells & Antibodies
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-08-05-0039@mo-usmle
+DTSTART;TZID=America/New_York:20260805T070000
+DTEND;TZID=America/New_York:20260805T140000
+SUMMARY:📚 Step1 · Immuno · 7h
+DESCRIPTION:📺 Bootcamp: Ch 8-10: Complement · Vaccinations · Immunodef
+ iciency Syndromes\n📖 First Aid: FA Immuno pp 116-120 (complement\, immu
+ nodef)\n🎨 Sketchy: Path: 4.1 Primary Immunodeficiency Syndromes (SCID 
+ · Bruton's · DiGeorge · CVID · Wiskott-Aldrich · Job's)\n❓ UWorld: 
+ 30 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 173 (Immunodeficien
+ cy)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Immuno — Ch 8-10: Complement · Vaccinatio
+ ns · Immunodeficiency Syndro
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-08-06-0040@mo-usmle
+DTSTART;TZID=America/New_York:20260806T070000
+DTEND;TZID=America/New_York:20260806T140000
+SUMMARY:📚 Step1 · Immuno · 7h
+DESCRIPTION:📺 Bootcamp: Ch 11-13: Hypersensitivity · Transfusion Reacti
+ ons · Transplant Rejection\n📖 First Aid: FA Immuno pp 121-end (HSR typ
+ es I-IV\, transplant)\n🎨 Sketchy: Path: 4.2 Transplant Rejection (Hyper
+ acute/Acute/Chronic) · 4.3 Transfusion Reactions & Blood Group Antigens\n
+ ❓ UWorld: 30 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 323 (Im
+ munocompromised)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Immuno — Ch 11-13: Hypersensitivity · Tra
+ nsfusion Reactions · Transpl
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-08-07-0041@mo-usmle
+DTSTART;TZID=America/New_York:20260807T070000
+DTEND;TZID=America/New_York:20260807T140000
+SUMMARY:📚 Step1 · Psych · 7h
+DESCRIPTION:📺 Bootcamp: Ch 1-2: Psychology & Developmental Disorders\n
+ 📖 First Aid: FA Psych pp 542-552 (development\, Erikson\, Piaget)\n🎨
+  Sketchy: Pharm: 4.3 Mood Stabilizers (Lithium\, Valproate\, Lamotrigine) 
+ · 4.4 Buspirone & Non-Benzo Anxiolytics\n❓ UWorld: 30 questions\n🃏 A
+ nki: 35 new cards\n🎧 Divine: Ep 229 (Psych 1)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Psych — Ch 1-2: Psychology & Developmental
+  Disorders
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-08-08-0042@mo-usmle
+DTSTART;TZID=America/New_York:20260808T070000
+DTEND;TZID=America/New_York:20260808T100000
+SUMMARY:😴 Step1 · REST · 3h
+DESCRIPTION:📺 Bootcamp: Anki — Repro + Immuno intro. Review hormone ta
+ ble in FA.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-08-09-0043@mo-usmle
+DTSTART;TZID=America/New_York:20260809T070000
+DTEND;TZID=America/New_York:20260809T140000
+SUMMARY:📚 Step1 · Psych · 7h
+DESCRIPTION:📺 Bootcamp: Ch 3-5: Memory · Dissociation · Anxiety · Tra
+ uma & Personality Disorders\n📖 First Aid: FA Psych pp 553-562 (anxiety\
+ , PTSD\, personality)\n🎨 Sketchy: Pharm: 6.1 Benzodiazepines · 6.2 Bar
+ biturates · 6.3 Buspirone · 6.4 Z-drugs (Zolpidem\, Zaleplon\, Eszopiclo
+ ne)\n❓ UWorld: 30 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 45
+ 3 (Psych Timelines)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Psych — Ch 3-5: Memory · Dissociation · 
+ Anxiety · Trauma & Personali
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-08-10-0044@mo-usmle
+DTSTART;TZID=America/New_York:20260810T070000
+DTEND;TZID=America/New_York:20260810T140000
+SUMMARY:📚 Step1 · Psych · 7h
+DESCRIPTION:📺 Bootcamp: Ch 6-8: Psychosis & Mood Disorders · Sleep & Ps
+ ychosomatic · Substance Misuse\n📖 First Aid: FA Psych pp 563-572 (schi
+ zophrenia\, bipolar\, MDD\, substance)\n🎨 Sketchy: Pharm: 4.1 Typical A
+ ntipsychotics (Haloperidol\, Chlorpromazine\, Thioridazine) · 4.2 Atypica
+ l Antipsychotics (Clozapine\, Risperidone\, Olanzapine\, Quetiapine\, Arip
+ iprazole)\n❓ UWorld: 30 questions\n🃏 Anki: 35 new cards\n🎧 Divine:
+  Ep 451 (Serotonin Syndrome)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Psych — Ch 6-8: Psychosis & Mood Disorders
+  · Sleep & Psychosomatic ·
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-08-11-0045@mo-usmle
+DTSTART;TZID=America/New_York:20260811T070000
+DTEND;TZID=America/New_York:20260811T150000
+SUMMARY:📚 Step1 · Psych · 8h
+DESCRIPTION:📺 Bootcamp: Ch 9: Psychiatry Pharmacology — full psychopha
+ rmacology deep dive\n📖 First Aid: FA Psych pp 573-end (antipsychotics\,
+  antidepressants\, mood stabilizers)\n🎨 Sketchy: Pharm: 5.1 SSRIs & SNR
+ Is · 5.2 Tricyclic Antidepressants (Amitriptyline\, Imipramine\, Clomipra
+ mine) · 5.3 MAOIs · 5.4 Bupropion & Mirtazapine\n❓ UWorld: 30 question
+ s\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 67 (Psych Pharm)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Psych — Ch 9: Psychiatry Pharmacology — 
+ full psychopharmacology deep
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-08-12-0046@mo-usmle
+DTSTART;TZID=America/New_York:20260812T070000
+DTEND;TZID=America/New_York:20260812T140000
+SUMMARY:📚 Step1 · Pharm · 7h
+DESCRIPTION:📺 Bootcamp: Ch 1-2: Pharmacodynamics · Pharmacokinetics\n
+ 📖 First Aid: FA Pharm pp 230-240 (PK/PD\, dose-response\, half-life)\n
+ 🎨 Sketchy: Pharm: 4.1 G-Protein Coupled Receptors · 4.2 Tyrosine Kinas
+ e Receptors · 4.3 Nuclear Receptors & Dose-Response\n❓ UWorld: 30 quest
+ ions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 471 (Receptors 1)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Pharm — Ch 1-2: Pharmacodynamics · Pharma
+ cokinetics
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-08-13-0047@mo-usmle
+DTSTART;TZID=America/New_York:20260813T070000
+DTEND;TZID=America/New_York:20260813T140000
+SUMMARY:📚 Step1 · Pharm · 7h
+DESCRIPTION:📺 Bootcamp: Ch 3: Autonomic System\n📖 First Aid: FA Pharm
+  pp 241-248 (ANS\, cholinergics\, adrenergics)\n🎨 Sketchy: Pharm Autono
+ mic: 1.1 Cholinomimetics · 1.2 Anticholinesterases · 1.3 Muscarinic Anta
+ gonists · 2.1 Adrenergic Agonists · 2.2 Alpha Blockers · 2.3 Beta Block
+ ers\n❓ UWorld: 30 questions\n🃏 Anki: 35 new cards\n🎧 Divine: Ep 18
+  (ANS Pharm)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
@@ -1007,1775 +862,1337 @@ TRIGGER:-PT15M
 ACTION:DISPLAY
 DESCRIPTION:📚 Starting now: Pharm — Ch 3: Autonomic System
 END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Pharm — log your UWorld Qs and Anki for today.
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-08-02-0047@mo-usmle
-DTSTART;TZID=America/New_York:20260802T070000
-DTEND;TZID=America/New_York:20260802T150000
-SUMMARY:📚 Step1 · Pharm · 8h
-DESCRIPTION:📺 Bootcamp: Ch 4: Side Effects & Toxins — comprehensive pharmac
- ology toxicology\n📖 First Aid: FA Pharm pp 249-end (toxidromes\, SE mnemon
- ics)\n❓ UWorld: 50 questions\n🃏 Anki: 65 new cards\n🎧 Divine: Ep 387 (Drug
-  Reactions 1)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Pharm — Ch 4: Side Effects & Toxins — comprehen
- sive pharmacology toxicology
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Pharm — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-03-0048@mo-usmle
-DTSTART;TZID=America/New_York:20260803T070000
-DTEND;TZID=America/New_York:20260803T150000
-SUMMARY:🎯 Step1 · NBME · 8h
-DESCRIPTION:📺 Bootcamp: 🎯 NBME Form 25 — full timed exam (4 hrs). Then full
-  error review.\n📖 First Aid: FA — error-driven review
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT30M
-ACTION:DISPLAY
-DESCRIPTION:🎯 NBME today — 🎯 NBME Form 25 — full timed exam (4 hrs). Then f
- ull error review.
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:NBME practice exam tomorrow — get good sleep tonight.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-04-0049@mo-usmle
-DTSTART;TZID=America/New_York:20260804T070000
-DTEND;TZID=America/New_York:20260804T110000
-SUMMARY:😴 Step1 · REST · 4h
-DESCRIPTION:📺 Bootcamp: NBME 25 error review — annotate every wrong answer 
- in FA. Identify top 3 weak subjects.
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:PT0S
-ACTION:DISPLAY
-DESCRIPTION:Rest day — Anki reviews only. Recharge.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-05-0050@mo-usmle
-DTSTART;TZID=America/New_York:20260805T070000
-DTEND;TZID=America/New_York:20260805T150000
-SUMMARY:📚 Step1 · Psych · 8h
-DESCRIPTION:📺 Bootcamp: Ch 1-2: Psychology & Developmental Disorders\n📖 Fir
- st Aid: FA Psych pp 542-552 (development\, Erikson\, Piaget)\n❓ UWorld: 50
-  questions\n🃏 Anki: 65 new cards\n🎧 Divine: Ep 229 (Psych 1)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Psych — Ch 1-2: Psychology & Developmental Diso
- rders
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Psych — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-06-0051@mo-usmle
-DTSTART;TZID=America/New_York:20260806T070000
-DTEND;TZID=America/New_York:20260806T150000
-SUMMARY:📚 Step1 · Psych · 8h
-DESCRIPTION:📺 Bootcamp: Ch 3-5: Memory\, Dissociation\, Anxiety\, Trauma & 
- Personality Disorders\n📖 First Aid: FA Psych pp 553-562 (anxiety\, PTSD\, 
- personality)\n❓ UWorld: 50 questions\n🃏 Anki: 65 new cards\n🎧 Divine: Ep 4
- 53 (Psych Timelines)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Psych — Ch 3-5: Memory\, Dissociation\, Anxiety
- \, Trauma & Personality Disorders
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Psych — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-07-0052@mo-usmle
-DTSTART;TZID=America/New_York:20260807T070000
-DTEND;TZID=America/New_York:20260807T150000
-SUMMARY:📚 Step1 · Psych · 8h
-DESCRIPTION:📺 Bootcamp: Ch 6: Psychosis & Mood Disorders · Ch 7: Sleep & Ps
- ychosomatic · Ch 8: Substance Misuse\n📖 First Aid: FA Psych pp 563-572 (sc
- hizophrenia\, bipolar\, MDD\, substance)\n❓ UWorld: 50 questions\n🃏 Anki: 
- 65 new cards\n🎧 Divine: Ep 451 (Serotonin Syndrome)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Psych — Ch 6: Psychosis & Mood Disorders · Ch 7
- : Sleep & Psychosomatic · Ch 8: Substance
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Psych — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-08-0053@mo-usmle
-DTSTART;TZID=America/New_York:20260808T070000
-DTEND;TZID=America/New_York:20260808T150000
-SUMMARY:📚 Step1 · Psych · 8h
-DESCRIPTION:📺 Bootcamp: Ch 9: Psychiatry Pharmacology — full psychopharmaco
- logy deep dive\n📖 First Aid: FA Psych pp 573-end (antipsychotics\, antidep
- ressants\, mood stabilizers)\n❓ UWorld: 50 questions\n🃏 Anki: 65 new cards
- \n🎧 Divine: Ep 67 (Psych Pharm)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Psych — Ch 9: Psychiatry Pharmacology — full ps
- ychopharmacology deep dive
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Psych — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-09-0054@mo-usmle
-DTSTART;TZID=America/New_York:20260809T070000
-DTEND;TZID=America/New_York:20260809T150000
-SUMMARY:📚 Step1 · Genetics · 8h
-DESCRIPTION:📺 Bootcamp: Ch 1: DNA Structure · Ch 2: DNA Replication · Ch 3:
-  DNA Mutations\n📖 First Aid: FA Biochem pp 36-46 (DNA repair\, mutations\,
-  lab techniques)\n❓ UWorld: 50 questions\n🃏 Anki: 65 new cards\n🎧 Divine: 
- Ep 138 (Genetic Diseases)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Genetics — Ch 1: DNA Structure · Ch 2: DNA Repl
- ication · Ch 3: DNA Mutations
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Genetics — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-10-0055@mo-usmle
-DTSTART;TZID=America/New_York:20260810T070000
-DTEND;TZID=America/New_York:20260810T150000
-SUMMARY:📚 Step1 · Genetics · 8h
-DESCRIPTION:📺 Bootcamp: Ch 4: Mitosis/Meiosis · Ch 5: Lab Techniques · Ch 6
- : Basics of Clinical Genetics · Ch 7: HY Disorders\n📖 First Aid: FA Bioche
- m pp 47-58 (inheritance patterns\, karyotypes)\n❓ UWorld: 50 questions\n🃏 
- Anki: 65 new cards\n🎧 Divine: Ep 424 (Inheritance Modes)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Genetics — Ch 4: Mitosis/Meiosis · Ch 5: Lab Te
- chniques · Ch 6: Basics of Clinical Genetics
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Genetics — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-11-0056@mo-usmle
-DTSTART;TZID=America/New_York:20260811T070000
-DTEND;TZID=America/New_York:20260811T110000
-SUMMARY:😴 Step1 · REST · 4h
-DESCRIPTION:📺 Bootcamp: Anki — Psych + Genetics. Review inheritance tables 
- in FA.
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:PT0S
-ACTION:DISPLAY
-DESCRIPTION:Rest day — Anki reviews only. Recharge.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-12-0057@mo-usmle
-DTSTART;TZID=America/New_York:20260812T070000
-DTEND;TZID=America/New_York:20260812T150000
-SUMMARY:📚 Step1 · Heme · 8h
-DESCRIPTION:📺 Bootcamp: Ch 1: Embryology · Ch 2: Blood Cells · Ch 3: Microc
- ytic Anemias\n📖 First Aid: FA Heme pp 384-396 (iron def\, thalassemia\, si
- deroblastic)\n🔬 Pathoma: Pathoma Ch 5: RBC\n❓ UWorld: 50 questions\n🃏 Anki
- : 65 new cards\n🎧 Divine: Ep 4 (Heme)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Heme — Ch 1: Embryology · Ch 2: Blood Cells · C
- h 3: Microcytic Anemias
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Heme — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-13-0058@mo-usmle
-DTSTART;TZID=America/New_York:20260813T070000
-DTEND;TZID=America/New_York:20260813T150000
-SUMMARY:📚 Step1 · Heme · 8h
-DESCRIPTION:📺 Bootcamp: Ch 4: Normocytic Anemias · Ch 5: Macrocytic Anemias
- \n📖 First Aid: FA Heme pp 397-405 (hemolytic\, B12\, folate\, aplastic)\n🔬
-  Pathoma: Pathoma Ch 5 cont\n❓ UWorld: 50 questions\n🃏 Anki: 65 new cards\
- n🎧 Divine: Ep 226 (Iron Labs)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Heme — Ch 4: Normocytic Anemias · Ch 5: Macrocy
- tic Anemias
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Heme — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-14-0059@mo-usmle
+UID:step1-2026-08-14-0048@mo-usmle
 DTSTART;TZID=America/New_York:20260814T070000
-DTEND;TZID=America/New_York:20260814T150000
-SUMMARY:📚 Step1 · Heme · 8h
-DESCRIPTION:📺 Bootcamp: Ch 6: Platelets · Ch 7: Coagulation & Fibrinolysis\
- n📖 First Aid: FA Heme pp 406-415 (platelets\, VWD\, hemophilia\, DIC\, TTP
- )\n🔬 Pathoma: Pathoma Ch 4: Hemostasis\n❓ UWorld: 50 questions\n🃏 Anki: 65
-  new cards\n🎧 Divine: Ep 444 (Thrombosis)
+DTEND;TZID=America/New_York:20260814T140000
+SUMMARY:📚 Step1 · Pharm · 7h
+DESCRIPTION:📺 Bootcamp: Ch 4: Side Effects & Toxins — comprehensive ph
+ armacology toxicology\n📖 First Aid: FA Pharm pp 249-end (toxidromes\, S
+ E mnemonics)\n🎨 Sketchy: Pharm: 5.1 Drug-Induced Toxicity (SIADH\, SJS\
+ , Agranulocytosis) · 5.2 HY Drug Side Effects (Sulfa drugs\, QT prolongat
+ ion\, P450 interactions)\n❓ UWorld: 30 questions\n🃏 Anki: 35 new card
+ s\n🎧 Divine: Ep 387 (Drug Reactions 1)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Heme — Ch 6: Platelets · Ch 7: Coagulation & Fi
- brinolysis
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Heme — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Pharm — Ch 4: Side Effects & Toxins — co
+ mprehensive pharmacology tox
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-08-15-0060@mo-usmle
+UID:step1-2026-08-15-0049@mo-usmle
 DTSTART;TZID=America/New_York:20260815T070000
-DTEND;TZID=America/New_York:20260815T150000
-SUMMARY:📚 Step1 · Heme · 8h
-DESCRIPTION:📺 Bootcamp: Ch 8: Oncology & Therapeutics · Ch 9: Leukemias & L
- ymphomas · Ch 10: Plasma Cell Dyscrasias\n📖 First Aid: FA Heme pp 416-end 
- (ALL/AML/CLL/CML\, Hodgkin/NHL\, MM)\n🔬 Pathoma: Pathoma Ch 3: Neoplasia +
-  Ch 6: WBC\n🧪 Sketchy: Path: 1.1 Myeloid Proliferative Disorders\n❓ UWorld
- : 50 questions\n🃏 Anki: 65 new cards\n🎧 Divine: Ep 203 (Leukemia/Lymphoma)
- 
+DTEND;TZID=America/New_York:20260815T100000
+SUMMARY:😴 Step1 · REST · 3h
+DESCRIPTION:📺 Bootcamp: Anki — Immuno + Pharm. Review hypersensitivity
+  table.
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Heme — Ch 8: Oncology & Therapeutics · Ch 9: Le
- ukemias & Lymphomas · Ch 10: Plasma Cell
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Heme — log your UWorld Qs and Anki for today.
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-08-16-0061@mo-usmle
+UID:step1-2026-08-16-0050@mo-usmle
 DTSTART;TZID=America/New_York:20260816T070000
 DTEND;TZID=America/New_York:20260816T150000
-SUMMARY:📚 Step1 · Derm · 8h
-DESCRIPTION:📺 Bootcamp: Ch 1-2: General Principles & Infectious Diseases of
-  Skin · Ch 3: Inflammatory Diseases\n📖 First Aid: FA Derm pp 478-490 (lesi
- on types\, psoriasis\, eczema\, SJS)\n🔬 Pathoma: Pathoma Ch 19: Skin\n❓ UW
- orld: 50 questions\n🃏 Anki: 65 new cards\n🎧 Divine: Ep 242 (Derm 1)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Derm — Ch 1-2: General Principles & Infectious 
- Diseases of Skin · Ch 3: Inflammatory Di
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Derm — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-17-0062@mo-usmle
-DTSTART;TZID=America/New_York:20260817T070000
-DTEND;TZID=America/New_York:20260817T150000
-SUMMARY:📚 Step1 · Derm · 8h
-DESCRIPTION:📺 Bootcamp: Ch 4-5: Malignant Skin Disorders & Additional Disor
- ders\n📖 First Aid: FA Derm pp 491-end (BCC\, SCC\, melanoma\, pemphigus)\n
- ❓ UWorld: 50 questions\n🃏 Anki: 65 new cards\n🎧 Divine: Ep 246 (Derm 2)
- 
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Derm — Ch 4-5: Malignant Skin Disorders & Addit
- ional Disorders
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Derm — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-18-0063@mo-usmle
-DTSTART;TZID=America/New_York:20260818T070000
-DTEND;TZID=America/New_York:20260818T110000
-SUMMARY:😴 Step1 · REST · 4h
-DESCRIPTION:📺 Bootcamp: Anki — Heme + Derm. Review coagulation cascade diag
- ram in FA.
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:PT0S
-ACTION:DISPLAY
-DESCRIPTION:Rest day — Anki reviews only. Recharge.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-19-0064@mo-usmle
-DTSTART;TZID=America/New_York:20260819T070000
-DTEND;TZID=America/New_York:20260819T150000
-SUMMARY:📚 Step1 · Biostat · 8h
-DESCRIPTION:📺 Bootcamp: Ch 1: Study Designs · Ch 2: Bias & Study Errors · C
- h 3: Risk Quantification\n📖 First Aid: FA Public Health pp 256-268 (study 
- types\, bias\, RR\, OR)\n❓ UWorld: 50 questions\n🃏 Anki: 65 new cards\n🎧 D
- ivine: Ep 143 (Biostatistics)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Biostat — Ch 1: Study Designs · Ch 2: Bias & St
- udy Errors · Ch 3: Risk Quantification
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Biostat — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-20-0065@mo-usmle
-DTSTART;TZID=America/New_York:20260820T070000
-DTEND;TZID=America/New_York:20260820T150000
-SUMMARY:📚 Step1 · Biostat · 8h
-DESCRIPTION:📺 Bootcamp: Ch 4: Diagnostic Tests · Ch 5: Statistical Distribu
- tions · Ch 6: Statistical Testing\n📖 First Aid: FA Public Health pp 269-28
- 0 (sensitivity/specificity\, NNT\, p-value)\n❓ UWorld: 50 questions\n🃏 Ank
- i: 65 new cards\n🎧 Divine: Ep 363 (Confounding)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Biostat — Ch 4: Diagnostic Tests · Ch 5: Statis
- tical Distributions · Ch 6: Statistical Tes
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Biostat — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-21-0066@mo-usmle
-DTSTART;TZID=America/New_York:20260821T070000
-DTEND;TZID=America/New_York:20260821T150000
-SUMMARY:📚 Step1 · Endo · 8h
-DESCRIPTION:📺 Bootcamp: Ch 1: Fundamentals · Ch 2: Hypothalamus · Ch 3: Ant
- erior & Posterior Pituitary\n📖 First Aid: FA Endo pp 336-348 (HPA axis\, p
- ituitary hormones\, SIADH\, DI)\n🔬 Pathoma: Pathoma Ch 16: Endocrine\n🧪 Sk
- etchy: Path: 1.3 Hyperpituitarism\n❓ UWorld: 50 questions\n🃏 Anki: 65 new 
- cards\n🎧 Divine: Ep 514 (Endo Testing)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Endo — Ch 1: Fundamentals · Ch 2: Hypothalamus 
- · Ch 3: Anterior & Posterior Pituitary
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Endo — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-22-0067@mo-usmle
-DTSTART;TZID=America/New_York:20260822T070000
-DTEND;TZID=America/New_York:20260822T150000
-SUMMARY:📚 Step1 · Endo · 8h
-DESCRIPTION:📺 Bootcamp: Ch 4: Thyroid · Ch 5: Parathyroids\n📖 First Aid: FA
-  Endo pp 349-358 (thyroid path\, Graves/Hashimoto\, Ca2+ disorders)\n🧪 Ske
- tchy: Path: 3.1 Thyroid Disorders\n❓ UWorld: 50 questions\n🃏 Anki: 65 new 
- cards\n🎧 Divine: Ep 251 (Thyroid)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Endo — Ch 4: Thyroid · Ch 5: Parathyroids
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Endo — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-23-0068@mo-usmle
-DTSTART;TZID=America/New_York:20260823T070000
-DTEND;TZID=America/New_York:20260823T150000
-SUMMARY:📚 Step1 · Endo · 8h
-DESCRIPTION:📺 Bootcamp: Ch 6: Adrenal Glands · Ch 7: Pancreas (Diabetes)\n📖
-  First Aid: FA Endo pp 359-end (Cushing/Addison/Conn/pheo\, DM\, DKA\, HHS
- )\n🔬 Pathoma: Pathoma Ch 16 cont\n🧪 Sketchy: Path: 2.1 Adrenal Insufficien
- cy · 4.6 Multiple Endocrine Neoplasia\n❓ UWorld: 50 questions\n🃏 Anki: 65 
- new cards\n🎧 Divine: Ep 301 (Diabetes 1)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Endo — Ch 6: Adrenal Glands · Ch 7: Pancreas (D
- iabetes)
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Endo — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-24-0069@mo-usmle
-DTSTART;TZID=America/New_York:20260824T070000
-DTEND;TZID=America/New_York:20260824T150000
-SUMMARY:📚 Step1 · Public Health · 8h
-DESCRIPTION:📺 Bootcamp: Ch 1: Ethics · Ch 2: Communication · Ch 3: Deliveri
- ng Care · Ch 4: Safety · Ch 5: Practice Qs\n📖 First Aid: FA Public Health 
- pp 281-end (ethics\, informed consent\, HIPAA)\n❓ UWorld: 50 questions\n🃏 
- Anki: 65 new cards\n🎧 Divine: Ep 123 (Ethics)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Public Health — Ch 1: Ethics · Ch 2: Communicat
- ion · Ch 3: Delivering Care · Ch 4: Safety · Ch 5
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Public Health — log your UWorld Qs and Anki for today
- .
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-25-0070@mo-usmle
-DTSTART;TZID=America/New_York:20260825T070000
-DTEND;TZID=America/New_York:20260825T110000
-SUMMARY:😴 Step1 · REST · 4h
-DESCRIPTION:📺 Bootcamp: Anki — Biostat + Endo consolidation. Review MEN tab
- le in FA.
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:PT0S
-ACTION:DISPLAY
-DESCRIPTION:Rest day — Anki reviews only. Recharge.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-26-0071@mo-usmle
-DTSTART;TZID=America/New_York:20260826T070000
-DTEND;TZID=America/New_York:20260826T150000
-SUMMARY:📚 Step1 · GI · 8h
-DESCRIPTION:📺 Bootcamp: Ch 1: Embryology · Ch 2: Oral Cavity · Ch 3: Esopha
- gus · Ch 4: Stomach\n📖 First Aid: FA GI pp 364-378 (embryo\, GERD\, Barret
- t's\, PUD\, gastric cancer)\n🔬 Pathoma: Pathoma Ch 10: GI upper\n🧪 Sketchy
- : Path: 1.1 Structural Esophageal Disorders & GERD · 2.1 Peptic Ulcer Dise
- ase · 2.4 Congenital GI Disorders\n❓ UWorld: 50 questions\n🃏 Anki: 65 new 
- cards\n🎧 Divine: Ep 489 (Esophagus)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: GI — Ch 1: Embryology · Ch 2: Oral Cavity · Ch 
- 3: Esophagus · Ch 4: Stomach
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up GI — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-27-0072@mo-usmle
-DTSTART;TZID=America/New_York:20260827T070000
-DTEND;TZID=America/New_York:20260827T150000
-SUMMARY:📚 Step1 · GI · 8h
-DESCRIPTION:📺 Bootcamp: Ch 5: Liver · Ch 6: Biliary System · Ch 7: Pancreas
- \n📖 First Aid: FA GI pp 379-395 (hepatitis serology\, cirrhosis\, biliary\
- , pancreas)\n🔬 Pathoma: Pathoma Ch 10-11: Liver/Pancreas\n🧪 Sketchy: Path:
-  4.1 Liver Disease & Cirrhosis · 4.2 Hepatocellular Carcinoma\n❓ UWorld: 5
- 0 questions\n🃏 Anki: 65 new cards\n🎧 Divine: Ep 503 (LFTs)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: GI — Ch 5: Liver · Ch 6: Biliary System · Ch 7:
-  Pancreas
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up GI — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-28-0073@mo-usmle
-DTSTART;TZID=America/New_York:20260828T070000
-DTEND;TZID=America/New_York:20260828T150000
-SUMMARY:📚 Step1 · GI · 8h
-DESCRIPTION:📺 Bootcamp: Ch 8: Small Intestine · Ch 9: Large Intestine · Ch 
- 10: Hernias\n📖 First Aid: FA GI pp 396-end (malabsorption\, IBD\, colorect
- al cancer)\n🔬 Pathoma: Pathoma Ch 10 cont\n🧪 Sketchy: Path: 3.1 Inflammato
- ry Bowel Disease · 3.4 Anorectal Disorders\n❓ UWorld: 50 questions\n🃏 Anki
- : 65 new cards\n🎧 Divine: Ep 384 (IBDs)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: GI — Ch 8: Small Intestine · Ch 9: Large Intest
- ine · Ch 10: Hernias
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up GI — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-29-0074@mo-usmle
-DTSTART;TZID=America/New_York:20260829T070000
-DTEND;TZID=America/New_York:20260829T150000
-SUMMARY:📚 Step1 · Biochem · 8h
-DESCRIPTION:📺 Bootcamp: Ch 1: Cell Biology · Ch 2: Lysosomal Storage Diseas
- es · Ch 3: Connective Tissue\n📖 First Aid: FA Biochem pp 60-72 (cell cycle
- \, lysosomal\, collagen)\n❓ UWorld: 50 questions\n🃏 Anki: 65 new cards\n🎧 
- Divine: Ep 56 (Cell Bio 1)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Biochem — Ch 1: Cell Biology · Ch 2: Lysosomal 
- Storage Diseases · Ch 3: Connective Tissue
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Biochem — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-30-0075@mo-usmle
-DTSTART;TZID=America/New_York:20260830T070000
-DTEND;TZID=America/New_York:20260830T150000
-SUMMARY:📚 Step1 · Biochem · 8h
-DESCRIPTION:📺 Bootcamp: Ch 4: Energy Production · Ch 5: Carbohydrates · Ch 
- 6: One Carbon Metabolism\n📖 First Aid: FA Biochem pp 73-85 (glycolysis\, T
- CA\, gluconeogenesis\, folate)\n❓ UWorld: 50 questions\n🃏 Anki: 65 new car
- ds\n🎧 Divine: Ep 13 (Metabolism)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Biochem — Ch 4: Energy Production · Ch 5: Carbo
- hydrates · Ch 6: One Carbon Metabolism
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Biochem — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-08-31-0076@mo-usmle
-DTSTART;TZID=America/New_York:20260831T070000
-DTEND;TZID=America/New_York:20260831T150000
-SUMMARY:📚 Step1 · Biochem · 8h
-DESCRIPTION:📺 Bootcamp: Ch 7: Oxidative Stress · Ch 8: Glycogen · Ch 9: Lip
- id Metabolism · Ch 10: Protein Metabolism\n📖 First Aid: FA Biochem pp 86-9
- 5 (glycogen storage\, FA metabolism\, urea cycle)\n❓ UWorld: 50 questions\
- n🃏 Anki: 65 new cards\n🎧 Divine: Ep 11 (Glycogen)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Biochem — Ch 7: Oxidative Stress · Ch 8: Glycog
- en · Ch 9: Lipid Metabolism · Ch 10: Protei
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Biochem — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-09-01-0077@mo-usmle
-DTSTART;TZID=America/New_York:20260901T070000
-DTEND;TZID=America/New_York:20260901T110000
-SUMMARY:😴 Step1 · REST · 4h
-DESCRIPTION:📺 Bootcamp: Anki — GI + Biochem. Review hepatitis serology tabl
- e in FA.
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:PT0S
-ACTION:DISPLAY
-DESCRIPTION:Rest day — Anki reviews only. Recharge.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-09-02-0078@mo-usmle
-DTSTART;TZID=America/New_York:20260902T070000
-DTEND;TZID=America/New_York:20260902T150000
-SUMMARY:📚 Step1 · Biochem · 8h
-DESCRIPTION:📺 Bootcamp: Ch 11: Porphyrias · Ch 12: Vitamins — complete vita
- min + mineral pathology\n📖 First Aid: FA Biochem pp 96-118 (vitamins\, min
- erals\, porphyrias)\n❓ UWorld: 50 questions\n🃏 Anki: 65 new cards\n🎧 Divin
- e: Ep 243 (Water Vitamins)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Biochem — Ch 11: Porphyrias · Ch 12: Vitamins —
-  complete vitamin + mineral pathology
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Biochem — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-09-03-0079@mo-usmle
-DTSTART;TZID=America/New_York:20260903T070000
-DTEND;TZID=America/New_York:20260903T150000
-SUMMARY:📚 Step1 · MSK · 8h
-DESCRIPTION:📺 Bootcamp: Ch 1: Skeletal Muscle · Ch 2: Non-Rheumatologic Dis
- eases · Ch 3: Rheumatologic Diseases\n📖 First Aid: FA MSK pp 458-468 (musc
- le\, OA\, RA\, gout\, pseudogout)\n🔬 Pathoma: Pathoma Ch 18: MSK\n❓ UWorld
- : 50 questions\n🃏 Anki: 65 new cards\n🎧 Divine: Ep 99 (Rheum 1)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: MSK — Ch 1: Skeletal Muscle · Ch 2: Non-Rheumat
- ologic Diseases · Ch 3: Rheumatologic D
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up MSK — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-09-04-0080@mo-usmle
-DTSTART;TZID=America/New_York:20260904T070000
-DTEND;TZID=America/New_York:20260904T150000
-SUMMARY:📚 Step1 · MSK · 8h
-DESCRIPTION:📺 Bootcamp: Ch 4: Seronegative Spondyloarthritis · Ch 5: Primar
- y Bone Tumors · Ch 6: Vasculitides\n📖 First Aid: FA MSK pp 469-476 (AS\, p
- soriatic\, bone tumors\, vasculitis)\n🔬 Pathoma: Pathoma Ch 18 cont\n❓ UWo
- rld: 50 questions\n🃏 Anki: 65 new cards\n🎧 Divine: Ep 269 (Bone Tumors)
- 
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: MSK — Ch 4: Seronegative Spondyloarthritis · Ch
-  5: Primary Bone Tumors · Ch 6: Vasculi
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up MSK — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-09-05-0081@mo-usmle
-DTSTART;TZID=America/New_York:20260905T070000
-DTEND;TZID=America/New_York:20260905T150000
-SUMMARY:📚 Step1 · MSK · 8h
-DESCRIPTION:📺 Bootcamp: Ch 7: Spine · Ch 8: Brachial Plexus · Ch 9: Shoulde
- r & Elbow · Ch 10: Wrist & Hand · Ch 11-13: Lower Extremity · Ch 14-15: Ch
- ildhood MSK & Pharm\n📖 First Aid: FA MSK pp 477-end (nerve injuries\, anat
- omy\, pharm)\n❓ UWorld: 50 questions\n🃏 Anki: 65 new cards\n🎧 Divine: Ep 3
- 05 (Upper Limb)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: MSK — Ch 7: Spine · Ch 8: Brachial Plexus · Ch 
- 9: Shoulder & Elbow · Ch 10: Wrist & Ha
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up MSK — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-09-06-0082@mo-usmle
-DTSTART;TZID=America/New_York:20260906T070000
-DTEND;TZID=America/New_York:20260906T150000
 SUMMARY:🎯 Step1 · NBME · 8h
-DESCRIPTION:📺 Bootcamp: 🎯 NBME Form 26 — full timed exam (4 hrs). Then full
-  error review.\n📖 First Aid: FA — error-driven review
+DESCRIPTION:📺 Bootcamp: 🎯 NBME Form 25 — full timed exam (4 hrs). T
+ hen full error review.\n📖 First Aid: FA — error-driven review
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:🎯 NBME today — 🎯 NBME Form 26 — full timed exam (4 hrs). Then f
- ull error review.
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:NBME practice exam tomorrow — get good sleep tonight.
+DESCRIPTION:🎯 NBME starting in 30 min — go to a quiet place.
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-09-07-0083@mo-usmle
+UID:step1-2026-08-17-0051@mo-usmle
+DTSTART;TZID=America/New_York:20260817T070000
+DTEND;TZID=America/New_York:20260817T150000
+SUMMARY:📚 Step1 · Review · 8h
+DESCRIPTION:📺 Bootcamp: NBME 25 error review — annotate every wrong an
+ swer in FA. Identify top 3 weak subjects.\n📖 First Aid: FA — error se
+ ctions\n❓ UWorld: 40 questions\n🎧 Divine: Ep 184 (NBME Weird Question
+ s)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Review — NBME 25 error review — annotate
+  every wrong answer in FA. Id
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-08-18-0052@mo-usmle
+DTSTART;TZID=America/New_York:20260818T070000
+DTEND;TZID=America/New_York:20260818T140000
+SUMMARY:📚 Step1 · Genetics · 7h
+DESCRIPTION:📺 Bootcamp: Ch 1-3: DNA Structure · DNA Replication · DNA 
+ Mutations\n📖 First Aid: FA Biochem pp 36-46 (DNA repair\, mutations\, l
+ ab techniques)\n🎨 Sketchy: Path: 1.1 Chromosomal Disorders (Down Syndro
+ me T21 · Turner 45X · Klinefelter 47XXY · Patau T13 · Edwards T18)\n
+ ❓ UWorld: 40 questions\n🃏 Anki: 50 new cards\n🎧 Divine: Ep 138 (Ge
+ netic Diseases)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Genetics — Ch 1-3: DNA Structure · DNA Re
+ plication · DNA Mutations
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-08-19-0053@mo-usmle
+DTSTART;TZID=America/New_York:20260819T070000
+DTEND;TZID=America/New_York:20260819T150000
+SUMMARY:📚 Step1 · Genetics · 8h
+DESCRIPTION:📺 Bootcamp: Ch 4-7: Mitosis/Meiosis · Lab Techniques · Cli
+ nical Genetics · HY Disorders\n📖 First Aid: FA Biochem pp 47-58 (inher
+ itance patterns\, karyotypes)\n🎨 Sketchy: Path: 1.2 X-linked Recessive 
+ Disorders (Duchenne/Becker MD · Hemophilia A/B · G6PD · Bruton · Fabry
+  · Hunter) · 1.3 Autosomal Dominant (Marfan · NF1/NF2 · Huntington · 
+ ADPKD · Li-Fraumeni · BRCA1/2) · 1.4 Autosomal Recessive (PKU · CF · 
+ Gaucher · Wilson · Hemochromatosis · Alkaptonuria) · 1.5 Trinucleotide
+  Repeats (Fragile X · Huntington · Myotonic Dystrophy · Friedreich Atax
+ ia) · 1.6 Genomic Imprinting (Prader-Willi · Angelman)\n❓ UWorld: 40 q
+ uestions\n🃏 Anki: 50 new cards\n🎧 Divine: Ep 424 (Inheritance Modes)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Genetics — Ch 4-7: Mitosis/Meiosis · Lab 
+ Techniques · Clinical Genetics
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-08-20-0054@mo-usmle
+DTSTART;TZID=America/New_York:20260820T070000
+DTEND;TZID=America/New_York:20260820T150000
+SUMMARY:📚 Step1 · Heme · 8h
+DESCRIPTION:📺 Bootcamp: Ch 1-3: Embryology · Blood Cells · Microcytic 
+ Anemias\n📖 First Aid: FA Heme pp 384-396 (iron def\, thalassemia\, side
+ roblastic)\n🫀 Pathoma: Pathoma Ch 5: RBC\n🎨 Sketchy: Path: 1.1 Iron 
+ Deficiency Anemia · 1.2 Beta-Thalassemia · 1.3 Sickle Cell Disease · 1.
+ 4 Sideroblastic Anemia · 1.5 Lead Poisoning\n❓ UWorld: 40 questions\n
+ 🃏 Anki: 50 new cards\n🎧 Divine: Ep 4 (Heme)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Heme — Ch 1-3: Embryology · Blood Cells 
+ · Microcytic Anemias
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-08-21-0055@mo-usmle
+DTSTART;TZID=America/New_York:20260821T070000
+DTEND;TZID=America/New_York:20260821T150000
+SUMMARY:📚 Step1 · Heme · 8h
+DESCRIPTION:📺 Bootcamp: Ch 4-5: Normocytic Anemias · Macrocytic Anemias
+ \n📖 First Aid: FA Heme pp 397-405 (hemolytic\, B12\, folate\, aplastic)
+ \n🫀 Pathoma: Pathoma Ch 5 cont\n🎨 Sketchy: Path: 2.1 Hemolytic Anemi
+ as (G6PD\, Hereditary Spherocytosis\, AIHA\, TTP/HUS\, PNH) · 2.2 B12 & F
+ olate Deficiency · 2.3 Aplastic Anemia\n❓ UWorld: 40 questions\n🃏 An
+ ki: 50 new cards\n🎧 Divine: Ep 226 (Iron Labs)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Heme — Ch 4-5: Normocytic Anemias · Macro
+ cytic Anemias
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-08-22-0056@mo-usmle
+DTSTART;TZID=America/New_York:20260822T070000
+DTEND;TZID=America/New_York:20260822T100000
+SUMMARY:😴 Step1 · REST · 3h
+DESCRIPTION:📺 Bootcamp: Anki — Genetics + Heme. Review inheritance pat
+ terns in FA.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-08-23-0057@mo-usmle
+DTSTART;TZID=America/New_York:20260823T070000
+DTEND;TZID=America/New_York:20260823T150000
+SUMMARY:📚 Step1 · Heme · 8h
+DESCRIPTION:📺 Bootcamp: Ch 6-7: Platelets · Coagulation & Fibrinolysis\
+ n📖 First Aid: FA Heme pp 406-415 (platelets\, VWD\, hemophilia\, DIC\, 
+ TTP)\n🫀 Pathoma: Pathoma Ch 4: Hemostasis\n🎨 Sketchy: Path: 3.1 Hemo
+ philia A & B · 3.2 Von Willebrand Disease · 3.3 DIC & TTP/HUS · 3.4 Thr
+ ombocytopenia (ITP\, HIT)\n❓ UWorld: 40 questions\n🃏 Anki: 50 new car
+ ds\n🎧 Divine: Ep 444 (Thrombosis)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Heme — Ch 6-7: Platelets · Coagulation & 
+ Fibrinolysis
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-08-24-0058@mo-usmle
+DTSTART;TZID=America/New_York:20260824T070000
+DTEND;TZID=America/New_York:20260824T150000
+SUMMARY:📚 Step1 · Heme · 8h
+DESCRIPTION:📺 Bootcamp: Ch 8-10: Oncology & Therapeutics · Leukemias & 
+ Lymphomas · Plasma Cell Dyscrasias\n📖 First Aid: FA Heme pp 416-end (A
+ LL/AML/CLL/CML\, Hodgkin/NHL\, MM)\n🫀 Pathoma: Pathoma Ch 3: Neoplasia 
+ + Ch 6: WBC\n🎨 Sketchy: Path: 1.1 Myeloid Proliferative Disorders (CML 
+ · PV · ET · Myelofibrosis) · 1.2 AML & MDS · 2.1 ALL & CLL · 3.1 Hod
+ gkin Lymphoma · 3.2 Non-Hodgkin Lymphoma (Diffuse Large B-Cell · Follicu
+ lar · Burkitt · Mantle Cell) · 4.1 Multiple Myeloma & Plasma Cell Dyscr
+ asias\n❓ UWorld: 40 questions\n🃏 Anki: 50 new cards\n🎧 Divine: Ep 
+ 203 (Leukemia/Lymphoma)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Heme — Ch 8-10: Oncology & Therapeutics ·
+  Leukemias & Lymphomas · P
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-08-25-0059@mo-usmle
+DTSTART;TZID=America/New_York:20260825T070000
+DTEND;TZID=America/New_York:20260825T140000
+SUMMARY:📚 Step1 · Derm · 7h
+DESCRIPTION:📺 Bootcamp: Ch 1-3: General Principles · Infectious Disease
+ s of Skin · Inflammatory Diseases\n📖 First Aid: FA Derm pp 478-490 (le
+ sion types\, psoriasis\, eczema\, SJS)\n🫀 Pathoma: Pathoma Ch 19: Skin\
+ n🎨 Sketchy: Path: 1.1 Psoriasis · 1.2 Atopic Dermatitis & Contact Derm
+ atitis · 1.3 Acne & Rosacea · 2.1 Bullous Pemphigoid · 2.2 Pemphigus Vu
+ lgaris · 2.3 SJS/TEN\n❓ UWorld: 40 questions\n🃏 Anki: 50 new cards\n
+ 🎧 Divine: Ep 242 (Derm 1)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Derm — Ch 1-3: General Principles · Infec
+ tious Diseases of Skin · I
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-08-26-0060@mo-usmle
+DTSTART;TZID=America/New_York:20260826T070000
+DTEND;TZID=America/New_York:20260826T140000
+SUMMARY:📚 Step1 · Derm · 7h
+DESCRIPTION:📺 Bootcamp: Ch 4-5: Malignant Skin Disorders & Additional Di
+ sorders\n📖 First Aid: FA Derm pp 491-end (BCC\, SCC\, melanoma\, pemphi
+ gus)\n🎨 Sketchy: Path: 3.1 Basal Cell Carcinoma · 3.2 Squamous Cell Ca
+ rcinoma · 3.3 Melanoma · 3.4 Actinic Keratosis & Seborrheic Keratosis\n
+ ❓ UWorld: 40 questions\n🃏 Anki: 50 new cards\n🎧 Divine: Ep 246 (De
+ rm 2)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Derm — Ch 4-5: Malignant Skin Disorders & 
+ Additional Disorders
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-08-27-0061@mo-usmle
+DTSTART;TZID=America/New_York:20260827T070000
+DTEND;TZID=America/New_York:20260827T140000
+SUMMARY:📚 Step1 · Biostat · 7h
+DESCRIPTION:📺 Bootcamp: Ch 1-3: Study Designs · Bias & Study Errors · 
+ Risk Quantification\n📖 First Aid: FA Public Health pp 256-268 (study ty
+ pes\, bias\, RR\, OR)\n❓ UWorld: 40 questions\n🃏 Anki: 50 new cards\n
+ 🎧 Divine: Ep 143 (Biostatistics)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Biostat — Ch 1-3: Study Designs · Bias & 
+ Study Errors · Risk Quantific
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-08-28-0062@mo-usmle
+DTSTART;TZID=America/New_York:20260828T070000
+DTEND;TZID=America/New_York:20260828T140000
+SUMMARY:📚 Step1 · Biostat · 7h
+DESCRIPTION:📺 Bootcamp: Ch 4-6: Diagnostic Tests · Statistical Distribu
+ tions · Statistical Testing\n📖 First Aid: FA Public Health pp 269-280 
+ (sensitivity/specificity\, NNT\, p-value)\n❓ UWorld: 40 questions\n🃏 
+ Anki: 50 new cards\n🎧 Divine: Ep 363 (Confounding)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Biostat — Ch 4-6: Diagnostic Tests · Stat
+ istical Distributions · Stati
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-08-29-0063@mo-usmle
+DTSTART;TZID=America/New_York:20260829T070000
+DTEND;TZID=America/New_York:20260829T100000
+SUMMARY:😴 Step1 · REST · 3h
+DESCRIPTION:📺 Bootcamp: Anki — Heme + Derm + Biostat. Review coagulati
+ on cascade.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-08-30-0064@mo-usmle
+DTSTART;TZID=America/New_York:20260830T070000
+DTEND;TZID=America/New_York:20260830T150000
+SUMMARY:📚 Step1 · Endo · 8h
+DESCRIPTION:📺 Bootcamp: Ch 1-3: Fundamentals · Hypothalamus · Anterior
+  & Posterior Pituitary\n📖 First Aid: FA Endo pp 336-348 (HPA axis\, pit
+ uitary hormones\, SIADH\, DI)\n🫀 Pathoma: Pathoma Ch 16: Endocrine\n
+ 🎨 Sketchy: Path: 1.1 Hypopituitarism (Sheehan · Empty Sella · Craniop
+ haryngioma) · 1.2 SIADH & Diabetes Insipidus · 1.3 Hyperpituitarism (Pro
+ lactinoma · Acromegaly · Cushing Disease)\n❓ UWorld: 40 questions\n
+ 🃏 Anki: 50 new cards\n🎧 Divine: Ep 514 (Endo Testing)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Endo — Ch 1-3: Fundamentals · Hypothalamu
+ s · Anterior & Posterior P
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-08-31-0065@mo-usmle
+DTSTART;TZID=America/New_York:20260831T070000
+DTEND;TZID=America/New_York:20260831T150000
+SUMMARY:📚 Step1 · Endo · 8h
+DESCRIPTION:📺 Bootcamp: Ch 4-5: Thyroid · Parathyroids\n📖 First Aid:
+  FA Endo pp 349-358 (thyroid path\, Graves/Hashimoto\, Ca2+ disorders)\n
+ 🎨 Sketchy: Path: 3.1 Thyroid Disorders (Graves · Hashimoto · Thyroid 
+ Cancer: Papillary · Follicular · Medullary · Anaplastic) · 3.2 Hyperpa
+ rathyroidism (Primary/Secondary/Tertiary) · 3.3 Hypoparathyroidism & Pseu
+ dohypoparathyroidism\n❓ UWorld: 40 questions\n🃏 Anki: 50 new cards\n
+ 🎧 Divine: Ep 251 (Thyroid)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Endo — Ch 4-5: Thyroid · Parathyroids
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-09-01-0066@mo-usmle
+DTSTART;TZID=America/New_York:20260901T070000
+DTEND;TZID=America/New_York:20260901T150000
+SUMMARY:📚 Step1 · Endo · 8h
+DESCRIPTION:📺 Bootcamp: Ch 6-7: Adrenal Glands · Pancreas (Diabetes)\n
+ 📖 First Aid: FA Endo pp 359-end (Cushing/Addison/Conn/pheo\, DM\, DKA\,
+  HHS)\n🫀 Pathoma: Pathoma Ch 16 cont\n🎨 Sketchy: Path: 2.1 Adrenal I
+ nsufficiency (Addison Disease · Waterhouse-Friderichsen) · 2.2 Cushing S
+ yndrome & Disease · 2.3 Hyperaldosteronism (Conn Syndrome) · 2.4 Pheochr
+ omocytoma · 3.1 Diabetes Mellitus Type 1 & Type 2 · 3.2 DKA & HHS · 3.3
+  Carcinoid Tumor · 4.6 Multiple Endocrine Neoplasia (MEN 1 · MEN 2A · M
+ EN 2B)\n❓ UWorld: 40 questions\n🃏 Anki: 50 new cards\n🎧 Divine: Ep
+  301 (Diabetes 1)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Endo — Ch 6-7: Adrenal Glands · Pancreas 
+ (Diabetes)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-09-02-0067@mo-usmle
+DTSTART;TZID=America/New_York:20260902T070000
+DTEND;TZID=America/New_York:20260902T140000
+SUMMARY:📚 Step1 · Public Health · 7h
+DESCRIPTION:📺 Bootcamp: Ch 1-5: Ethics · Communication · Delivering Ca
+ re · Safety · Practice Qs\n📖 First Aid: FA Public Health pp 281-end (
+ ethics\, informed consent\, HIPAA)\n❓ UWorld: 40 questions\n🃏 Anki: 5
+ 0 new cards\n🎧 Divine: Ep 123 (Ethics)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Public Health — Ch 1-5: Ethics · Communic
+ ation · Delivering Care · Safety · 
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-09-03-0068@mo-usmle
+DTSTART;TZID=America/New_York:20260903T070000
+DTEND;TZID=America/New_York:20260903T150000
+SUMMARY:📚 Step1 · GI · 8h
+DESCRIPTION:📺 Bootcamp: Ch 1-4: Embryology · Oral Cavity · Esophagus 
+ · Stomach\n📖 First Aid: FA GI pp 364-378 (embryo\, GERD\, Barrett's\, 
+ PUD\, gastric cancer)\n🫀 Pathoma: Pathoma Ch 10: GI upper\n🎨 Sketchy
+ : Path: 1.1 Structural Esophageal Disorders & GERD · 1.2 Esophageal Cance
+ r (SCC · Adenocarcinoma/Barrett Esophagus) · 2.1 Peptic Ulcer Disease ·
+  2.2 Gastric Cancer (Adenocarcinoma · Linitis Plastica · MALT Lymphoma 
+ · GISTs) · 2.3 Gastritis (H. pylori · Autoimmune) · 2.4 Congenital GI 
+ Disorders\n❓ UWorld: 40 questions\n🃏 Anki: 50 new cards\n🎧 Divine:
+  Ep 489 (Esophagus)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: GI — Ch 1-4: Embryology · Oral Cavity · 
+ Esophagus · Stomach
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-09-04-0069@mo-usmle
+DTSTART;TZID=America/New_York:20260904T070000
+DTEND;TZID=America/New_York:20260904T150000
+SUMMARY:📚 Step1 · GI · 8h
+DESCRIPTION:📺 Bootcamp: Ch 5-7: Liver · Biliary System · Pancreas\n
+ 📖 First Aid: FA GI pp 379-395 (hepatitis serology\, cirrhosis\, biliary
+ \, pancreas)\n🫀 Pathoma: Pathoma Ch 10-11: Liver/Pancreas\n🎨 Sketchy
+ : Path: 4.1 Liver Disease & Cirrhosis · 4.2 Hepatocellular Carcinoma · 5
+ .1 Cholelithiasis & Cholecystitis · 5.2 Cholangiocarcinoma & PSC/PBC · 6
+ .1 Acute & Chronic Pancreatitis · 6.2 Pancreatic Adenocarcinoma\n❓ UWor
+ ld: 40 questions\n🃏 Anki: 50 new cards\n🎧 Divine: Ep 503 (LFTs)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: GI — Ch 5-7: Liver · Biliary System · Pa
+ ncreas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-09-05-0070@mo-usmle
+DTSTART;TZID=America/New_York:20260905T070000
+DTEND;TZID=America/New_York:20260905T100000
+SUMMARY:😴 Step1 · REST · 3h
+DESCRIPTION:📺 Bootcamp: Anki — Endo + GI. Review MEN table in FA.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-09-06-0071@mo-usmle
+DTSTART;TZID=America/New_York:20260906T070000
+DTEND;TZID=America/New_York:20260906T150000
+SUMMARY:📚 Step1 · GI · 8h
+DESCRIPTION:📺 Bootcamp: Ch 8-10: Small Intestine · Large Intestine · H
+ ernias\n📖 First Aid: FA GI pp 396-end (malabsorption\, IBD\, colorectal
+  cancer)\n🫀 Pathoma: Pathoma Ch 10 cont\n🎨 Sketchy: Path: 3.1 Inflam
+ matory Bowel Disease (Crohn's · UC) · 3.2 Colorectal Cancer & Polyps (FA
+ P · Lynch Syndrome · Villous Adenoma) · 3.3 Malabsorption Syndromes (Ce
+ liac Disease · Whipple Disease · Tropical Sprue · Lactase Deficiency) 
+ · 3.4 Appendicitis · 3.5 Carcinoid Tumor · 3.6 Anorectal Disorders\n❓
+  UWorld: 40 questions\n🃏 Anki: 50 new cards\n🎧 Divine: Ep 384 (IBDs)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: GI — Ch 8-10: Small Intestine · Large Int
+ estine · Hernias
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-09-07-0072@mo-usmle
 DTSTART;TZID=America/New_York:20260907T070000
 DTEND;TZID=America/New_York:20260907T150000
-SUMMARY:📚 Step1 · Review · 8h
-DESCRIPTION:📺 Bootcamp: NBME 26 error review — deep dive on every wrong ans
- wer. Re-read FA sections. Update weak list.\n📖 First Aid: FA — error-drive
- n sections\n❓ UWorld: 50 questions\n🎧 Divine: Ep 184 (NBME Weird Questions
- )
+SUMMARY:📚 Step1 · Biochem · 8h
+DESCRIPTION:📺 Bootcamp: Ch 1-3: Cell Biology · Lysosomal Storage Diseas
+ es · Connective Tissue\n📖 First Aid: FA Biochem pp 60-72 (cell cycle\,
+  lysosomal\, collagen)\n🎨 Sketchy: Path: 1.1 Lysosomal Storage Diseases
+  — Gaucher · Niemann-Pick · Fabry · Tay-Sachs · Hurler (MPS I) · Hu
+ nter (MPS II) · Pompe (GSD II)\n❓ UWorld: 40 questions\n🃏 Anki: 50 n
+ ew cards\n🎧 Divine: Ep 56 (Cell Bio 1)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Review — NBME 26 error review — deep dive on ev
- ery wrong answer. Re-read FA sections. Upd
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Review — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Biochem — Ch 1-3: Cell Biology · Lysosoma
+ l Storage Diseases · Connecti
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-09-08-0084@mo-usmle
+UID:step1-2026-09-08-0073@mo-usmle
 DTSTART;TZID=America/New_York:20260908T070000
-DTEND;TZID=America/New_York:20260908T110000
-SUMMARY:😴 Step1 · REST · 4h
-DESCRIPTION:📺 Bootcamp: Anki — MSK + Biochem. Light review of weak subjects
-  from NBME 26.
+DTEND;TZID=America/New_York:20260908T150000
+SUMMARY:📚 Step1 · Biochem · 8h
+DESCRIPTION:📺 Bootcamp: Ch 4-6: Energy Production · Carbohydrates · On
+ e Carbon Metabolism\n📖 First Aid: FA Biochem pp 73-85 (glycolysis\, TCA
+ \, gluconeogenesis\, folate)\n❓ UWorld: 40 questions\n🃏 Anki: 50 new 
+ cards\n🎧 Divine: Ep 13 (Metabolism)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
-TRIGGER:PT0S
+TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Rest day — Anki reviews only. Recharge.
+DESCRIPTION:📚 Starting now: Biochem — Ch 4-6: Energy Production · Car
+ bohydrates · One Carbon Metab
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-09-09-0085@mo-usmle
+UID:step1-2026-09-09-0074@mo-usmle
 DTSTART;TZID=America/New_York:20260909T070000
 DTEND;TZID=America/New_York:20260909T150000
-SUMMARY:📚 Step1 · Micro · 8h
-DESCRIPTION:📺 Bootcamp: Sketchy: Gram+ Cocci — S. aureus\, S. pyogenes\, S.
-  pneumoniae\, Enterococcus\n📖 First Aid: FA Micro pp 124-138 (Gram+ cocci\
- , toxins\, infections)\n🧪 Sketchy: Micro Bacteria: 1.1 S. aureus · 1.2 S. 
- pyogenes · 1.3 S. pneumoniae · 1.4 S. viridans · 1.5 S. agalactiae · 1.6 E
- nterococci · 1.7 MRSA & Staph epi\n❓ UWorld: 50 questions\n🃏 Anki: 65 new 
- cards\n🎧 Divine: Ep 77 (Gram Positive)
+SUMMARY:📚 Step1 · Biochem · 8h
+DESCRIPTION:📺 Bootcamp: Ch 7-10: Oxidative Stress · Glycogen · Lipid M
+ etabolism · Protein Metabolism\n📖 First Aid: FA Biochem pp 86-95 (glyc
+ ogen storage\, FA metabolism\, urea cycle)\n🎨 Sketchy: Path: 1.2 Glycog
+ en Storage Diseases (Von Gierke GSD Ia · Pompe GSD II · Cori GSD III · 
+ McArdle GSD V) · 1.3 Familial Hypercholesterolemia\n❓ UWorld: 40 questi
+ ons\n🃏 Anki: 50 new cards\n🎧 Divine: Ep 11 (Glycogen)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Micro — Sketchy: Gram+ Cocci — S. aureus\, S. p
- yogenes\, S. pneumoniae\, Enterococcus
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Micro — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Biochem — Ch 7-10: Oxidative Stress · Gly
+ cogen · Lipid Metabolism · Pr
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-09-10-0086@mo-usmle
+UID:step1-2026-09-10-0075@mo-usmle
 DTSTART;TZID=America/New_York:20260910T070000
 DTEND;TZID=America/New_York:20260910T150000
-SUMMARY:📚 Step1 · Micro · 8h
-DESCRIPTION:📺 Bootcamp: Sketchy: Gram+ Rods — Bacillus\, Clostridium (tetan
- i/botulinum/difficile/perfringens)\, Listeria · Mycobacteria (TB\, leprosy
- \, MAC)\n📖 First Aid: FA Micro pp 139-152 (Gram+ rods\, TB serology\, trea
- tment)\n🧪 Sketchy: Micro Bacteria: 2.1 C. botulinum · 2.2 C. tetani · 2.3 
- C. perfringens · 2.4 C. difficile · 2.5 B. anthracis · 2.6 B. cereus · 2.7
-  Listeria · 8.1 M. tuberculosis · 8.2 MAC · 8.3 M. leprae\n❓ UWorld: 50 qu
- estions\n🃏 Anki: 65 new cards\n🎧 Divine: Ep 262 (Tuberculosis)
+SUMMARY:📚 Step1 · Biochem · 8h
+DESCRIPTION:📺 Bootcamp: Ch 11-12: Porphyrias · Vitamins — complete vi
+ tamin + mineral pathology\n📖 First Aid: FA Biochem pp 96-118 (vitamins\
+ , minerals\, porphyrias)\n🎨 Sketchy: Path: 1.4 Vitamin Deficiencies —
+  A (night blindness) · C (scurvy) · D (rickets) · E · K | B vitamins: 
+ B1/Thiamine · B3/Niacin · B6 · B12 · Folate · 1.5 Porphyrias (AIP · 
+ Porphyria Cutanea Tarda · Lead Poisoning effects on heme)\n❓ UWorld: 40
+  questions\n🃏 Anki: 50 new cards\n🎧 Divine: Ep 243 (Water Vitamins)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Micro — Sketchy: Gram+ Rods — Bacillus\, Clostr
- idium (tetani/botulinum/difficile/perfring
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Micro — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Biochem — Ch 11-12: Porphyrias · Vitamins
+  — complete vitamin + mineral
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-09-11-0087@mo-usmle
+UID:step1-2026-09-11-0076@mo-usmle
 DTSTART;TZID=America/New_York:20260911T070000
 DTEND;TZID=America/New_York:20260911T150000
-SUMMARY:📚 Step1 · Micro · 8h
-DESCRIPTION:📺 Bootcamp: Sketchy: Gram− — Neisseria\, H. flu\, Pseudomonas\,
-  E. coli\, Klebsiella\, Salmonella\, Shigella\, Campylobacter\, H. pylori\
- n📖 First Aid: FA Micro pp 153-165 (Gram− bacteria\, GI pathogens)\n🧪 Sketc
- hy: Micro Bacteria: 3.1 N. gonorrhoeae · 3.2 N. meningitidis · 3.3 H. infl
- uenzae · 3.4 Bordetella · 4.1 E. coli · 4.2 Klebsiella · 4.3 Pseudomonas ·
-  4.4 Salmonella · 4.5 H. pylori · 5.1 V. cholerae · 5.2 Campylobacter · 5.
- 3 Shigella · 5.4 Yersinia\n❓ UWorld: 50 questions\n🃏 Anki: 65 new cards\n🎧
-  Divine: Ep 78 (Gram Negative)
+SUMMARY:📚 Step1 · MSK · 8h
+DESCRIPTION:📺 Bootcamp: Ch 1-3: Skeletal Muscle · Non-Rheumatologic Dis
+ eases · Rheumatologic Diseases\n📖 First Aid: FA MSK pp 458-468 (muscle
+ \, OA\, RA\, gout\, pseudogout)\n🫀 Pathoma: Pathoma Ch 18: MSK\n🎨 Sk
+ etchy: Path: 1.1 Osteoarthritis vs RA · 1.2 Gout & Pseudogout · 1.3 SLE 
+ & Sjogren's Syndrome · 2.1 Polymyalgia Rheumatica · 2.2 Fibromyalgia\n
+ ❓ UWorld: 40 questions\n🃏 Anki: 50 new cards\n🎧 Divine: Ep 99 (Rhe
+ um 1)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Micro — Sketchy: Gram− — Neisseria\, H. flu\, P
- seudomonas\, E. coli\, Klebsiella\, Salmonella
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Micro — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: MSK — Ch 1-3: Skeletal Muscle · Non-Rheum
+ atologic Diseases · Rheum
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-09-12-0088@mo-usmle
+UID:step1-2026-09-12-0077@mo-usmle
 DTSTART;TZID=America/New_York:20260912T070000
-DTEND;TZID=America/New_York:20260912T150000
-SUMMARY:📚 Step1 · Micro · 8h
-DESCRIPTION:📺 Bootcamp: Sketchy: Atypicals (Mycoplasma\, Chlamydia\, Ricket
- tsia) · Spirochetes (Treponema\, Borrelia\, Leptospira)\n📖 First Aid: FA M
- icro pp 166-176 (atypicals\, spirochetes\, STIs)\n🧪 Sketchy: Micro Bacteri
- a: 5.5 Brucella · 5.6 Francisella · 6.1 Treponema pallidum · 6.2 Borrelia 
- burgdorferi · 6.3 Legionella · 6.4 Leptospira · 7.1 Chlamydia trachomatis 
- · 7.2 Chlamydophila pneumoniae · 9.1 R. rickettsii · 9.2 R. typhi · 10.4 M
- ycoplasma · 10.6 R. prowazekii\n❓ UWorld: 50 questions\n🃏 Anki: 65 new car
- ds\n🎧 Divine: Ep 201 (Micro 1)
+DTEND;TZID=America/New_York:20260912T100000
+SUMMARY:😴 Step1 · REST · 3h
+DESCRIPTION:📺 Bootcamp: Anki — Biochem + MSK. Review metabolic pathway
+  diagrams.
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Micro — Sketchy: Atypicals (Mycoplasma\, Chlamy
- dia\, Rickettsia) · Spirochetes (Treponema\,
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Micro — log your UWorld Qs and Anki for today.
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-09-13-0089@mo-usmle
+UID:step1-2026-09-13-0078@mo-usmle
 DTSTART;TZID=America/New_York:20260913T070000
 DTEND;TZID=America/New_York:20260913T150000
-SUMMARY:📚 Step1 · Micro · 8h
-DESCRIPTION:📺 Bootcamp: Sketchy: Fungi — Candida\, Aspergillus\, Cryptococc
- us\, dimorphic fungi (Histo/Blasto/Cocci)\, Mucor\, Pneumocystis\n📖 First 
- Aid: FA Micro pp 177-184 (fungi\, antifungal targets)\n🧪 Sketchy: Micro Fu
- ngi: 1.1 Aspergillus · 1.2 Blastomycosis · 1.3 Coccidioidomycosis · 1.4 Hi
- stoplasmosis · 2.1 Pneumocystis jirovecii · 2.2 Dermatophytes · 3.1 Candid
- a albicans · 3.2 Mucormycosis · 3.3 Cryptococcus · 3.4 Sporothrix\n❓ UWorl
- d: 50 questions\n🃏 Anki: 65 new cards\n🎧 Divine: Ep 205 (Micro 2)
+SUMMARY:📚 Step1 · MSK · 8h
+DESCRIPTION:📺 Bootcamp: Ch 4-6: Seronegative Spondyloarthritis · Primar
+ y Bone Tumors · Vasculitides\n📖 First Aid: FA MSK pp 469-476 (AS\, pso
+ riatic\, bone tumors\, vasculitis)\n🫀 Pathoma: Pathoma Ch 18 cont\n🎨
+  Sketchy: Path: 3.1 Seroneg SpA (AS · PsA · Reactive Arthritis · IBD-as
+ sociated) · 3.2 Dermatomyositis & Polymyositis · 4.1 Bone Tumors (Osteos
+ arcoma · Ewing's · GCT · Chondrosarcoma) · 4.2 Osteoporosis & Osteomal
+ acia · 4.3 Paget Disease of Bone · 5.1 Vasculitis by vessel size\n❓ UW
+ orld: 40 questions\n🃏 Anki: 50 new cards\n🎧 Divine: Ep 269 (Bone Tum
+ ors)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Micro — Sketchy: Fungi — Candida\, Aspergillus\
- , Cryptococcus\, dimorphic fungi (Histo/Blas
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Micro — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: MSK — Ch 4-6: Seronegative Spondyloarthrit
+ is · Primary Bone Tumors
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-09-14-0090@mo-usmle
+UID:step1-2026-09-14-0079@mo-usmle
 DTSTART;TZID=America/New_York:20260914T070000
 DTEND;TZID=America/New_York:20260914T150000
-SUMMARY:📚 Step1 · Micro · 8h
-DESCRIPTION:📺 Bootcamp: Micro integration day — UWorld Micro block 60 Qs ti
- med. Review all Sketchy images from this week.\n📖 First Aid: FA Micro — er
- ror review + Sketchy rapid recall\n❓ UWorld: 60 questions\n🃏 Anki: 65 new 
- cards\n🎧 Divine: Ep 100 (Clutch Micro)
+SUMMARY:📚 Step1 · MSK · 8h
+DESCRIPTION:📺 Bootcamp: Ch 7-15: Spine · Brachial Plexus · Upper & Low
+ er Extremity · Childhood MSK · Pharm\n📖 First Aid: FA MSK pp 477-end 
+ (nerve injuries\, anatomy\, pharm)\n🎨 Sketchy: Pharm: 1.4 NSAIDs & COX-
+ 2 Inhibitors · 1.5 Colchicine · 1.6 Allopurinol & Febuxostat | 1.2 DMARD
+ s (MTX\, HCQ\, Sulfasalazine\, Leflunomide) · 1.3 Biologics (TNF-alpha\, 
+ IL-6\, B-cell inhibitors)\n❓ UWorld: 40 questions\n🃏 Anki: 50 new car
+ ds\n🎧 Divine: Ep 305 (Upper Limb)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Micro — Micro integration day — UWorld Micro bl
- ock 60 Qs timed. Review all Sketchy image
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Micro — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: MSK — Ch 7-15: Spine · Brachial Plexus ·
+  Upper & Lower Extremity ·
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-09-15-0091@mo-usmle
+UID:step1-2026-09-15-0080@mo-usmle
 DTSTART;TZID=America/New_York:20260915T070000
-DTEND;TZID=America/New_York:20260915T110000
-SUMMARY:😴 Step1 · REST · 4h
-DESCRIPTION:📺 Bootcamp: Anki — Micro bacteria + fungi. Flip through Sketchy
-  images from memory.
+DTEND;TZID=America/New_York:20260915T150000
+SUMMARY:🎯 Step1 · NBME · 8h
+DESCRIPTION:📺 Bootcamp: 🎯 NBME Form 26 — full timed exam (4 hrs). T
+ hen full error review.\n📖 First Aid: FA — error-driven review
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
-TRIGGER:PT0S
+TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:Rest day — Anki reviews only. Recharge.
+DESCRIPTION:🎯 NBME starting in 30 min — go to a quiet place.
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-09-16-0092@mo-usmle
+UID:step1-2026-09-16-0081@mo-usmle
 DTSTART;TZID=America/New_York:20260916T070000
 DTEND;TZID=America/New_York:20260916T150000
-SUMMARY:📚 Step1 · Micro · 8h
-DESCRIPTION:📺 Bootcamp: Sketchy: DNA Viruses — Herpes family (HSV/VZV/EBV/C
- MV)\, Adenovirus\, Parvovirus\, HPV\, HBV\, Poxvirus\n📖 First Aid: FA Micr
- o pp 185-194 (DNA viruses\, serology)\n🧪 Sketchy: Micro Viruses: 1.1 HSV ·
-  1.2 VZV · 1.3 EBV · 1.4 CMV · 1.5 HHV-6 · 1.6 HHV-8 · 1.7 Flavivirus · 3.
- 1 Parvovirus B19 · 3.2 Adenovirus · 3.3 HPV\n❓ UWorld: 70 questions\n🃏 Ank
- i: 50 new cards\n🎧 Divine: Ep 2 (Viruses)
+SUMMARY:📚 Step1 · Review · 8h
+DESCRIPTION:📺 Bootcamp: NBME 26 error review — deep dive on every wron
+ g answer. Re-read FA sections. Update weak list.\n📖 First Aid: FA — e
+ rror-driven sections\n❓ UWorld: 40 questions\n🎧 Divine: Ep 184 (NBME 
+ Weird Questions)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Micro — Sketchy: DNA Viruses — Herpes family (H
- SV/VZV/EBV/CMV)\, Adenovirus\, Parvovirus\, 
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Micro — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Review — NBME 26 error review — deep div
+ e on every wrong answer. Re-r
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-09-17-0093@mo-usmle
+UID:step1-2026-09-17-0082@mo-usmle
 DTSTART;TZID=America/New_York:20260917T070000
 DTEND;TZID=America/New_York:20260917T150000
 SUMMARY:📚 Step1 · Micro · 8h
-DESCRIPTION:📺 Bootcamp: Sketchy: RNA Viruses — Influenza\, Measles\, Mumps\
- , Rubella\, Rabies\, Picornaviruses\, Rotavirus\, Dengue\n📖 First Aid: FA 
- Micro pp 195-202 (RNA viruses)\n🧪 Sketchy: Micro Viruses: 2.1 Influenza · 
- 2.2 Paramyxovirus · 2.3 Rhabdovirus · 2.4 Coronavirus · 4.1 Hep A · 4.2 He
- p B · 4.3 Hep C · 4.4 Hep D · 4.5 Hep E · 5.1 Poliovirus · 5.2 Coxsackievi
- rus · 5.3 Rhinovirus · 6.1 Rotavirus · 6.2 Norovirus\n❓ UWorld: 70 questio
- ns\n🃏 Anki: 50 new cards\n🎧 Divine: Ep 3 (Viruses)
+DESCRIPTION:📺 Bootcamp: Sketchy: Gram+ Cocci — S. aureus\, S. pyogenes
+ \, S. pneumoniae\, Enterococcus\n📖 First Aid: FA Micro pp 124-138 (Gram
+ + cocci\, toxins\, infections)\n🎨 Sketchy: Micro Bacteria: 1.1 S. aureu
+ s · 1.2 S. pyogenes · 1.3 S. pneumoniae · 1.4 S. viridans · 1.5 S. aga
+ lactiae · 1.6 Enterococci · 1.7 MRSA & Staph epi\n❓ UWorld: 50 questio
+ ns\n🃏 Anki: 50 new cards\n🎧 Divine: Ep 77 (Gram Positive)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Micro — Sketchy: RNA Viruses — Influenza\, Meas
- les\, Mumps\, Rubella\, Rabies\, Picornaviruse
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Micro — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Micro — Sketchy: Gram+ Cocci — S. aureus
+ , S. pyogenes, S. pneumoniae
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-09-18-0094@mo-usmle
+UID:step1-2026-09-18-0083@mo-usmle
 DTSTART;TZID=America/New_York:20260918T070000
 DTEND;TZID=America/New_York:20260918T150000
 SUMMARY:📚 Step1 · Micro · 8h
-DESCRIPTION:📺 Bootcamp: Sketchy: HIV/AIDS — lifecycle\, CD4 thresholds & OI
- s\, HAART classes (NRTIs/NNRTIs/PIs/INSTIs/fusion)\n📖 First Aid: FA Micro 
- pp 203-210 (HIV\, AIDS complications)\n🧪 Sketchy: Micro Viruses: 7.1 HIV/A
- IDS — lifecycle\, CD4 thresholds\, opportunistic infections\, HAART classe
- s\n❓ UWorld: 70 questions\n🃏 Anki: 50 new cards\n🎧 Divine: Ep 218 (Micro 3
- )
+DESCRIPTION:📺 Bootcamp: Sketchy: Gram+ Rods — Clostridium · Bacillus 
+ · Listeria · Corynebacterium · Mycobacteria (TB\, leprosy\, MAC)\n📖 
+ First Aid: FA Micro pp 139-152 (Gram+ rods\, TB serology\, treatment)\n
+ 🎨 Sketchy: Micro Bacteria: 2.1 C. botulinum · 2.2 C. tetani · 2.3 C. 
+ perfringens · 2.4 C. difficile · 2.5 B. anthracis · 2.6 B. cereus · 2.
+ 7 Listeria · 2.8 Corynebacterium diphtheriae · 2.9 Actinomyces · 2.10 N
+ ocardia · 8.1 M. tuberculosis · 8.2 MAC · 8.3 M. leprae\n❓ UWorld: 50
+  questions\n🃏 Anki: 50 new cards\n🎧 Divine: Ep 262 (Tuberculosis)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Micro — Sketchy: HIV/AIDS — lifecycle\, CD4 thr
- esholds & OIs\, HAART classes (NRTIs/NNRTIs
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Micro — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Micro — Sketchy: Gram+ Rods — Clostridiu
+ m · Bacillus · Listeria · Co
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-09-19-0095@mo-usmle
+UID:step1-2026-09-19-0084@mo-usmle
 DTSTART;TZID=America/New_York:20260919T070000
-DTEND;TZID=America/New_York:20260919T150000
-SUMMARY:📚 Step1 · Micro · 8h
-DESCRIPTION:📺 Bootcamp: Sketchy: Parasites — Protozoa (Plasmodium\, Toxopla
- sma\, Giardia\, Entamoeba\, Trypanosoma\, Leishmania\, Crypto)\n📖 First Ai
- d: FA Micro pp 211-218 (protozoa)\n🧪 Sketchy: Micro Parasites: 1.1 Giardia
-  · 1.2 Entamoeba histolytica · 1.3 Cryptosporidium · 2.1 Toxoplasma gondii
-  · 2.2 Plasmodium · 2.3 Babesia · 3.1 T. brucei · 3.2 T. cruzi · 3.3 Leish
- mania\n❓ UWorld: 70 questions\n🃏 Anki: 50 new cards\n🎧 Divine: Ep 252 (PEP
- /HIV prophylaxis)
+DTEND;TZID=America/New_York:20260919T100000
+SUMMARY:😴 Step1 · REST · 3h
+DESCRIPTION:📺 Bootcamp: Anki — Micro Bacteria. Flip Sketchy images fro
+ m memory.
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Micro — Sketchy: Parasites — Protozoa (Plasmodi
- um\, Toxoplasma\, Giardia\, Entamoeba\, Trypa
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Micro — log your UWorld Qs and Anki for today.
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-09-20-0096@mo-usmle
+UID:step1-2026-09-20-0085@mo-usmle
 DTSTART;TZID=America/New_York:20260920T070000
 DTEND;TZID=America/New_York:20260920T150000
 SUMMARY:📚 Step1 · Micro · 8h
-DESCRIPTION:📺 Bootcamp: Sketchy: Helminths (Ascaris\, hookworm\, Strongyloi
- des\, tapeworms\, Schistosoma) · Ectoparasites\n📖 First Aid: FA Micro pp 2
- 19-226 (helminths\, ectoparasites)\n🧪 Sketchy: Micro Parasites: 4.1 Ascari
- s · 4.2 Hookworm · 4.3 Strongyloides · 5.1 Schistosoma · 5.2 Clonorchis si
- nensis · 5.3 Taenia · 6.1 Cestodes · 6.2 Trichinella · 6.3 Trichomonas · 6
- .4 Enterobius\n❓ UWorld: 70 questions\n🃏 Anki: 50 new cards\n🎧 Divine: Ep 
- 459 (STI management)
+DESCRIPTION:📺 Bootcamp: Sketchy: Gram− — Neisseria\, H. flu\, Pseudo
+ monas\, E. coli\, Klebsiella\, Salmonella\, Shigella\, Campylobacter\, H. 
+ pylori\n📖 First Aid: FA Micro pp 153-165 (Gram− bacteria\, GI pathoge
+ ns)\n🎨 Sketchy: Micro Bacteria: 3.1 N. gonorrhoeae · 3.2 N. meningitid
+ is · 3.3 H. influenzae · 3.4 Bordetella · 4.1 E. coli · 4.2 Klebsiella
+  · 4.3 Pseudomonas · 4.4 Salmonella · 4.5 H. pylori · 5.1 V. cholerae 
+ · 5.2 Campylobacter · 5.3 Shigella · 5.4 Yersinia\n❓ UWorld: 50 quest
+ ions\n🃏 Anki: 50 new cards\n🎧 Divine: Ep 78 (Gram Negative)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Micro — Sketchy: Helminths (Ascaris\, hookworm\
- , Strongyloides\, tapeworms\, Schistosoma) · 
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Micro — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Micro — Sketchy: Gram− — Neisseria, H.
+  flu, Pseudomonas, E. coli, Kl
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-09-21-0097@mo-usmle
+UID:step1-2026-09-21-0086@mo-usmle
 DTSTART;TZID=America/New_York:20260921T070000
 DTEND;TZID=America/New_York:20260921T150000
-SUMMARY:📚 Step1 · Pharm · 8h
-DESCRIPTION:📺 Bootcamp: Sketchy: Antibiotics — cell wall inhibitors (PCN\, 
- cephalosporins\, vancomycin\, carbapenems) + protein synthesis (aminoglyco
- sides\, macrolides\, tetracyclines\, linezolid\, chloramphenicol) + other\
- n📖 First Aid: FA Micro pp 227-238 (antimicrobials\, mechanisms\, resistanc
- e)\n🧪 Sketchy: Pharm Antimicrobials: 1.1 Penicillin · 1.2 Aminopenicillins
-  · 1.3 Antistaphylococcal PCN · 1.4 Cephalosporins · 1.5 Carbapenems & Azt
- reonam · 1.6 Vancomycin · 1.7 Daptomycin · 2.1 Tetracyclines · 2.2 Macroli
- des · 2.3 Clindamycin · 2.4 Chloramphenicol · 2.5 Linezolid · 3.1 Aminogly
- cosides · 3.2 Sulfonamides & TMP · 4.1 Nitrofurantoin · 4.2 Fluoroquinolon
- es · 4.3 Metronidazole\n❓ UWorld: 70 questions\n🃏 Anki: 50 new cards\n🎧 Di
- vine: Ep 460 (Antibiotics 1)
+SUMMARY:📚 Step1 · Micro · 8h
+DESCRIPTION:📺 Bootcamp: Sketchy: Atypicals (Mycoplasma\, Chlamydia\, Ric
+ kettsia) · Spirochetes (Treponema\, Borrelia\, Leptospira)\n📖 First Ai
+ d: FA Micro pp 166-176 (atypicals\, spirochetes\, STIs)\n🎨 Sketchy: Mic
+ ro Bacteria: 5.5 Brucella · 5.6 Francisella · 6.1 Treponema pallidum · 
+ 6.2 Borrelia burgdorferi · 6.3 Legionella · 6.4 Leptospira · 7.1 Chlamy
+ dia trachomatis · 7.2 Chlamydophila pneumoniae · 9.1 R. rickettsii · 9.
+ 2 R. typhi · 10.4 Mycoplasma · 10.6 R. prowazekii\n❓ UWorld: 50 questi
+ ons\n🃏 Anki: 50 new cards\n🎧 Divine: Ep 201 (Micro 1)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Pharm — Sketchy: Antibiotics — cell wall inhibi
- tors (PCN\, cephalosporins\, vancomycin\, ca
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Pharm — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Micro — Sketchy: Atypicals (Mycoplasma, Ch
+ lamydia, Rickettsia) · Spi
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-09-22-0098@mo-usmle
+UID:step1-2026-09-22-0087@mo-usmle
 DTSTART;TZID=America/New_York:20260922T070000
-DTEND;TZID=America/New_York:20260922T110000
-SUMMARY:😴 Step1 · REST · 4h
-DESCRIPTION:📺 Bootcamp: Anki — Viruses + parasites Sketchy review. HIV CD4 
- count thresholds from memory.
+DTEND;TZID=America/New_York:20260922T150000
+SUMMARY:📚 Step1 · Micro · 8h
+DESCRIPTION:📺 Bootcamp: Sketchy: Fungi — Candida\, Aspergillus\, Crypt
+ ococcus\, dimorphic fungi\, Mucor\, Pneumocystis\n📖 First Aid: FA Micro
+  pp 177-184 (fungi\, antifungal targets)\n🎨 Sketchy: Micro Fungi: 1.1 A
+ spergillus · 1.2 Blastomycosis · 1.3 Coccidioidomycosis · 1.4 Histoplas
+ mosis · 2.1 Pneumocystis jirovecii · 2.2 Dermatophytes · 3.1 Candida al
+ bicans · 3.2 Mucormycosis · 3.3 Cryptococcus · 3.4 Sporothrix\n❓ UWor
+ ld: 60 questions\n🃏 Anki: 40 new cards\n🎧 Divine: Ep 205 (Micro 2)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
-TRIGGER:PT0S
+TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Rest day — Anki reviews only. Recharge.
+DESCRIPTION:📚 Starting now: Micro — Sketchy: Fungi — Candida, Asperg
+ illus, Cryptococcus, dimorph
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-09-23-0099@mo-usmle
+UID:step1-2026-09-23-0088@mo-usmle
 DTSTART;TZID=America/New_York:20260923T070000
 DTEND;TZID=America/New_York:20260923T150000
-SUMMARY:📚 Step1 · Pharm · 8h
-DESCRIPTION:📺 Bootcamp: Sketchy: Antifungals + Antiparasitic + Antivirals (
- NRTIs\, NNRTIs\, PIs\, integrase inhibitors\, neuraminidase inhibitors)\n📖
-  First Aid: FA Pharm pp 196-205 (antifungals\, antivirals\, HIV pharm)\n🧪 
- Sketchy: Pharm Antimicrobials: 5.1 Amphotericin B · 5.2 Azoles · 5.3 Echin
- ocandins · 6.1 NRTIs · 6.2 NNRTIs · 6.3 Protease Inhibitors · 6.4 Integras
- e Inhibitors · 6.5 Fusion/Entry Inhibitors · 7.1 Neuraminidase Inhibitors 
- · 7.2 Antiherpes Drugs\n❓ UWorld: 80 questions\n🃏 Anki: 40 new cards\n🎧 Di
- vine: Ep 461 (Antibiotics 2)
+SUMMARY:📚 Step1 · Micro · 8h
+DESCRIPTION:📺 Bootcamp: Sketchy: DNA Viruses — Herpes family (HSV/VZV/
+ EBV/CMV)\, Adenovirus\, Parvovirus\, HPV\, HBV\, Poxvirus\n📖 First Aid:
+  FA Micro pp 185-194 (DNA viruses\, serology)\n🎨 Sketchy: Micro Viruses
+ : 1.1 HSV · 1.2 VZV · 1.3 EBV · 1.4 CMV · 1.5 HHV-6 · 1.6 HHV-8 · 1.
+ 7 Flavivirus · 3.1 Parvovirus B19 · 3.2 Adenovirus · 3.3 HPV\n❓ UWorl
+ d: 60 questions\n🃏 Anki: 40 new cards\n🎧 Divine: Ep 2 (Viruses)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Pharm — Sketchy: Antifungals + Antiparasitic + 
- Antivirals (NRTIs\, NNRTIs\, PIs\, integrase
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Pharm — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Micro — Sketchy: DNA Viruses — Herpes fa
+ mily (HSV/VZV/EBV/CMV), Aden
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-09-24-0100@mo-usmle
+UID:step1-2026-09-24-0089@mo-usmle
 DTSTART;TZID=America/New_York:20260924T070000
 DTEND;TZID=America/New_York:20260924T150000
-SUMMARY:📚 Step1 · Pharm · 8h
-DESCRIPTION:📺 Bootcamp: Sketchy: Cardiovascular drugs — antihypertensives\,
-  antiarrhythmics (Vaughan-Williams I-IV)\, HF drugs\, anticoagulants\n📖 Fi
- rst Aid: FA Pharm pp 206-218 (cardio pharm\, anticoagulants)\n🧪 Sketchy: P
- harm Autonomic: 1.1 Cholinomimetics · 1.2 Anticholinesterases · 1.3 Muscar
- inic Antagonists · 2.1 Adrenergic Agonists · 2.2 Alpha Blockers · 2.3 Beta
-  Blockers · 2.4 Indirect Sympathomimetics | CV & Renal: 1.1 ACE/ARBs · 1.2
-  CCBs · 1.3 Nitrates · 1.4 Antiarrhythmics I · 1.5 Antiarrhythmics II-IV ·
-  1.6 Digoxin · 2.1 Thiazides · 2.2 Loop Diuretics · 2.3 K-sparing · 3.1 He
- parin/LMWH · 3.2 Warfarin · 3.3 DOACs · 3.4 Thrombolytics · 4.1 Statins\n❓
-  UWorld: 80 questions\n🃏 Anki: 40 new cards\n🎧 Divine: Ep 55 (Cardio Pharm
- )
+SUMMARY:📚 Step1 · Micro · 8h
+DESCRIPTION:📺 Bootcamp: Sketchy: RNA Viruses — Influenza\, Measles\, M
+ umps\, Rubella\, Rabies\, Picornaviruses\, Rotavirus\, Hepatitis A-E\n📖
+  First Aid: FA Micro pp 195-202 (RNA viruses)\n🎨 Sketchy: Micro Viruses
+ : 2.1 Influenza · 2.2 Paramyxovirus · 2.3 Rhabdovirus · 2.4 Coronavirus
+  · 4.1 Hep A · 4.2 Hep B · 4.3 Hep C · 4.4 Hep D · 4.5 Hep E · 5.1 P
+ oliovirus · 5.2 Coxsackievirus · 5.3 Rhinovirus · 6.1 Rotavirus · 6.2 
+ Norovirus\n❓ UWorld: 60 questions\n🃏 Anki: 40 new cards\n🎧 Divine:
+  Ep 3 (Viruses)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Pharm — Sketchy: Cardiovascular drugs — antihyp
- ertensives\, antiarrhythmics (Vaughan-Will
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Pharm — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Micro — Sketchy: RNA Viruses — Influenza
+ , Measles, Mumps, Rubella, R
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-09-25-0101@mo-usmle
+UID:step1-2026-09-25-0090@mo-usmle
 DTSTART;TZID=America/New_York:20260925T070000
 DTEND;TZID=America/New_York:20260925T150000
-SUMMARY:📚 Step1 · Pharm · 8h
-DESCRIPTION:📺 Bootcamp: Sketchy: CNS drugs — antidepressants (SSRIs/SNRIs/T
- CAs/MAOIs)\, antipsychotics (typical/atypical)\, anticonvulsants\, Parkins
- on/Alzheimer drugs\, opioids\n📖 First Aid: FA Pharm pp 219-230 (psychophar
- m\, neuro drugs)\n🧪 Sketchy: Pharm Neuro/Psych: 1.1 General Anesthetics · 
- 1.2 Local Anesthetics · 1.3 Opioids · 1.4 NSAIDs · 2.1 AEDs (Na) · 2.2 AED
- s (GABA) · 2.3 AEDs (Other) · 3.1 Parkinson Drugs · 3.2 Alzheimer Drugs · 
- 4.1 Typical Antipsychotics · 4.2 Atypical Antipsychotics · 5.1 SSRIs/SNRIs
-  · 5.2 TCAs · 5.3 MAOIs · 5.4 Mood Stabilizers · 6.1 Benzos · 6.2 Barbitur
- ates · 6.3 Buspirone & Z-drugs\n❓ UWorld: 80 questions\n🃏 Anki: 40 new car
- ds\n🎧 Divine: Ep 20 (Psych Pharm)
+SUMMARY:📚 Step1 · Micro · 8h
+DESCRIPTION:📺 Bootcamp: Sketchy: HIV/AIDS — lifecycle\, CD4 thresholds
+  & OIs\, HAART · Parasites (Protozoa)\n📖 First Aid: FA Micro pp 203-21
+ 8 (HIV\, AIDS complications\, protozoa)\n🎨 Sketchy: Micro Viruses: 7.1 
+ HIV/AIDS — lifecycle\, CD4 thresholds\, opportunistic infections\, HAART
+  classes | Micro Parasites: 1.1 Giardia · 1.2 Entamoeba histolytica · 1.
+ 3 Cryptosporidium · 1.4 Naegleria fowleri · 1.5 Acanthamoeba · 2.1 Toxo
+ plasma gondii · 2.2 Plasmodium · 2.3 Babesia · 3.1 T. brucei · 3.2 T. 
+ cruzi · 3.3 Leishmania\n❓ UWorld: 60 questions\n🃏 Anki: 40 new cards
+ \n🎧 Divine: Ep 218 (Micro 3)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Pharm — Sketchy: CNS drugs — antidepressants (S
- SRIs/SNRIs/TCAs/MAOIs)\, antipsychotics (t
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Pharm — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Micro — Sketchy: HIV/AIDS — lifecycle, C
+ D4 thresholds & OIs, HAART ·
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-09-26-0102@mo-usmle
+UID:step1-2026-09-26-0091@mo-usmle
 DTSTART;TZID=America/New_York:20260926T070000
-DTEND;TZID=America/New_York:20260926T150000
-SUMMARY:📚 Step1 · Pharm · 8h
-DESCRIPTION:📺 Bootcamp: Sketchy: GI + Pulm + Endo + Renal + Antineoplastic 
- drugs\n📖 First Aid: FA Pharm pp 231-end (all remaining pharm classes)\n🧪 S
- ketchy: Pharm GI/Endo: 1.1 H2 Blockers/PPIs · 1.2 GI Motility · 1.3 Antiem
- etics · 2.1 Insulin · 2.2 Oral Hypoglycemics · 3.1 Thyroid Drugs · 3.2 Cor
- ticosteroids · 3.3 Sex Hormones | Antineoplastics: 1.1 Alkylating · 1.2 An
- timetabolites · 1.3 Topoisomerase · 1.4 Antitumor Antibiotics · 1.5 Microt
- ubule · 2.1 TKIs · 2.2 mAbs · 2.3 Hormonal | Blood/Inflam: 1.1 Corticoster
- oids · 1.2 DMARDs · 1.3 Biologics (TNF-α) · 2.1 Antihistamines · 2.2 Leuko
- trienes · 2.3 Epinephrine | Smooth Muscle: 1.1 Bronchodilators · 1.2 Methy
- lxanthines · 1.3 Uterotonic · 1.4 Tocolytics\n❓ UWorld: 80 questions\n🃏 An
- ki: 40 new cards\n🎧 Divine: Ep 432 (Pharm Blitz)
+DTEND;TZID=America/New_York:20260926T100000
+SUMMARY:😴 Step1 · REST · 3h
+DESCRIPTION:📺 Bootcamp: Anki — Micro Fungi/Viruses/Parasites. HIV CD4 
+ thresholds from memory.
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Pharm — Sketchy: GI + Pulm + Endo + Renal + Ant
- ineoplastic drugs
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Pharm — log your UWorld Qs and Anki for today.
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-09-27-0103@mo-usmle
+UID:step1-2026-09-27-0092@mo-usmle
 DTSTART;TZID=America/New_York:20260927T070000
 DTEND;TZID=America/New_York:20260927T150000
-SUMMARY:🎯 Step1 · NBME · 8h
-DESCRIPTION:📺 Bootcamp: 🎯 NBME Form 28 — full timed exam (4 hrs). Then full
-  error review.\n📖 First Aid: FA — error-driven review
+SUMMARY:📚 Step1 · Micro · 8h
+DESCRIPTION:📺 Bootcamp: Sketchy: Helminths (Ascaris\, hookworm\, Strongy
+ loides\, tapeworms\, Schistosoma) · Ectoparasites + Micro UWorld 60 Qs ti
+ med\n📖 First Aid: FA Micro pp 219-226 (helminths\, ectoparasites)\n🎨
+  Sketchy: Micro Parasites: 4.1 Ascaris · 4.2 Hookworm · 4.3 Strongyloide
+ s · 5.1 Schistosoma · 5.2 Clonorchis sinensis · 5.3 Taenia · 6.1 Cesto
+ des · 6.2 Trichinella · 6.3 Trichomonas · 6.4 Enterobius\n❓ UWorld: 6
+ 0 questions\n🃏 Anki: 40 new cards\n🎧 Divine: Ep 252 (PEP/HIV prophyl
+ axis)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
-TRIGGER:-PT30M
+TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:🎯 NBME today — 🎯 NBME Form 28 — full timed exam (4 hrs). Then f
- ull error review.
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:NBME practice exam tomorrow — get good sleep tonight.
+DESCRIPTION:📚 Starting now: Micro — Sketchy: Helminths (Ascaris, hookw
+ orm, Strongyloides, tapewo
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-09-28-0104@mo-usmle
+UID:step1-2026-09-28-0093@mo-usmle
 DTSTART;TZID=America/New_York:20260928T070000
 DTEND;TZID=America/New_York:20260928T150000
-SUMMARY:📚 Step1 · Review · 8h
-DESCRIPTION:📺 Bootcamp: NBME 28 comprehensive error review. Identify top 3 
- remaining weak subjects. Update FA annotations.\n📖 First Aid: FA — error s
- ections\n❓ UWorld: 50 questions\n🎧 Divine: Ep 433 (Drug Reactions 2)
+SUMMARY:📚 Step1 · Pharm · 8h
+DESCRIPTION:📺 Bootcamp: Sketchy: Antibiotics — cell wall inhibitors (P
+ CN\, cephalosporins\, vancomycin\, carbapenems) + protein synthesis + othe
+ r\n📖 First Aid: FA Micro pp 227-238 (antimicrobials\, mechanisms\, resi
+ stance)\n🎨 Sketchy: Pharm Antimicrobials: 1.1 Penicillin · 1.2 Aminope
+ nicillins · 1.3 Antistaphylococcal PCN · 1.4 Cephalosporins · 1.5 Carba
+ penems & Aztreonam · 1.6 Vancomycin · 1.7 Daptomycin · 2.1 Tetracycline
+ s · 2.2 Macrolides · 2.3 Clindamycin · 2.4 Chloramphenicol · 2.5 Linez
+ olid · 3.1 Aminoglycosides · 3.2 Sulfonamides & TMP · 4.1 Nitrofurantoi
+ n · 4.2 Fluoroquinolones · 4.3 Metronidazole\n❓ UWorld: 60 questions\n
+ 🃏 Anki: 30 new cards\n🎧 Divine: Ep 460 (Antibiotics 1)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Review — NBME 28 comprehensive error review. Id
- entify top 3 remaining weak subjects. Upda
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Review — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Pharm — Sketchy: Antibiotics — cell wall
+  inhibitors (PCN, cephalospo
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-09-29-0105@mo-usmle
+UID:step1-2026-09-29-0094@mo-usmle
 DTSTART;TZID=America/New_York:20260929T070000
-DTEND;TZID=America/New_York:20260929T110000
-SUMMARY:😴 Step1 · REST · 4h
-DESCRIPTION:📺 Bootcamp: Anki — Pharm integration cards. No new content. Lig
- ht review only.
+DTEND;TZID=America/New_York:20260929T150000
+SUMMARY:🎯 Step1 · NBME · 8h
+DESCRIPTION:📺 Bootcamp: 🎯 NBME Form 28 — full timed exam (4 hrs). T
+ hen full error review.\n📖 First Aid: FA — error-driven review
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
-TRIGGER:PT0S
+TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:Rest day — Anki reviews only. Recharge.
+DESCRIPTION:🎯 NBME starting in 30 min — go to a quiet place.
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-09-30-0106@mo-usmle
+UID:step1-2026-09-30-0095@mo-usmle
 DTSTART;TZID=America/New_York:20260930T070000
 DTEND;TZID=America/New_York:20260930T150000
-SUMMARY:📚 Step1 · Dedicated · 8h
-DESCRIPTION:📺 Bootcamp: Weak area #1 (from NBME list) — Pathoma/Bootcamp re
- watch + 60 targeted UWorld Qs in subject\n📖 First Aid: FA — weak subject 1
- \n🔬 Pathoma: Pathoma weak chapter\n❓ UWorld: 60 questions\n🎧 Divine: Ep 84
-  (Rapid Review 1)
+SUMMARY:📚 Step1 · Review · 8h
+DESCRIPTION:📺 Bootcamp: NBME 28 comprehensive error review. Identify top
+  3 remaining weak subjects. Update FA annotations.\n📖 First Aid: FA —
+  error sections\n❓ UWorld: 50 questions\n🎧 Divine: Ep 433 (Drug React
+ ions 2)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Dedicated — Weak area #1 (from NBME list) — Pat
- homa/Bootcamp rewatch + 60 targeted UWorld Qs
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Dedicated — log your UWorld Qs and Anki for today.
- 
+DESCRIPTION:📚 Starting now: Review — NBME 28 comprehensive error revie
+ w. Identify top 3 remaining
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-10-01-0107@mo-usmle
+UID:step1-2026-10-01-0096@mo-usmle
 DTSTART;TZID=America/New_York:20261001T070000
 DTEND;TZID=America/New_York:20261001T150000
-SUMMARY:📚 Step1 · Dedicated · 8h
-DESCRIPTION:📺 Bootcamp: Weak area #2 — same protocol: content review + 60 U
- World questions + full explanations\n📖 First Aid: FA — weak subject 2\n❓ U
- World: 60 questions\n🎧 Divine: Ep 90 (Rapid Review 2)
+SUMMARY:📚 Step1 · Pharm · 8h
+DESCRIPTION:📺 Bootcamp: Sketchy: Antifungals + Antiparasitic + Antiviral
+ s (NRTIs\, NNRTIs\, PIs\, integrase inhibitors\, neuraminidase inhibitors)
+ \n📖 First Aid: FA Pharm pp 196-205 (antifungals\, antivirals\, HIV phar
+ m)\n🎨 Sketchy: Pharm Antimicrobials: 5.1 Amphotericin B · 5.2 Azoles 
+ · 5.3 Echinocandins · 6.1 NRTIs · 6.2 NNRTIs · 6.3 Protease Inhibitors
+  · 6.4 Integrase Inhibitors · 6.5 Fusion/Entry Inhibitors · 7.1 Neurami
+ nidase Inhibitors · 7.2 Antiherpes Drugs\n❓ UWorld: 60 questions\n🃏 
+ Anki: 30 new cards\n🎧 Divine: Ep 461 (Antibiotics 2)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Dedicated — Weak area #2 — same protocol: conte
- nt review + 60 UWorld questions + full explan
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Dedicated — log your UWorld Qs and Anki for today.
- 
+DESCRIPTION:📚 Starting now: Pharm — Sketchy: Antifungals + Antiparasit
+ ic + Antivirals (NRTIs, NN
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-10-02-0108@mo-usmle
+UID:step1-2026-10-02-0097@mo-usmle
 DTSTART;TZID=America/New_York:20261002T070000
 DTEND;TZID=America/New_York:20261002T150000
-SUMMARY:📚 Step1 · Dedicated · 8h
-DESCRIPTION:📺 Bootcamp: Weak area #3 — content review + UWorld block + anno
- tate FA on every error\n📖 First Aid: FA — weak subject 3\n❓ UWorld: 60 que
- stions\n🎧 Divine: Ep 92 (Rapid Review 3)
+SUMMARY:📚 Step1 · Pharm · 8h
+DESCRIPTION:📺 Bootcamp: Sketchy: Cardiovascular drugs — antihypertensi
+ ves\, antiarrhythmics (Vaughan-Williams I-IV)\, HF drugs\, anticoagulants\
+ n📖 First Aid: FA Pharm pp 206-218 (cardio pharm\, anticoagulants)\n🎨
+  Sketchy: Pharm Autonomic: 2.4 Indirect Sympathomimetics | CV & Renal: 1.1
+  ACE/ARBs · 1.2 CCBs · 1.3 Nitrates · 1.4 Antiarrhythmics I · 1.5 Anti
+ arrhythmics II-IV · 1.6 Digoxin · 2.1 Thiazides · 2.2 Loop Diuretics ·
+  2.3 K-sparing · 3.1 Heparin/LMWH · 3.2 Warfarin · 3.3 DOACs · 3.4 Thr
+ ombolytics · 4.1 Statins\n❓ UWorld: 60 questions\n🃏 Anki: 30 new car
+ ds\n🎧 Divine: Ep 55 (Cardio Pharm)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Dedicated — Weak area #3 — content review + UWo
- rld block + annotate FA on every error
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Dedicated — log your UWorld Qs and Anki for today.
- 
+DESCRIPTION:📚 Starting now: Pharm — Sketchy: Cardiovascular drugs — 
+ antihypertensives, antiarrhy
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-10-03-0109@mo-usmle
+UID:step1-2026-10-03-0098@mo-usmle
 DTSTART;TZID=America/New_York:20261003T070000
-DTEND;TZID=America/New_York:20261003T150000
-SUMMARY:📚 Step1 · Dedicated · 8h
-DESCRIPTION:📺 Bootcamp: UWorld timed random — 80 Qs. No tutoring mode. Full
-  review of all explanations.\n📖 First Aid: FA — spot review errors\n❓ UWor
- ld: 80 questions\n🎧 Divine: Ep 93 (Rapid Review 4)
+DTEND;TZID=America/New_York:20261003T100000
+SUMMARY:😴 Step1 · REST · 3h
+DESCRIPTION:📺 Bootcamp: Anki — Pharm integration. Review P450 table an
+ d drug SEs.
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Dedicated — UWorld timed random — 80 Qs. No tut
- oring mode. Full review of all explanations.
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Dedicated — log your UWorld Qs and Anki for today.
- 
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-10-04-0110@mo-usmle
+UID:step1-2026-10-04-0099@mo-usmle
 DTSTART;TZID=America/New_York:20261004T070000
 DTEND;TZID=America/New_York:20261004T150000
-SUMMARY:🎯 Step1 · NBME · 8h
-DESCRIPTION:📺 Bootcamp: 🎯 NBME Form 30 — full timed exam (4 hrs). Then full
-  error review.\n📖 First Aid: FA — error-driven review
+SUMMARY:📚 Step1 · Pharm · 8h
+DESCRIPTION:📺 Bootcamp: Sketchy: CNS drugs — antidepressants · antips
+ ychotics · anticonvulsants · Parkinson/Alzheimer · opioids · anestheti
+ cs\n📖 First Aid: FA Pharm pp 219-230 (psychopharm\, neuro drugs)\n🎨 
+ Sketchy: Pharm Neuro/Psych: 1.1 General Anesthetics · 1.2 Local Anestheti
+ cs · 1.3 Opioids · 1.4 NSAIDs · 2.1 AEDs (Na) · 2.2 AEDs (GABA) · 2.3
+  AEDs (Other) · 3.1 Parkinson Drugs · 3.2 Alzheimer Drugs · 4.1 Typical
+  Antipsychotics · 4.2 Atypical Antipsychotics · 5.1 SSRIs/SNRIs · 5.2 T
+ CAs · 5.3 MAOIs · 5.4 Mood Stabilizers · 6.1 Benzos · 6.2 Barbiturates
+  · 6.3 Buspirone & Z-drugs\n❓ UWorld: 60 questions\n🃏 Anki: 30 new c
+ ards\n🎧 Divine: Ep 20 (Psych Pharm)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
-TRIGGER:-PT30M
+TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:🎯 NBME today — 🎯 NBME Form 30 — full timed exam (4 hrs). Then f
- ull error review.
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:NBME practice exam tomorrow — get good sleep tonight.
+DESCRIPTION:📚 Starting now: Pharm — Sketchy: CNS drugs — antidepress
+ ants · antipsychotics · anti
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-10-05-0111@mo-usmle
+UID:step1-2026-10-05-0100@mo-usmle
 DTSTART;TZID=America/New_York:20261005T070000
 DTEND;TZID=America/New_York:20261005T150000
-SUMMARY:📚 Step1 · Dedicated · 8h
-DESCRIPTION:📺 Bootcamp: NBME 30 error review — exhaustive. Note any topic a
- ppearing in multiple NBMEs (guaranteed on exam).\n📖 First Aid: FA — error 
- sections\n❓ UWorld: 40 questions\n🎧 Divine: Ep 107 (Rapid Review GI)
+SUMMARY:📚 Step1 · Pharm · 8h
+DESCRIPTION:📺 Bootcamp: Sketchy: GI + Pulm + Endo + Renal + Antineoplast
+ ic drugs\n📖 First Aid: FA Pharm pp 231-end (all remaining pharm classes
+ )\n🎨 Sketchy: Pharm GI/Endo: 1.1 H2 Blockers/PPIs · 1.2 GI Motility ·
+  1.3 Antiemetics · 2.1 Insulin · 2.2 Oral Hypoglycemics · 3.1 Thyroid D
+ rugs · 3.2 Corticosteroids · 3.3 Sex Hormones | Antineoplastics: 1.1 Alk
+ ylating · 1.2 Antimetabolites · 1.3 Topoisomerase · 1.4 Antitumor Antib
+ iotics · 1.5 Microtubule · 2.1 TKIs · 2.2 mAbs · 2.3 Hormonal | Blood/
+ Inflam: 1.1 Corticosteroids · 1.2 DMARDs · 1.3 Biologics (TNF-α) · 2.1
+  Antihistamines · 2.2 Leukotrienes · 2.3 Epinephrine | Smooth Muscle: 1.
+ 1 Bronchodilators · 1.2 Methylxanthines · 1.3 Uterotonic · 1.4 Tocolyti
+ cs\n❓ UWorld: 60 questions\n🃏 Anki: 30 new cards\n🎧 Divine: Ep 432
+  (Pharm Blitz)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Dedicated — NBME 30 error review — exhaustive. 
- Note any topic appearing in multiple NBMEs (g
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Dedicated — log your UWorld Qs and Anki for today.
- 
+DESCRIPTION:📚 Starting now: Pharm — Sketchy: GI + Pulm + Endo + Renal 
+ + Antineoplastic drugs
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-10-06-0112@mo-usmle
+UID:step1-2026-10-06-0101@mo-usmle
 DTSTART;TZID=America/New_York:20261006T070000
-DTEND;TZID=America/New_York:20261006T110000
-SUMMARY:😴 Step1 · REST · 4h
-DESCRIPTION:📺 Bootcamp: Full rest. No studying. Walk\, eat well\, sleep. Yo
- u've earned it.
+DTEND;TZID=America/New_York:20261006T150000
+SUMMARY:📚 Step1 · Dedicated · 8h
+DESCRIPTION:📺 Bootcamp: Weak area #1 (from NBME list) — Pathoma/Bootca
+ mp rewatch + 60 targeted UWorld Qs in subject\n📖 First Aid: FA — weak
+  subject 1\n🫀 Pathoma: Pathoma weak chapter\n❓ UWorld: 60 questions\n
+ 🎧 Divine: Ep 84 (Rapid Review 1)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
-TRIGGER:PT0S
+TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Rest day — Anki reviews only. Recharge.
+DESCRIPTION:📚 Starting now: Dedicated — Weak area #1 (from NBME list) 
+ — Pathoma/Bootcamp rewatch + 6
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-10-07-0113@mo-usmle
+UID:step1-2026-10-07-0102@mo-usmle
 DTSTART;TZID=America/New_York:20261007T070000
 DTEND;TZID=America/New_York:20261007T150000
-SUMMARY:🎯 Step1 · Free 120 · 8h
-DESCRIPTION:📺 Bootcamp: 🎯 NBME Free 120 (2022 version) — full timed\, exam 
- conditions. Treat like the real thing. Full review.\n📖 First Aid: FA — err
- or sections\n🎧 Divine: Skip today
+SUMMARY:📚 Step1 · Dedicated · 8h
+DESCRIPTION:📺 Bootcamp: Weak area #2 — same protocol: content review +
+  60 UWorld questions + full explanations\n📖 First Aid: FA — weak subj
+ ect 2\n❓ UWorld: 60 questions\n🎧 Divine: Ep 90 (Rapid Review 2)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
-TRIGGER:-PT30M
+TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:🎯 NBME today — 🎯 NBME Free 120 (2022 version) — full timed\, ex
- am conditions. Treat like the real thing. Full review.
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:NBME practice exam tomorrow — get good sleep tonight.
+DESCRIPTION:📚 Starting now: Dedicated — Weak area #2 — same protocol
+ : content review + 60 UWorld que
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-10-08-0114@mo-usmle
+UID:step1-2026-10-08-0103@mo-usmle
 DTSTART;TZID=America/New_York:20261008T070000
 DTEND;TZID=America/New_York:20261008T150000
-SUMMARY:📚 Step1 · Rapid FA · 8h
-DESCRIPTION:📺 Bootcamp: First Aid rapid pass: Biochem → Genetics → Immunolo
- gy — speed read\, HY tables only\, mark any gaps\n📖 First Aid: FA: Biochem
-  + Genetics + Immuno\n❓ UWorld: 60 questions\n🎧 Divine: Ep 117 (Rapid Revi
- ew Repro)
+SUMMARY:📚 Step1 · Dedicated · 8h
+DESCRIPTION:📺 Bootcamp: Weak area #3 — content review + UWorld block +
+  annotate FA on every error\n📖 First Aid: FA — weak subject 3\n❓ UW
+ orld: 60 questions\n🎧 Divine: Ep 92 (Rapid Review 3)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Rapid FA — First Aid rapid pass: Biochem → Gene
- tics → Immunology — speed read\, HY tables on
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Rapid FA — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Dedicated — Weak area #3 — content revie
+ w + UWorld block + annotate FA o
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-10-09-0115@mo-usmle
+UID:step1-2026-10-09-0104@mo-usmle
 DTSTART;TZID=America/New_York:20261009T070000
 DTEND;TZID=America/New_York:20261009T150000
-SUMMARY:📚 Step1 · Rapid FA · 8h
-DESCRIPTION:📺 Bootcamp: First Aid rapid pass: Cardio → Pulm → Renal — reinf
- orce key tables and diagrams\n📖 First Aid: FA: Cardio + Pulm + Renal\n❓ UW
- orld: 60 questions\n🎧 Divine: Ep 160 (Rapid Review)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Rapid FA — First Aid rapid pass: Cardio → Pulm 
- → Renal — reinforce key tables and diagrams
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Rapid FA — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-10-10-0116@mo-usmle
-DTSTART;TZID=America/New_York:20261010T070000
-DTEND;TZID=America/New_York:20261010T150000
-SUMMARY:📚 Step1 · Rapid FA · 8h
-DESCRIPTION:📺 Bootcamp: First Aid rapid pass: GI → Endo → Repro\n📖 First Ai
- d: FA: GI + Endo + Repro\n❓ UWorld: 60 questions\n🎧 Divine: Ep 168 (Rapid 
- Review)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Rapid FA — First Aid rapid pass: GI → Endo → Re
- pro
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Rapid FA — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-10-11-0117@mo-usmle
-DTSTART;TZID=America/New_York:20261011T070000
-DTEND;TZID=America/New_York:20261011T150000
-SUMMARY:📚 Step1 · Rapid FA · 8h
-DESCRIPTION:📺 Bootcamp: First Aid rapid pass: Neuro + Psych → Heme + MSK + 
- Derm → Micro + Pharm\n📖 First Aid: FA: Neuro/Psych/Heme/MSK/Derm/Micro/Pha
- rm\n❓ UWorld: 60 questions\n🎧 Divine: Ep 500 (USMLE Rapid Review)
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Rapid FA — First Aid rapid pass: Neuro + Psych 
- → Heme + MSK + Derm → Micro + Pharm
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Rapid FA — log your UWorld Qs and Anki for today.
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:step1-2026-10-12-0118@mo-usmle
-DTSTART;TZID=America/New_York:20261012T070000
-DTEND;TZID=America/New_York:20261012T150000
 SUMMARY:🎯 Step1 · Free 120 · 8h
-DESCRIPTION:📺 Bootcamp: 🎯 NBME Free 120 (2023 version) — full timed. Compar
- e with first Free 120 for progress.\n📖 First Aid: FA — error review\n🎧 Div
- ine: Skip today
+DESCRIPTION:📺 Bootcamp: 🎯 NBME Free 120 (2022 version) — full timed
+ \, exam conditions. Treat like the real thing. Full review.\n📖 First Ai
+ d: FA — error sections
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:🎯 NBME today — 🎯 NBME Free 120 (2023 version) — full timed. Com
- pare with first Free 120 for progress.
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:NBME practice exam tomorrow — get good sleep tonight.
+DESCRIPTION:🎯 Free 120 starting in 30 min — go to a quiet place.
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-10-13-0119@mo-usmle
-DTSTART;TZID=America/New_York:20261013T070000
-DTEND;TZID=America/New_York:20261013T110000
-SUMMARY:😴 Step1 · REST · 4h
-DESCRIPTION:📺 Bootcamp: Free 120 error review only. Light Anki. No new mate
- rial.
+UID:step1-2026-10-10-0105@mo-usmle
+DTSTART;TZID=America/New_York:20261010T070000
+DTEND;TZID=America/New_York:20261010T100000
+SUMMARY:😴 Step1 · REST · 3h
+DESCRIPTION:📺 Bootcamp: Full rest. No studying. Walk\, eat well\, sleep.
+  You have earned it.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-10-11-0106@mo-usmle
+DTSTART;TZID=America/New_York:20261011T070000
+DTEND;TZID=America/New_York:20261011T150000
+SUMMARY:📚 Step1 · Review · 8h
+DESCRIPTION:📺 Bootcamp: Free 120 (2022) error review — annotate every 
+ wrong answer. Note any repeated NBME weak spots.\n📖 First Aid: FA — e
+ rror sections\n❓ UWorld: 40 questions\n🎧 Divine: Ep 96 (Rapid Review 
+ 5)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
-TRIGGER:PT0S
+TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Rest day — Anki reviews only. Recharge.
+DESCRIPTION:📚 Starting now: Review — Free 120 (2022) error review — 
+ annotate every wrong answer. 
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-10-14-0120@mo-usmle
+UID:step1-2026-10-12-0107@mo-usmle
+DTSTART;TZID=America/New_York:20261012T070000
+DTEND;TZID=America/New_York:20261012T150000
+SUMMARY:📚 Step1 · Rapid FA · 8h
+DESCRIPTION:📺 Bootcamp: First Aid rapid pass: Biochem → Genetics → I
+ mmunology — speed read\, HY tables only\, mark any gaps\n📖 First Aid:
+  FA: Biochem + Genetics + Immuno\n❓ UWorld: 50 questions\n🎧 Divine: E
+ p 117 (Rapid Review Repro)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Rapid FA — First Aid rapid pass: Biochem 
+ → Genetics → Immunology — spee
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-10-13-0108@mo-usmle
+DTSTART;TZID=America/New_York:20261013T070000
+DTEND;TZID=America/New_York:20261013T150000
+SUMMARY:📚 Step1 · Rapid FA · 8h
+DESCRIPTION:📺 Bootcamp: First Aid rapid pass: Cardio → Pulm → Renal 
+ — reinforce key tables and diagrams\n📖 First Aid: FA: Cardio + Pulm +
+  Renal\n❓ UWorld: 50 questions\n🎧 Divine: Ep 160 (Rapid Review)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Rapid FA — First Aid rapid pass: Cardio 
+ → Pulm → Renal — reinforce key 
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-10-14-0109@mo-usmle
 DTSTART;TZID=America/New_York:20261014T070000
 DTEND;TZID=America/New_York:20261014T150000
-SUMMARY:📚 Step1 · Final · 8h
-DESCRIPTION:📺 Bootcamp: Pathoma Ch 1-4 rewatch at 2x speed — Cell Injury\, 
- Inflammation\, Hemodynamics\, Neoplasia. Most tested on Step 1.\n📖 First A
- id: FA Pathology sections\n🔬 Pathoma: Pathoma Ch 1-4 at 2x speed\n❓ UWorld
- : 60 questions\n🎧 Divine: Ep 96 (Rapid Review 5)
+SUMMARY:📚 Step1 · Rapid FA · 8h
+DESCRIPTION:📺 Bootcamp: First Aid rapid pass: GI → Endo → Repro\n
+ 📖 First Aid: FA: GI + Endo + Repro\n❓ UWorld: 50 questions\n🎧 Divi
+ ne: Ep 168 (Rapid Review)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Final — Pathoma Ch 1-4 rewatch at 2x speed — Ce
- ll Injury\, Inflammation\, Hemodynamics\, Ne
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Final — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Rapid FA — First Aid rapid pass: GI → En
+ do → Repro
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-10-15-0121@mo-usmle
+UID:step1-2026-10-15-0110@mo-usmle
 DTSTART;TZID=America/New_York:20261015T070000
 DTEND;TZID=America/New_York:20261015T150000
-SUMMARY:📚 Step1 · Final · 8h
-DESCRIPTION:📺 Bootcamp: Sketchy Micro rapid image recall — flip through all
-  bacteria + fungi + virus images. Name from memory.\n📖 First Aid: Sketchy 
- all images (rapid)\n🧪 Sketchy: Rapid recall: All Micro Bacteria (42) · Vir
- uses (25) · Fungi (10) · Parasites (19) — name from image\n❓ UWorld: 60 qu
- estions\n🎧 Divine: Ep 101 (Rapid Review 6)
+SUMMARY:📚 Step1 · Rapid FA · 8h
+DESCRIPTION:📺 Bootcamp: First Aid rapid pass: Neuro + Psych → Heme + M
+ SK + Derm → Micro + Pharm\n📖 First Aid: FA: Neuro/Psych/Heme/MSK/Derm
+ /Micro/Pharm\n❓ UWorld: 50 questions\n🎧 Divine: Ep 500 (USMLE Rapid R
+ eview)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Final — Sketchy Micro rapid image recall — flip
-  through all bacteria + fungi + virus ima
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Final — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Rapid FA — First Aid rapid pass: Neuro + P
+ sych → Heme + MSK + Derm → Mi
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-10-16-0122@mo-usmle
+UID:step1-2026-10-16-0111@mo-usmle
 DTSTART;TZID=America/New_York:20261016T070000
 DTEND;TZID=America/New_York:20261016T150000
-SUMMARY:📚 Step1 · Final · 8h
-DESCRIPTION:📺 Bootcamp: UWorld redo — all marked/incorrect questions from e
- ntire prep. These are your personal weak spots.\n📖 First Aid: FA — spot re
- view on redos\n❓ UWorld: 80 questions\n🎧 Divine: Ep 105 (Rapid Review 7)
- 
+SUMMARY:🎯 Step1 · Free 120 · 8h
+DESCRIPTION:📺 Bootcamp: 🎯 NBME Free 120 (2023 version) — full timed
+ . Compare with first Free 120 for progress.\n📖 First Aid: FA — error 
+ review
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
-TRIGGER:-PT15M
+TRIGGER:-PT30M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Final — UWorld redo — all marked/incorrect ques
- tions from entire prep. These are your pe
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Final — log your UWorld Qs and Anki for today.
+DESCRIPTION:🎯 Free 120 starting in 30 min — go to a quiet place.
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-10-17-0123@mo-usmle
+UID:step1-2026-10-17-0112@mo-usmle
 DTSTART;TZID=America/New_York:20261017T070000
-DTEND;TZID=America/New_York:20261017T130000
-SUMMARY:📚 Step1 · Final · 6h
-DESCRIPTION:📺 Bootcamp: FA — HY tables\, drug side effects\, microbe presen
- tations\, key formulas. No deep reading. Skim and reinforce.\n📖 First Aid:
-  FA: HY tables only\n❓ UWorld: 40 questions\n🎧 Divine: Ep 498 (Successful 
- Dedicated 1)
+DTEND;TZID=America/New_York:20261017T100000
+SUMMARY:😴 Step1 · REST · 3h
+DESCRIPTION:📺 Bootcamp: Full rest. No new content. Tomorrow: NBME 30.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-10-18-0113@mo-usmle
+DTSTART;TZID=America/New_York:20261018T070000
+DTEND;TZID=America/New_York:20261018T150000
+SUMMARY:📚 Step1 · Final · 8h
+DESCRIPTION:📺 Bootcamp: Free 120 (2023) error review + Pathoma Ch 1-4 re
+ watch at 2x — Cell Injury\, Inflammation\, Hemodynamics\, Neoplasia.\n
+ 📖 First Aid: FA Pathology sections\n🫀 Pathoma: Pathoma Ch 1-4 at 2x 
+ speed\n❓ UWorld: 40 questions\n🎧 Divine: Ep 101 (Rapid Review 6)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:📚 Starting now: Final — FA — HY tables\, drug side effects\, mi
- crobe presentations\, key formulas. No deep 
-END:VALARM
-BEGIN:VALARM
-TRIGGER:PT8H
-ACTION:DISPLAY
-DESCRIPTION:✅ Wrap up Final — log your UWorld Qs and Anki for today.
+DESCRIPTION:📚 Starting now: Final — Free 120 (2023) error review + Pat
+ homa Ch 1-4 rewatch at 2x 
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-10-18-0124@mo-usmle
-DTSTART;TZID=America/New_York:20261018T070000
-DTEND;TZID=America/New_York:20261018T100000
-SUMMARY:😴 Step1 · Light Prep · 3h
-DESCRIPTION:📺 Bootcamp: No new content. Anki reviews only. Pack bag. Confir
- m test center\, bring valid ID\, plan snacks. Sleep by 9pm.\n🎧 Divine: Ep 
- 499 (Successful Dedicated 2)
+UID:step1-2026-10-19-0114@mo-usmle
+DTSTART;TZID=America/New_York:20261019T070000
+DTEND;TZID=America/New_York:20261019T150000
+SUMMARY:📚 Step1 · Final · 8h
+DESCRIPTION:📺 Bootcamp: Sketchy Micro rapid image recall — flip throug
+ h all bacteria + fungi + virus images. Name from memory.\n📖 First Aid: 
+ Sketchy all images (rapid)\n🎨 Sketchy: Rapid recall: All Micro Bacteria
+  (42) · Viruses (25) · Fungi (10) · Parasites (19) — name from image\
+ n❓ UWorld: 40 questions\n🎧 Divine: Ep 105 (Rapid Review 7)
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
-TRIGGER:PT0S
+TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Rest day — Anki reviews only. Recharge.
+DESCRIPTION:📚 Starting now: Final — Sketchy Micro rapid image recall 
+ — flip through all bacteria
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:step1-2026-10-19-0125@mo-usmle
-DTSTART;TZID=America/New_York:20261019T070000
-DTEND;TZID=America/New_York:20261019T080000
+UID:step1-2026-10-20-0115@mo-usmle
+DTSTART;TZID=America/New_York:20261020T070000
+DTEND;TZID=America/New_York:20261020T150000
+SUMMARY:📚 Step1 · Final · 8h
+DESCRIPTION:📺 Bootcamp: UWorld redo — all marked/incorrect questions f
+ rom entire prep. These are your personal weak spots.\n📖 First Aid: FA 
+ — spot review on redos\n❓ UWorld: 80 questions\n🎧 Divine: Ep 498 (S
+ uccessful Dedicated 1)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Final — UWorld redo — all marked/incorre
+ ct questions from entire pre
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-10-21-0116@mo-usmle
+DTSTART;TZID=America/New_York:20261021T070000
+DTEND;TZID=America/New_York:20261021T150000
+SUMMARY:🎯 Step1 · NBME · 8h
+DESCRIPTION:📺 Bootcamp: 🎯 NBME Form 30 — full timed exam (4 hrs). T
+ hen full error review.\n📖 First Aid: FA — error-driven review
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:🎯 NBME starting in 30 min — go to a quiet place.
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-10-22-0117@mo-usmle
+DTSTART;TZID=America/New_York:20261022T070000
+DTEND;TZID=America/New_York:20261022T150000
+SUMMARY:📚 Step1 · Review · 8h
+DESCRIPTION:📺 Bootcamp: NBME 30 error review — exhaustive. Note any to
+ pic appearing in multiple NBMEs (guaranteed on exam).\n📖 First Aid: FA 
+ — error sections\n❓ UWorld: 40 questions\n🎧 Divine: Ep 107 (Rapid R
+ eview GI)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Review — NBME 30 error review — exhausti
+ ve. Note any topic appearing 
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-10-23-0118@mo-usmle
+DTSTART;TZID=America/New_York:20261023T070000
+DTEND;TZID=America/New_York:20261023T130000
+SUMMARY:📚 Step1 · Final · 6h
+DESCRIPTION:📺 Bootcamp: FA — HY tables\, drug side effects\, microbe p
+ resentations\, key formulas. No deep reading. Skim and reinforce.\n📖 Fi
+ rst Aid: FA: HY tables only\n🎧 Divine: Ep 499 (Successful Dedicated 2)
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:📚 Starting now: Final — FA — HY tables, drug side effect
+ s, microbe presentations, ke
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-10-24-0119@mo-usmle
+DTSTART;TZID=America/New_York:20261024T070000
+DTEND;TZID=America/New_York:20261024T100000
+SUMMARY:😴 Step1 · REST · 3h
+DESCRIPTION:📺 Bootcamp: Full rest. No studying. Confirm test center\, br
+ ing valid ID\, plan snacks.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-10-25-0120@mo-usmle
+DTSTART;TZID=America/New_York:20261025T070000
+DTEND;TZID=America/New_York:20261025T100000
+SUMMARY:😴 Step1 · REST · 3h
+DESCRIPTION:📺 Bootcamp: No new content. Anki reviews only. Pack bag. Con
+ firm test center\, bring valid ID\, plan snacks. Sleep by 9pm.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:step1-2026-10-26-0121@mo-usmle
+DTSTART;TZID=America/New_York:20261026T070000
+DTEND;TZID=America/New_York:20261026T080000
 SUMMARY:🏆 Step1 · EXAM
-DESCRIPTION:📺 Bootcamp: 🎯 USMLE STEP 1 — EXAM DAY. Trust your preparation. 
- You are ready.
+DESCRIPTION:📺 Bootcamp: 🎯 USMLE STEP 1 — EXAM DAY. Trust your prepa
+ ration. You are ready.
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
