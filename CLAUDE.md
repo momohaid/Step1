@@ -5,7 +5,7 @@ A PWA (Progressive Web App) + iOS Scriptable widget for tracking a USMLE Step 1 
 
 ## Files
 - `index.html` — the entire PWA (single file). All logic, styles, and schedule data live here.
-- `sw.js` — service worker. Must bump `CACHE` version (e.g. `step1-v12`) on every deploy.
+- `sw.js` — service worker. Must bump `CACHE` version (e.g. `step1-v13`) on every deploy.
 - `manifest.json` — PWA manifest.
 - `Step1Schedule.js` — iOS Scriptable widget.
 - `sketchy.html` — Sketchy video reference page.
@@ -15,15 +15,15 @@ A PWA (Progressive Web App) + iOS Scriptable widget for tracking a USMLE Step 1 
 
 Day object shape:
 ```json
-{"d":"Sun Jun 28","iso":"2026-06-28","h":6,"s":"Cardio","bc":"content description","fa":"FA page refs","p":"Pathoma ref","sk":"Sketchy videos","uw":20,"an":35,"dv":"Bootcamp ep","type":"normal"}
+{"d":"Fri Jul 3","iso":"2026-07-03","h":6,"s":"Cardio","bc":"content description","fa":"FA page refs","p":"Pathoma ref","sk":"Sketchy videos","uw":20,"an":35,"dv":"Bootcamp ep","type":"normal"}
 ```
 Types: `normal`, `rest`, `nbme`, `exam`
 
 ## Schedule overview
-- **Start:** Jun 28, 2026 (Sunday)
-- **Exam:** Oct 26, 2026 (Monday)
-- **Saturdays:** always rest/Anki days
-- **103 study days**, 4 NBMEs (Forms 25, 26, 28, 30) + 2× Free 120
+- **Start:** Jul 3, 2026 (Friday)
+- **Day 3:** Jul 5, 2026 (Sunday)
+- **Exam:** Oct 30, 2026 (Friday)
+- **96 normal study days**, 17 Saturday rest days, 4 NBMEs (Forms 25, 26, 28, 30) + 2× Free 120
 - Content order: Cardio → Pulm → Renal → Neuro → Repro → Immuno → Psych → Pharm → Genetics → Heme → Derm → Biostat → Endo → Public Health → GI → Biochem → MSK → Micro → Pharm systems → Dedicated review → Final prep
 
 ## Deploy workflow

@@ -1,4 +1,4 @@
-const CACHE = "step1-v11";
+const CACHE = "step1-v13";
 
 self.addEventListener("install", e => {
   self.skipWaiting();
